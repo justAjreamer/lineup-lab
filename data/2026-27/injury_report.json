@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-27_01_45PM.pdf",
-"report_time": "2026-10-27 13:45:00",
-"fetched_at": "2026-10-27T17:49:33.004716+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-27_04_00PM.pdf",
+"report_time": "2026-10-27 16:00:00",
+"fetched_at": "2026-10-27T20:13:21.950554+00:00",
 "rows": [
 {
 "team": "BKN",
@@ -112,7 +112,7 @@
 "team": "SAC",
 "player": "Keegan Murray",
 "status": "Out",
-"reason": "Injury/Illness - Left Capsulitis",
+"reason": "Injury/Illness - Left Left Ankle Capsulitis",
 "matchup": "SAC@SAS"
 },
 {
@@ -153,7 +153,7 @@
 {
 "team": "POR",
 "player": "Branden Carlson",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Concussion Protocol",
 "matchup": "POR@LAL"
 },
@@ -214,6 +214,20 @@
 "matchup": "POR@LAL"
 },
 {
+"team": "MIA",
+"player": "Simone Fontecchio",
+"status": "Doubtful",
+"reason": "Injury/Illness - Illness",
+"matchup": "MIA@ATL"
+},
+{
+"team": "MIA",
+"player": "Pelle Larsson",
+"status": "Probable",
+"reason": "Injury/Illness - Right Ankle Sprain",
+"matchup": "MIA@ATL"
+},
+{
 "team": "ORL",
 "player": "Paolo Banchero",
 "status": "Out",
@@ -247,6 +261,62 @@
 "status": "Out",
 "reason": "Injury/Illness - Right Knee Contusion / Bone Bruise",
 "matchup": "ORL@TOR"
+},
+{
+"team": "TOR",
+"player": "Nate Bittle",
+"status": "Out",
+"reason": "Injury/Illness - Right Foot Avulsion Fracture",
+"matchup": "ORL@TOR"
+},
+{
+"team": "TOR",
+"player": "Kawhi Leonard",
+"status": "Out",
+"reason": "Injury/Illness - Left Knee Effusion / Swelling",
+"matchup": "ORL@TOR"
+},
+{
+"team": "TOR",
+"player": "Malachi Smith",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "ORL@TOR"
+},
+{
+"team": "NOP",
+"player": "Malik Dia",
+"status": "Doubtful",
+"reason": "G League - Two- Way",
+"matchup": "DEN@NOP"
+},
+{
+"team": "NOP",
+"player": "Yves Missi",
+"status": "Out",
+"reason": "Injury/Illness - Left Knee Contusion / Bone Bruise",
+"matchup": "DEN@NOP"
+},
+{
+"team": "NOP",
+"player": "Jaron Pierre Jr.",
+"status": "Doubtful",
+"reason": "G League - Two- Way",
+"matchup": "DEN@NOP"
+},
+{
+"team": "NOP",
+"player": "Jordan Poole",
+"status": "Probable",
+"reason": "Injury/Illness - Illness",
+"matchup": "DEN@NOP"
+},
+{
+"team": "NOP",
+"player": "Julian Reese",
+"status": "Probable",
+"reason": "G League - Two- Way",
+"matchup": "DEN@NOP"
 }
 ]
 }
