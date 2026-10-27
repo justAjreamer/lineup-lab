@@ -15,16 +15,27 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
       - run: pip install requests pypdf
-      - run: python nba_feed.py fetch --root data/2026-27
-      - name: commit new data
+      - name: fetch (output saved to data/2026-27/relay_log.txt so it can be read without Actions log access)
+        id: fetch
+        run: |
+          set +e
+          python nba_feed.py fetch --root data/2026-27 > data/2026-27/relay_log.txt 2>&1
+          code=$?
+          echo "exit=$code at $(date -u +%Y-%m-%dT%H:%MZ)" >> data/2026-27/relay_log.txt
+          tail -40 data/2026-27/relay_log.txt
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+      - name: commit new data (and the log, even when the fetch failed)
         run: |
           git config user.name "lineup-lab-relay"
           git config user.email "lineup-lab-relay@users.noreply.github.com"
           git add data
           git diff --cached --quiet || git commit -m "NBA data $(date -u +%Y-%m-%dT%H:%MZ)"
           git push
+      - name: fail the run if the fetch failed (GitHub emails you)
+        if: steps.fetch.outputs.code != '0'
+        run: exit 1
