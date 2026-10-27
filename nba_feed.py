@@ -359,6 +359,9 @@ def fetch(root):
     try:
         rows = espn_injuries(_get(f"{ESPN}/injuries"))
         json.dump({"fetched_at": st["fetched_at"], "rows": rows}, open(os.path.join(root, "espn_injuries.json"), "w"))
+        os.makedirs(os.path.join(root, "injury_reports"), exist_ok=True)
+        json.dump({"fetched_at": st["fetched_at"], "rows": rows}, open(os.path.join(root, "injury_reports", f"espn_{today:%Y%m%d}.json"), "w"),
+                  separators=(",", ":"))
         st["espn_injury_rows"] = len(rows)
     except Exception as e:
         st["errors"].append(f"ESPN injuries: {e!r}")
@@ -371,8 +374,13 @@ def fetch(root):
         rows = parse_injury_words(pdf_words(_get(links[-1], "bytes")))
         if not rows:
             raise RuntimeError(f"{links[-1]} parsed to 0 rows (format changed?)")
-        json.dump({"url": links[-1], "report_time": str(report_time(links[-1])), "fetched_at": st["fetched_at"], "rows": rows},
-                  open(os.path.join(root, "injury_report.json"), "w"), indent=0)
+        rep = {"url": links[-1], "report_time": str(report_time(links[-1])), "fetched_at": st["fetched_at"], "rows": rows}
+        json.dump(rep, open(os.path.join(root, "injury_report.json"), "w"), indent=0)
+        # archive: each report kept once, so we can later measure how often each status really plays
+        os.makedirs(os.path.join(root, "injury_reports"), exist_ok=True)
+        arch = os.path.join(root, "injury_reports", re.sub(r"[^0-9]", "", rep["report_time"])[:12] + ".json")
+        if not os.path.exists(arch):
+            json.dump(rep, open(arch, "w"), separators=(",", ":"))
         st["official_injury_rows"] = len(rows)
     except Exception as e:
         st["errors"].append(f"official injury report: {e!r}")
@@ -457,8 +465,9 @@ def build(root):
 def availability(root, P):
     """Auto roster status, weakest evidence first, each later source overriding: (1) the team's last two box scores
     (inactive for injury in both -> out, in the last only -> questionable, played last game -> active);
-    (2) ESPN's injury list (Out -> out, Day-To-Day -> questionable), only entries newer than the team's last game;
-    (3) the official NBA report (Out/Doubtful -> out, Questionable -> questionable, Probable/Available -> active)."""
+    (2) ESPN's injury list (Out -> out, Day-To-Day -> day-to-day), only entries newer than the team's last game;
+    (3) the official NBA report (Out -> out, Doubtful -> doubtful, Questionable -> questionable, Probable/Available -> active).
+    The app turns doubtful/questionable/day-to-day into a chance of playing (config: availability.p_play)."""
     import pandas as pd
     out = {}
     last_game = {}
@@ -482,14 +491,14 @@ def availability(root, P):
                 continue
             if r.get("date") and r["date"][:10] < last_game.get(r["team"], "") and out.get(r["player"], ("", ""))[1] == "active":
                 continue   # he has played since this note was written
-            s = {"Out": "out", "Day-To-Day": "questionable"}.get(r["status"])
+            s = {"Out": "out", "Day-To-Day": "day-to-day"}.get(r["status"])
             if s:
                 out[r["player"]] = (r["team"], s, f"ESPN: {r['status']} ({r['reason']})" + (f", return ~{r['return']}" if r.get("return") else ""))
     rp = os.path.join(root, "injury_report.json")
     if os.path.exists(rp):
         rep = json.load(open(rp))
         for r in rep["rows"]:
-            s = {"Out": "out", "Doubtful": "out", "Questionable": "questionable"}.get(r["status"], "active")
+            s = {"Out": "out", "Doubtful": "doubtful", "Questionable": "questionable"}.get(r["status"], "active")
             out[r["player"]] = (r["team"], s, f"NBA report {rep.get('report_time', '')[:16]}: {r['status']} — {r['reason']}")
     pd.DataFrame([{"player": k, "team": t, "status": s, "note": n} for k, (t, s, n) in sorted(out.items())],
                  columns=["player", "team", "status", "note"]).to_csv(os.path.join(root, "availability.csv"), index=False)
@@ -510,12 +519,14 @@ def update(root, relay=None):
             if r.returncode == 0 and os.path.isdir(os.path.join(src, "ledger")):
                 os.makedirs(os.path.join(root, "ledger"), exist_ok=True)
                 n = 0
-                for sub in ("ledger", "pbp"):
+                for sub in ("ledger", "pbp", "injury_reports"):
                     os.makedirs(os.path.join(root, sub), exist_ok=True)
                     for f in glob.glob(os.path.join(src, sub, "*.json")):
                         dst = os.path.join(root, sub, os.path.basename(f))
-                        if not os.path.exists(dst):
-                            open(dst, "w").write(open(f).read()); n += sub == "ledger"
+                        txt = open(f).read()
+                        if not os.path.exists(dst) or open(dst).read() != txt:   # new game, or a backfilled field
+                            n += sub == "ledger" and not os.path.exists(dst)
+                            open(dst, "w").write(txt)
                 for fn in ["nba_schedule.json", "injury_report.json", "espn_injuries.json", "feed_status.json"]:
                     if os.path.exists(os.path.join(src, fn)):
                         open(os.path.join(root, fn), "w").write(open(os.path.join(src, fn)).read())
