@@ -1,18 +1,18 @@
-"""Official NBA data feed: box scores, schedule/results and availability, kept as a game-by-game ledger.
+"""NBA data feed: schedule, results, box scores and availability, kept as a game-by-game ledger.
 
 Commands (run from the project root, or standalone in the GitHub relay):
-  python3 -m lineuplab.nba_feed fetch  [--root DIR]   pull new data from NBA.com into DIR/ (needs network access)
+  python3 -m lineuplab.nba_feed fetch  [--root DIR]   pull new data into DIR/ (needs network access)
   python3 -m lineuplab.nba_feed build                 turn the ledger into the season tables the model reads
   python3 -m lineuplab.nba_feed update                fetch directly; if blocked, pull the GitHub relay; then build
 
-Why a ledger: every completed game is stored once (data/2026-27/ledger/<gameId>.json) and never refetched, and the
-season tables are re-derived from it, so a missed day heals itself the next time any route works.
-
-Sources (all public, no key):
-  schedule  https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json
-  box score https://cdn.nba.com/static/json/liveData/boxscore/boxscore_<gameId>.json  (minutes, starters, DNP reasons)
-  injuries  official NBA injury report PDFs linked from https://official.nba.com/nba-injury-report-<season>-season/
-This file depends only on the standard library + requests (+ pypdf for the injury report) so the relay can run it alone.
+Sources — chosen because they answer from GitHub's servers (NBA.com's own data CDN refuses cloud machines; tested
+Oct 27 2026 from the relay):
+  ESPN public API   scoreboard (schedule/results), game summary (box score: minutes, starters, positions, DNPs,
+                    game-day injuries), league injury list
+  NBA official injury report (PDF, linked from official.nba.com): the authoritative game-day status
+Every completed game is stored once (data/2026-27/ledger/<id>.json) and never refetched; the season tables are
+re-derived from the ledger, so a missed day heals itself the next time any route works.
+Standalone needs: python stdlib + requests + pypdf (pandas only for `build`).
 """
 import datetime as dt
 import glob
@@ -22,100 +22,19 @@ import re
 import subprocess
 import sys
 import tempfile
+import time
 
-SCHEDULE_URL = "https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json"
-BOX_URL = "https://cdn.nba.com/static/json/liveData/boxscore/boxscore_{}.json"
+ESPN = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba"
 INJURY_INDEX = "https://official.nba.com/nba-injury-report-{}-season/"
 HEADERS = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36",
-           "Referer": "https://www.nba.com/", "Origin": "https://www.nba.com", "Accept": "application/json, text/plain, */*"}
-SEASON = "2026-27"
+           "Referer": "https://www.nba.com/", "Accept": "application/json, text/html, */*"}
+SEASON, SEASON_YEAR = "2026-27", 2027          # ESPN labels a season by its ending year
+ESPN_FIX = {"GS": "GSW", "NY": "NYK", "SA": "SAS", "NO": "NOP", "UTAH": "UTA", "WSH": "WAS"}
 try:
     from zoneinfo import ZoneInfo
     CT = ZoneInfo("America/Chicago")
 except Exception:  # no tz database: fixed CDT offset (an hour off in winter; dates are still right)
     CT = dt.timezone(dt.timedelta(hours=-5))
-
-
-def _root(args):
-    if "--root" in args:
-        return args[args.index("--root") + 1]
-    return os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", SEASON)
-
-
-# ------------------------------------------------------------------ fetch
-def _get(url, kind="json"):
-    import requests
-    r = requests.get(url, headers=HEADERS, timeout=30)
-    r.raise_for_status()
-    return r.json() if kind == "json" else (r.content if kind == "bytes" else r.text)
-
-
-def _mins(iso):
-    """'PT34M12.00S' -> 34.2"""
-    m = re.match(r"PT(?:(\d+)M)?(?:([\d.]+)S)?", iso or "")
-    return round(int(m.group(1) or 0) + float(m.group(2) or 0) / 60, 2) if m else 0.0
-
-
-def compact_box(box):
-    """NBA.com live box score -> compact ledger record, validated against the team totals."""
-    g = box["game"]
-    rec = {"gameId": g["gameId"], "date": (g.get("gameEt") or g.get("gameTimeUTC"))[:10],
-           "home": g["homeTeam"]["teamTricode"], "away": g["awayTeam"]["teamTricode"],
-           "home_score": g["homeTeam"]["score"], "away_score": g["awayTeam"]["score"],
-           "periods": len(g["homeTeam"].get("periods", [])) or 4, "players": []}
-    for side in ("homeTeam", "awayTeam"):
-        t = g[side]
-        for p in t["players"]:
-            s = p.get("statistics", {})
-            rec["players"].append({
-                "team": t["teamTricode"], "name": p.get("name") or f"{p.get('firstName', '')} {p.get('familyName', '')}".strip(),
-                "id": p.get("personId"), "starter": p.get("starter") == "1", "played": p.get("played") == "1",
-                "status": p.get("status"), "reason": p.get("notPlayingReason"), "desc": p.get("notPlayingDescription"),
-                "pos": p.get("position") or "", "min": _mins(s.get("minutes")),
-                "fgm": s.get("fieldGoalsMade", 0), "fga": s.get("fieldGoalsAttempted", 0),
-                "fg3m": s.get("threePointersMade", 0), "fg3a": s.get("threePointersAttempted", 0),
-                "ftm": s.get("freeThrowsMade", 0), "fta": s.get("freeThrowsAttempted", 0),
-                "oreb": s.get("reboundsOffensive", 0), "dreb": s.get("reboundsDefensive", 0),
-                "ast": s.get("assists", 0), "stl": s.get("steals", 0), "blk": s.get("blocks", 0),
-                "tov": s.get("turnovers", 0), "pts": s.get("points", 0), "pm": s.get("plusMinusPoints", 0)})
-    rec["problems"] = validate(rec)
-    return rec
-
-
-def validate(rec):
-    """A box score is trusted only if players add up to the team: points, and 5 players x game length in minutes."""
-    out = []
-    for team, score in ((rec["home"], rec["home_score"]), (rec["away"], rec["away_score"])):
-        ps = [p for p in rec["players"] if p["team"] == team]
-        pts = sum(p["pts"] for p in ps)
-        mins = sum(p["min"] for p in ps)
-        full = 5 * (48 + 5 * max(0, rec["periods"] - 4))
-        if pts != score:
-            out.append(f"{team}: players' points {pts} != team score {score}")
-        if abs(mins - full) > 2:
-            out.append(f"{team}: players' minutes {mins:.1f} != {full}")
-        if sum(p["starter"] for p in ps) != 5:
-            out.append(f"{team}: {sum(p['starter'] for p in ps)} starters flagged")
-    return out
-
-
-def schedule_games(sched):
-    """scheduleLeagueV2 -> [{gameId, date(CT), home, away, status, scores, time_ct}] regular season only."""
-    out = []
-    for day in sched["leagueSchedule"]["gameDates"]:
-        for g in day["games"]:
-            if not str(g["gameId"]).startswith("002"):
-                continue
-            utc = dt.datetime.fromisoformat(g["gameDateTimeUTC"].replace("Z", "+00:00"))
-            ct = utc.astimezone(CT)
-            out.append({"gameId": g["gameId"], "date": ct.strftime("%Y-%m-%d"), "home": g["homeTeam"]["teamTricode"],
-                        "away": g["awayTeam"]["teamTricode"], "status": {1: "scheduled", 2: "live", 3: "final"}.get(g["gameStatus"], "scheduled"),
-                        "home_score": g["homeTeam"].get("score"), "away_score": g["awayTeam"].get("score"),
-                        "time_ct": ct.strftime("%-I:%M %p"), "tip_utc": g["gameDateTimeUTC"]})
-    return out
-
-
-INJ_STATUS = ("Out", "Doubtful", "Questionable", "Probable", "Available")
 TEAM_NAMES = {"Atlanta Hawks": "ATL", "Boston Celtics": "BOS", "Brooklyn Nets": "BKN", "Charlotte Hornets": "CHA",
               "Chicago Bulls": "CHI", "Cleveland Cavaliers": "CLE", "Dallas Mavericks": "DAL", "Denver Nuggets": "DEN",
               "Detroit Pistons": "DET", "Golden State Warriors": "GSW", "Houston Rockets": "HOU", "Indiana Pacers": "IND",
@@ -124,76 +43,275 @@ TEAM_NAMES = {"Atlanta Hawks": "ATL", "Boston Celtics": "BOS", "Brooklyn Nets": 
               "New York Knicks": "NYK", "Oklahoma City Thunder": "OKC", "Orlando Magic": "ORL", "Philadelphia 76ers": "PHI",
               "Phoenix Suns": "PHX", "Portland Trail Blazers": "POR", "Sacramento Kings": "SAC", "San Antonio Spurs": "SAS",
               "Toronto Raptors": "TOR", "Utah Jazz": "UTA", "Washington Wizards": "WAS"}
+tri = lambda a: ESPN_FIX.get(a, a)
 
 
-def parse_injury_text(text):
-    """Text of an official injury report -> [{team, player('First Last'), status, reason}].
-    Rows look like '... Boston Celtics Brown, Jaylen Questionable Injury/Illness - Left Knee; Soreness'; the team name
-    appears only on its first row, so it carries forward."""
-    rows, team = [], None
-    names = sorted(TEAM_NAMES, key=len, reverse=True)
-    pat = re.compile(r"([A-Z][\w'’.\-]+(?: [A-Z][\w'’.\-]+)*(?: (?:Jr\.|Sr\.|II|III|IV))?), ([A-Z][\w'’.\-]+(?: [A-Z][\w'’.\-]+)*) (" + "|".join(INJ_STATUS) + r")\b(.*)")
-    for line in text.splitlines():
-        for n in names:
-            if n in line:
-                team = TEAM_NAMES[n]
-                line = line.split(n, 1)[1]
-                break
-        m = pat.search(line)
-        if m and team:
-            last, first, status, reason = m.groups()
-            suffix = ""
-            sm = re.match(r"(.*) (Jr\.|Sr\.|II|III|IV)$", last)
-            if sm:
-                last, suffix = sm.group(1), " " + sm.group(2)
-            rows.append({"team": team, "player": f"{first} {last}{suffix}", "status": status, "reason": reason.strip()})
+def _root(args):
+    if "--root" in args:
+        return args[args.index("--root") + 1]
+    return os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", SEASON)
+
+
+def _get(url, kind="json", tries=3):
+    import requests
+    for i in range(tries):
+        try:
+            r = requests.get(url, headers=HEADERS, timeout=30)
+            r.raise_for_status()
+            return r.json() if kind == "json" else (r.content if kind == "bytes" else r.text)
+        except Exception:
+            if i == tries - 1:
+                raise
+            time.sleep(2 * (i + 1))
+
+
+# ------------------------------------------------------------------ parsing (pure functions, tested offline)
+def ct_of(iso_utc):
+    t = dt.datetime.fromisoformat(iso_utc.replace("Z", "+00:00"))
+    if t.tzinfo is None:
+        t = t.replace(tzinfo=dt.timezone.utc)
+    return t.astimezone(CT)
+
+
+def scoreboard_games(sb):
+    """ESPN scoreboard -> [{id, date (Central), home, away, status, scores, time_ct, tip_utc}], regular season only."""
+    out = []
+    for e in sb.get("events", []):
+        if e.get("season", {}).get("type") != 2:
+            continue
+        comp = {c["homeAway"]: c for c in e["competitions"][0]["competitors"]}
+        name = e["status"]["type"]["name"]
+        st = "final" if name == "STATUS_FINAL" else "scheduled" if name in ("STATUS_SCHEDULED", "STATUS_POSTPONED") else "live"
+        t = ct_of(e["date"])
+        g = {"id": f"espn_{e['id']}", "espn_id": e["id"], "date": t.strftime("%Y-%m-%d"), "home": tri(comp["home"]["team"]["abbreviation"]),
+             "away": tri(comp["away"]["team"]["abbreviation"]), "status": st, "time_ct": t.strftime("%-I:%M %p"),
+             "tip_utc": t.astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")}
+        if st == "final":
+            g["home_score"], g["away_score"] = int(comp["home"]["score"]), int(comp["away"]["score"])
+        if name == "STATUS_POSTPONED":
+            g["postponed"] = True
+        out.append(g)
+    return out
+
+
+def _ma(s):
+    a, b = (s or "0-0").split("-")
+    return int(a or 0), int(b or 0)
+
+
+def compact_summary(s, game):
+    """ESPN game summary -> compact ledger record, validated against the final score."""
+    rec = {"id": game["id"], "date": game["date"], "home": game["home"], "away": game["away"],
+           "home_score": game["home_score"], "away_score": game["away_score"], "source": "espn", "players": []}
+    for t in s["boxscore"]["players"]:
+        team = tri(t["team"]["abbreviation"])
+        st = t["statistics"][0]
+        keys = st["keys"]
+        for a in st["athletes"]:
+            v = dict(zip(keys, a.get("stats") or []))
+            played = not a.get("didNotPlay") and bool(a.get("stats"))
+            fgm, fga = _ma(v.get("fieldGoalsMade-fieldGoalsAttempted"))
+            f3m, f3a = _ma(v.get("threePointFieldGoalsMade-threePointFieldGoalsAttempted"))
+            ftm, fta = _ma(v.get("freeThrowsMade-freeThrowsAttempted"))
+            num = lambda k: int(str(v.get(k, "0")).replace("+", "") or 0) if played else 0
+            rec["players"].append({
+                "team": team, "name": a["athlete"]["displayName"], "id": a["athlete"].get("id"),
+                "starter": bool(a.get("starter")), "played": played, "status": "ACTIVE",
+                "reason": None if played else ("DNP_COACH" if "COACH" in str(a.get("reason", "")).upper() else str(a.get("reason") or "DNP")),
+                "desc": None, "pos": ((a["athlete"].get("position") or {}).get("abbreviation") or ""),
+                "min": float(num("minutes")), "fgm": fgm if played else 0, "fga": fga if played else 0,
+                "fg3m": f3m if played else 0, "fg3a": f3a if played else 0, "ftm": ftm if played else 0, "fta": fta if played else 0,
+                "oreb": num("offensiveRebounds"), "dreb": num("defensiveRebounds"), "ast": num("assists"), "stl": num("steals"),
+                "blk": num("blocks"), "tov": num("turnovers"), "pts": num("points"), "pm": num("plusMinus")})
+    listed = {(p["team"], p["name"]) for p in rec["players"]}
+    for t in s.get("injuries", []):     # injured players are usually not in the box score at all
+        team = tri(t["team"]["abbreviation"])
+        for i in t.get("injuries", []):
+            nm = i["athlete"]["displayName"]
+            if (team, nm) in listed:
+                continue
+            rec["players"].append({"team": team, "name": nm, "id": None, "starter": False, "played": False, "status": "INACTIVE",
+                                   "reason": "INACTIVE_INJURY", "desc": f"{i.get('status', '')}: {(i.get('details') or {}).get('type') or 'injury'}",
+                                   "pos": "", "min": 0.0, **{k: 0 for k in ["fgm", "fga", "fg3m", "fg3a", "ftm", "fta", "oreb", "dreb", "ast", "stl", "blk", "tov", "pts", "pm"]}})
+    rec["problems"] = validate(rec)
+    return rec
+
+
+def validate(rec, min_tol=6):
+    """Trusted only if the players add up to the team: points exactly; minutes to 5 x game length (ESPN rounds
+    minutes to whole numbers, so allow a few); exactly five starters."""
+    out = []
+    for team, score in ((rec["home"], rec["home_score"]), (rec["away"], rec["away_score"])):
+        ps = [p for p in rec["players"] if p["team"] == team]
+        pts, mins = sum(p["pts"] for p in ps), sum(p["min"] for p in ps)
+        ot = max(0, round((mins - 240) / 25)) if mins > 250 else 0
+        if pts != score:
+            out.append(f"{team}: players' points {pts} != team score {score}")
+        if abs(mins - (240 + 25 * ot)) > min_tol:
+            out.append(f"{team}: players' minutes {mins:.0f} != {240 + 25 * ot}")
+        if sum(p["starter"] for p in ps) != 5:
+            out.append(f"{team}: {sum(p['starter'] for p in ps)} starters flagged")
+    return out
+
+
+def espn_injuries(j):
+    """ESPN league injury list -> [{team, player, status, reason, date}]"""
+    rows = []
+    for t in j.get("injuries", []):
+        team = TEAM_NAMES.get(t.get("displayName"))
+        for i in t.get("injuries", []):
+            d = i.get("details") or {}
+            rows.append({"team": team, "player": i["athlete"]["displayName"], "status": i.get("status"),
+                         "reason": d.get("type") or "", "date": i.get("date"), "return": d.get("returnDate")})
     return rows
 
 
-def fetch_injuries(root):
+# --- official NBA injury report: rebuild the table from word positions (text extraction scrambles its rows)
+INJ_STATUS = ("Out", "Doubtful", "Questionable", "Probable", "Available")
+
+
+def pdf_words(pdf_bytes):
+    """-> [[ (x, y, word), ... ] per page]"""
     from io import BytesIO
     from pypdf import PdfReader
-    html = _get(INJURY_INDEX.format(SEASON), "text")
-    links = re.findall(r"https://ak-static\.cms\.nba\.com/referee/injury/Injury-Report_[\w\-]+\.pdf", html)
-    if not links:
-        raise RuntimeError("no injury report links found on the index page")
-    url = sorted(set(links))[-1]
-    pdf = PdfReader(BytesIO(_get(url, "bytes")))
-    text = "\n".join(page.extract_text() or "" for page in pdf.pages)
-    rows = parse_injury_text(text)
-    if not rows:
-        raise RuntimeError(f"injury report {url} parsed to 0 rows (format changed?)")
-    json.dump({"url": url, "fetched_at": dt.datetime.now(dt.timezone.utc).isoformat(), "rows": rows},
-              open(os.path.join(root, "injury_report.json"), "w"), indent=0)
-    return len(rows)
+    pages = []
+    for page in PdfReader(BytesIO(pdf_bytes)).pages:
+        words = []
+        page.extract_text(visitor_text=lambda text, cm, tm, fd, fs: words.append(
+            (round(tm[4] * cm[0] + cm[4], 1), round(tm[5] * cm[3] + cm[5], 1), text.strip())) if text.strip() else None)
+        pages.append(words)
+    return pages
 
 
+def parse_injury_words(pages):
+    """Word positions -> [{team, player('First Last'), status, reason, matchup}]. Columns are located from the
+    header row; rows are read top to bottom; a team cell applies until the next one; reason text that wraps onto
+    its own line joins the nearest player row."""
+    rows, team, matchup, cols = [], None, None, None
+    names = sorted(TEAM_NAMES, key=len, reverse=True)
+    for words in pages:
+        hdr = {w: x for x, y, w in words if w in ("Matchup", "Team", "Player", "Current", "Reason")}
+        if {"Team", "Player", "Current", "Reason"} <= set(hdr):
+            hy = max(y for x, y, w in words if w == "Player")
+            cols = [("matchup", hdr.get("Matchup", hdr["Team"] - 60)), ("team", hdr["Team"]), ("player", hdr["Player"]),
+                    ("status", hdr["Current"]), ("reason", hdr["Reason"])]
+        elif cols:   # continuation pages repeat only the title: keep page 1's columns, skip the title line
+            title = [y for x, y, w in words if w == "Report:"]
+            hy = (max(title) if title else max(y for x, y, w in words) + 1) - 3
+        else:
+            continue
+        lines = {}
+        for x, y, w in words:
+            if y >= hy - 2:
+                continue  # header and title
+            key = next((k for k in lines if abs(k - y) <= 2.5), y)
+            lines.setdefault(key, []).append((x, w))
+        entries = []
+        for y in sorted(lines, reverse=True):
+            cell = {c: [] for c, _ in cols}
+            for x, w in sorted(lines[y]):
+                c = [c for c, cx in cols if x >= cx - 6]
+                if c:
+                    cell[c[-1]].append(w)
+            txt = {c: " ".join(v) for c, v in cell.items()}
+            if re.search(r"[A-Z]{2,3}@[A-Z]{2,3}", txt["matchup"]):
+                matchup = re.search(r"[A-Z]{2,3}@[A-Z]{2,3}", txt["matchup"]).group(0)
+            if txt["team"]:
+                tn = re.sub(r"\s+", " ", txt["team"])
+                hit = next((n for n in names if n in tn or tn in n), None)
+                if hit:
+                    team = TEAM_NAMES[hit]
+            m = re.match(r"(.+?), (.+)$", txt["player"])
+            if m and txt["status"].split()[:1] and txt["status"].split()[0] in INJ_STATUS:
+                last, first = m.groups()
+                sm = re.match(r"(.*) (Jr\.|Sr\.|II|III|IV)$", last)
+                name = f"{first} {sm.group(1)} {sm.group(2)}" if sm else f"{first} {last}"
+                entries.append({"y": y, "team": team, "player": name, "status": txt["status"].split()[0],
+                                "reason": txt["reason"], "matchup": matchup})
+            elif txt["reason"] and not txt["player"] and entries is not None:
+                entries.append({"y": y, "continuation": txt["reason"]})
+        players = [e for e in entries if "player" in e]
+        for e in entries:
+            if "continuation" in e and players:
+                near = min(players, key=lambda p: abs(p["y"] - e["y"]))
+                if abs(near["y"] - e["y"]) < 20:
+                    near["reason"] = (near["reason"] + " " + e["continuation"]).strip()
+        rows += [{k: v for k, v in p.items() if k != "y"} for p in players]
+    return rows
+
+
+# ------------------------------------------------------------------ fetch (network)
 def fetch(root):
-    """Pull schedule, every new final box score, and the latest injury report. Returns a status dict."""
+    """Schedule + results for the season, every new final box score, ESPN and official injury reports."""
     os.makedirs(os.path.join(root, "ledger"), exist_ok=True)
-    st = {"fetched_at": dt.datetime.now(dt.timezone.utc).isoformat(), "source": "nba.com direct", "errors": []}
-    games = schedule_games(_get(SCHEDULE_URL))
-    json.dump({"pulled": dt.datetime.now(CT).strftime("%Y-%m-%d"), "games": games}, open(os.path.join(root, "nba_schedule.json"), "w"))
+    st = {"fetched_at": dt.datetime.now(dt.timezone.utc).isoformat(), "source": "ESPN + NBA injury report", "errors": []}
+    sched_path = os.path.join(root, "nba_schedule.json")
+    cache = json.load(open(sched_path)) if os.path.exists(sched_path) else {"games": [], "full_at": None}
+    today = dt.datetime.now(CT).date()
+    first = _get(f"{ESPN}/scoreboard?dates={today:%Y%m%d}")
+    cal = sorted({c[:10] for c in (first.get("leagues") or [{}])[0].get("calendar", [])})
+    stale = not cache.get("full_at") or (dt.date.today() - dt.date.fromisoformat(cache["full_at"])).days >= 7
+    known = {g["id"]: g for g in cache["games"]}
+    if stale:   # weekly: re-read the whole season (catches reschedules)
+        dates = cal
+    else:       # otherwise: from the oldest unfinished game in the past through the next 10 days
+        open_past = [g["date"] for g in known.values() if g["status"] != "final" and g["date"] <= today.isoformat()]
+        start = min(open_past + [(today - dt.timedelta(days=2)).isoformat()])
+        dates = [d for d in cal if start <= d <= (today + dt.timedelta(days=10)).isoformat()]
+    for d in dates:
+        try:
+            for g in scoreboard_games(_get(f"{ESPN}/scoreboard?dates={d.replace('-', '')}")):
+                known[g["id"]] = g
+        except Exception as e:
+            st["errors"].append(f"scoreboard {d}: {e!r}")
+        time.sleep(0.25)
+    cache = {"pulled": today.isoformat(), "full_at": today.isoformat() if stale else cache.get("full_at"),
+             "games": sorted(known.values(), key=lambda g: (g["date"], g["home"]))}
+    json.dump(cache, open(sched_path, "w"))
     have = {os.path.basename(f)[:-5] for f in glob.glob(os.path.join(root, "ledger", "*.json"))}
     new = 0
-    for g in games:
-        if g["status"] != "final" or g["gameId"] in have:
+    for g in cache["games"]:
+        if g["status"] != "final" or g["id"] in have:
             continue
         try:
-            rec = compact_box(_get(BOX_URL.format(g["gameId"])))
-            rec["date"] = g["date"]          # use the schedule's CT date so ids line up with the app
-            json.dump(rec, open(os.path.join(root, "ledger", g["gameId"] + ".json"), "w"))
+            rec = compact_summary(_get(f"{ESPN}/summary?event={g['espn_id']}"), g)
+            json.dump(rec, open(os.path.join(root, "ledger", g["id"] + ".json"), "w"))
             new += 1
         except Exception as e:  # one bad game never blocks the rest; it is retried next run
-            st["errors"].append(f"box {g['gameId']}: {e!r}")
+            st["errors"].append(f"box {g['id']}: {e!r}")
+        time.sleep(0.25)
     try:
-        st["injury_rows"] = fetch_injuries(root)
+        rows = espn_injuries(_get(f"{ESPN}/injuries"))
+        json.dump({"fetched_at": st["fetched_at"], "rows": rows}, open(os.path.join(root, "espn_injuries.json"), "w"))
+        st["espn_injury_rows"] = len(rows)
     except Exception as e:
-        st["errors"].append(f"injury report: {e!r}")
-    st["new_games"] = new
-    st["ledger_games"] = len(have) + new
+        st["errors"].append(f"ESPN injuries: {e!r}")
+    try:
+        html = _get(INJURY_INDEX.format(SEASON), "text")
+        links = sorted(set(re.findall(r"https://ak-static\.cms\.nba\.com/referee/injury/Injury-Report_[\w\-]+\.pdf", html)),
+                       key=lambda u: report_time(u) or dt.datetime.min)
+        if not links:
+            raise RuntimeError("no report links on the index page")
+        rows = parse_injury_words(pdf_words(_get(links[-1], "bytes")))
+        if not rows:
+            raise RuntimeError(f"{links[-1]} parsed to 0 rows (format changed?)")
+        json.dump({"url": links[-1], "report_time": str(report_time(links[-1])), "fetched_at": st["fetched_at"], "rows": rows},
+                  open(os.path.join(root, "injury_report.json"), "w"), indent=0)
+        st["official_injury_rows"] = len(rows)
+    except Exception as e:
+        st["errors"].append(f"official injury report: {e!r}")
+    st.update(new_games=new, ledger_games=len(have) + new, schedule_games=len(cache["games"]))
     json.dump(st, open(os.path.join(root, "feed_status.json"), "w"), indent=1)
     return st
+
+
+def report_time(url):
+    """'.../Injury-Report_2026-10-27_05_30PM.pdf' -> datetime (ET wall time; used for ordering only)."""
+    m = re.search(r"Injury-Report_(\d{4}-\d{2}-\d{2})_(\d{1,2})(?:_(\d{2}))?(AM|PM)", url)
+    if not m:
+        return None
+    d, h, mi, ap = m.groups()
+    return dt.datetime.strptime(f"{d} {int(h)}:{mi or '00'} {ap}", "%Y-%m-%d %I:%M %p")
 
 
 # ------------------------------------------------------------------ build (no network)
@@ -203,11 +321,11 @@ def build(root):
     if not recs:
         print("feed build: ledger is empty; nothing to build")
         return None
-    bad = {r["gameId"]: r["problems"] for r in recs if r.get("problems")}
+    bad = {r["id"]: r["problems"] for r in recs if r.get("problems")}
     rows = []
-    for r in sorted(recs, key=lambda r: (r["date"], r["gameId"])):
+    for r in sorted(recs, key=lambda r: (r["date"], r["id"])):
         for p in r["players"]:
-            rows.append({**p, "gameId": r["gameId"], "date": r["date"], "suspect": r["gameId"] in bad})
+            rows.append({**p, "gameId": r["id"], "date": r["date"]})
     P = pd.DataFrame(rows)
     played = P[P.played & (P["min"] > 0)]
     last = played.sort_values(["date", "gameId"]).groupby("name").tail(1).set_index("name")
@@ -226,51 +344,62 @@ def build(root):
     gs = pg[["Player", "Team", "Pos", "G", "GS"]].copy()
     gs["MP"] = (pg.MP * pg.G).round(0)
     gs.to_csv(os.path.join(root, "games_started.csv"), index=False)
-    # roster presence: anyone listed active in a box score (includes coach's decisions), latest team
     act = P[P.status == "ACTIVE"].sort_values(["date", "gameId"]).groupby("name").tail(1)
     act.assign(player=act.name, source_game=act.date + " " + act.gameId)[["player", "team", "source_game"]] \
         .to_csv(os.path.join(root, "feed_box_seen.csv"), index=False)
     availability(root, P)
-    meta_through = max(r["date"] for r in recs)
+    through = max(r["date"] for r in recs)
     mp = os.path.join(root, "meta.json")
     if os.path.exists(mp):
         m = json.load(open(mp))
-        m.update(stats_date=meta_through, season_through=f"2026-27 through {dt.date.fromisoformat(meta_through):%b %-d} (NBA.com box scores)",
-                 rosters_as_of=f"NBA.com box scores + injury report, {dt.date.fromisoformat(meta_through):%b %-d}")
+        m.update(stats_date=through, season_through=f"2026-27 through {dt.date.fromisoformat(through):%b %-d} (ESPN box scores)",
+                 rosters_as_of=f"box scores + injury reports, {dt.date.fromisoformat(through):%b %-d}")
         json.dump(m, open(mp, "w"))
-    json.dump({"through": meta_through, "games": len(recs), "players": len(pg), "suspect_games": bad},
+    json.dump({"through": through, "games": len(recs), "players": len(pg), "suspect_games": bad},
               open(os.path.join(root, "feed_build.json"), "w"), indent=1)
-    print(f"feed build: {len(recs)} games through {meta_through}, {len(pg)} players, {len(bad)} games failing checks")
-    return meta_through
+    print(f"feed build: {len(recs)} games through {through}, {len(pg)} players, {len(bad)} games failing checks")
+    return through
 
 
 def availability(root, P):
-    """Auto roster status. Evidence, newest first: today's official injury report; then each player's last two team games.
-    Out/Doubtful on the report -> out; Questionable -> questionable; inactive for injury in both of the team's last
-    two games -> out; in the last one only -> questionable; played in the team's last game -> active."""
+    """Auto roster status, weakest evidence first, each later source overriding: (1) the team's last two box scores
+    (inactive for injury in both -> out, in the last only -> questionable, played last game -> active);
+    (2) ESPN's injury list (Out -> out, Day-To-Day -> questionable), only entries newer than the team's last game;
+    (3) the official NBA report (Out/Doubtful -> out, Questionable -> questionable, Probable/Available -> active)."""
     import pandas as pd
     out = {}
-    tg = P.groupby("team").apply(lambda d: sorted(d[["date", "gameId"]].drop_duplicates().itertuples(index=False, name=None))[-2:])
-    for team, last2 in tg.items():
-        ids = [g for _, g in last2]
-        sub = P[(P.team == team) & P.gameId.isin(ids)]
-        for name, d in sub.groupby("name"):
-            d = d.drop_duplicates("gameId").set_index("gameId").reindex(ids)
-            inj = [(isinstance(r, str) and "INJURY" in r) for r in d.reason]
-            if bool(d.played.iloc[-1] == True):  # noqa: E712 (reindexed column may hold NaN)
-                out[name] = (team, "active", f"played {last2[-1][0]}")
-            elif all(inj):
-                out[name] = (team, "out", f"inactive last {len(ids)} games: {d.desc.iloc[-1] or 'injury'}")
+    last_game = {}
+    for team, d in P.groupby("team"):
+        ids = sorted(d[["date", "gameId"]].drop_duplicates().itertuples(index=False, name=None))[-2:]
+        last_game[team] = ids[-1][0]
+        gids = [g for _, g in ids]
+        for name, pdx in P[(P.team == team) & P.gameId.isin(gids)].groupby("name"):
+            pdx = pdx.drop_duplicates("gameId").set_index("gameId").reindex(gids)
+            inj = [(isinstance(r, str) and "INJURY" in r) for r in pdx.reason]
+            if bool(pdx.played.iloc[-1] == True):  # noqa: E712 (reindexed column may hold NaN)
+                out[name] = (team, "active", f"played {ids[-1][0]}")
+            elif len(gids) == 2 and all(inj):
+                out[name] = (team, "out", f"inactive last {len(gids)} games: {pdx.desc.iloc[-1] or 'injury'}")
             elif inj[-1]:
-                out[name] = (team, "questionable", f"inactive {last2[-1][0]}: {d.desc.iloc[-1] or 'injury'}")
-    rep_path = os.path.join(root, "injury_report.json")
-    if os.path.exists(rep_path):
-        rep = json.load(open(rep_path))
+                out[name] = (team, "questionable", f"inactive {ids[-1][0]}: {pdx.desc.iloc[-1] or 'injury'}")
+    ep = os.path.join(root, "espn_injuries.json")
+    if os.path.exists(ep):
+        for r in json.load(open(ep))["rows"]:
+            if not r.get("team"):
+                continue
+            if r.get("date") and r["date"][:10] < last_game.get(r["team"], "") and out.get(r["player"], ("", ""))[1] == "active":
+                continue   # he has played since this note was written
+            s = {"Out": "out", "Day-To-Day": "questionable"}.get(r["status"])
+            if s:
+                out[r["player"]] = (r["team"], s, f"ESPN: {r['status']} ({r['reason']})" + (f", return ~{r['return']}" if r.get("return") else ""))
+    rp = os.path.join(root, "injury_report.json")
+    if os.path.exists(rp):
+        rep = json.load(open(rp))
         for r in rep["rows"]:
             s = {"Out": "out", "Doubtful": "out", "Questionable": "questionable"}.get(r["status"], "active")
-            out[r["player"]] = (r["team"], s, f"injury report: {r['status']} — {r['reason']}")
-    pd.DataFrame([{"player": k, "team": t, "status": s, "note": n} for k, (t, s, n) in sorted(out.items())]) \
-        .to_csv(os.path.join(root, "availability.csv"), index=False)
+            out[r["player"]] = (r["team"], s, f"NBA report {rep.get('report_time', '')[:16]}: {r['status']} — {r['reason']}")
+    pd.DataFrame([{"player": k, "team": t, "status": s, "note": n} for k, (t, s, n) in sorted(out.items())],
+                 columns=["player", "team", "status", "note"]).to_csv(os.path.join(root, "availability.csv"), index=False)
 
 
 # ------------------------------------------------------------------ update: direct, else relay
@@ -283,22 +412,23 @@ def update(root, relay=None):
         print(f"feed: direct fetch unavailable ({type(e).__name__}); trying relay")
         if relay:
             tmp = tempfile.mkdtemp()
-            r = subprocess.run(["git", "clone", "--depth", "1", "--quiet", relay, tmp], capture_output=True, text=True, timeout=120)
-            if r.returncode == 0 and os.path.isdir(os.path.join(tmp, "data", SEASON, "ledger")):
-                src = os.path.join(tmp, "data", SEASON)
+            r = subprocess.run(["git", "clone", "--depth", "1", "--quiet", relay, tmp], capture_output=True, text=True, timeout=180)
+            src = os.path.join(tmp, "data", SEASON)
+            if r.returncode == 0 and os.path.isdir(os.path.join(src, "ledger")):
                 os.makedirs(os.path.join(root, "ledger"), exist_ok=True)
                 n = 0
                 for f in glob.glob(os.path.join(src, "ledger", "*.json")):
                     dst = os.path.join(root, "ledger", os.path.basename(f))
                     if not os.path.exists(dst):
                         open(dst, "w").write(open(f).read()); n += 1
-                for fn in ["nba_schedule.json", "injury_report.json", "feed_status.json"]:
+                for fn in ["nba_schedule.json", "injury_report.json", "espn_injuries.json", "feed_status.json"]:
                     if os.path.exists(os.path.join(src, fn)):
                         open(os.path.join(root, fn), "w").write(open(os.path.join(src, fn)).read())
-                st = json.load(open(os.path.join(root, "feed_status.json"))) if os.path.exists(os.path.join(root, "feed_status.json")) else {}
-                st["source"] = f"GitHub relay ({relay})"
-                json.dump(st, open(os.path.join(root, "feed_status.json"), "w"), indent=1)
-                print(f"feed: relay ok, {n} new games copied")
+                fs = os.path.join(root, "feed_status.json")
+                st = json.load(open(fs)) if os.path.exists(fs) else {}
+                st["route"] = f"GitHub relay ({relay})"
+                json.dump(st, open(fs, "w"), indent=1)
+                print(f"feed: relay ok, {n} new games copied (relay fetched {st.get('fetched_at', '?')[:16]})")
             else:
                 print(f"feed: relay unavailable ({(r.stderr or 'no ledger in repo').strip()[:120]})")
         else:
