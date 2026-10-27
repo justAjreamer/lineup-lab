@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/home/runner/work/lineup-lab/lineup-lab/nba_feed.py", line 313, in <module>
+    print(json.dumps(fetch(_root(a)), indent=1))
+                     ^^^^^^^^^^^^^^^
+  File "/home/runner/work/lineup-lab/lineup-lab/nba_feed.py", line 175, in fetch
+    games = schedule_games(_get(SCHEDULE_URL))
+                           ^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/lineup-lab/lineup-lab/nba_feed.py", line 49, in _get
+    r.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json
+exit=1 at 2026-10-27T06:32Z
