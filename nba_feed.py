@@ -65,6 +65,8 @@ def _get(url, kind="json", tries=5):
             r = requests.get(url, headers=HEADERS, timeout=30)
             r.raise_for_status()
             return r.json() if kind == "json" else (r.content if kind == "bytes" else r.text)
+        except requests.exceptions.ProxyError:
+            raise            # this network blocks the host: retrying won't help, let the caller use the relay
         except Exception:
             if i == tries - 1:
                 raise
@@ -312,6 +314,9 @@ def fetch(root):
         first = _get(f"{ESPN}/scoreboard?dates={today:%Y%m%d}")
         cal = sorted({c[:10] for c in (first.get("leagues") or [{}])[0].get("calendar", [])})
     except Exception as e:   # scoreboard unavailable: keep going with the saved schedule's dates
+        import requests
+        if isinstance(e, requests.exceptions.ProxyError):
+            raise
         st["errors"].append(f"scoreboard calendar: {e!r}")
         cal = sorted({g["date"] for g in cache["games"]})
         if not cal:
@@ -324,13 +329,19 @@ def fetch(root):
         open_past = [g["date"] for g in known.values() if g["status"] != "final" and g["date"] <= today.isoformat()]
         start = min(open_past + [(today - dt.timedelta(days=2)).isoformat()])
         dates = [d for d in cal if start <= d <= (today + dt.timedelta(days=10)).isoformat()]
+    ok_days = 0
     for d in dates:
         try:
             for g in scoreboard_games(_get(f"{ESPN}/scoreboard?dates={d.replace('-', '')}")):
                 known[g["id"]] = g
+            ok_days += 1
         except Exception as e:
             st["errors"].append(f"scoreboard {d}: {e!r}")
         time.sleep(0.25)
+    if ok_days == 0:
+        # nothing reachable (e.g. this network blocks ESPN): fail before writing anything, so the caller can try the
+        # relay instead of stamping old data as freshly fetched
+        raise RuntimeError(f"no ESPN scoreboard reachable ({len(st['errors'])} errors)")
     cache = {"pulled": today.isoformat(), "full_at": today.isoformat() if stale else cache.get("full_at"),
              "games": sorted(known.values(), key=lambda g: (g["date"], g["home"]))}
     json.dump(cache, open(sched_path, "w"))
