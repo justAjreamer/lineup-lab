@@ -1,0 +1,253 @@
+{
+ "nba_cdn_schedule": {
+  "browser": {
+   "status": 403,
+   "bytes": 425,
+   "type": "text/html"
+  },
+  "ua_only": {
+   "status": 403,
+   "bytes": 425,
+   "type": "text/html"
+  },
+  "none": {
+   "status": 403,
+   "bytes": 425,
+   "type": "text/html"
+  }
+ },
+ "nba_cdn_scoreboard": {
+  "browser": {
+   "status": 403,
+   "bytes": 445,
+   "type": "text/html"
+  },
+  "ua_only": {
+   "status": 403,
+   "bytes": 445,
+   "type": "text/html"
+  },
+  "none": {
+   "status": 403,
+   "bytes": 445,
+   "type": "text/html"
+  }
+ },
+ "nba_cdn_boxscore": {
+  "browser": {
+   "status": 403,
+   "bytes": 443,
+   "type": "text/html"
+  },
+  "ua_only": {
+   "status": 403,
+   "bytes": 443,
+   "type": "text/html"
+  },
+  "none": {
+   "status": 403,
+   "bytes": 443,
+   "type": "text/html"
+  }
+ },
+ "nba_stats": {
+  "browser": {
+   "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=20)\"))"
+  },
+  "ua_only": {
+   "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=20)\"))"
+  },
+  "none": {
+   "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=20)\"))"
+  }
+ },
+ "nba_injury_index": {
+  "browser": {
+   "status": 200,
+   "bytes": 37215,
+   "type": "text/html; charset=UTF-8"
+  },
+  "ua_only": {
+   "status": 200,
+   "bytes": 37215,
+   "type": "text/html; charset=UTF-8"
+  },
+  "none": {
+   "status": 403,
+   "bytes": 425,
+   "type": "text/html"
+  }
+ },
+ "espn_scoreboard": {
+  "browser": {
+   "status": 200,
+   "bytes": 214793,
+   "type": "application/json;charset=UTF-8"
+  },
+  "ua_only": {
+   "status": 200,
+   "bytes": 214793,
+   "type": "application/json;charset=UTF-8"
+  },
+  "none": {
+   "status": 200,
+   "bytes": 214793,
+   "type": "application/json;charset=UTF-8"
+  },
+  "events": [
+   [
+    "401909868",
+    "WSH @ CHA",
+    "STATUS_FINAL"
+   ],
+   [
+    "401909869",
+    "MIN @ CLE",
+    "STATUS_FINAL"
+   ],
+   [
+    "401909870",
+    "CHI @ BOS",
+    "STATUS_FINAL"
+   ],
+   [
+    "401909871",
+    "DAL @ MIA",
+    "STATUS_FINAL"
+   ],
+   [
+    "401909872",
+    "IND @ MIL",
+    "STATUS_FINAL"
+   ],
+   [
+    "401909873",
+    "PHX @ OKC",
+    "STATUS_FINAL"
+   ],
+   [
+    "401909874",
+    "ATL @ HOU",
+    "STATUS_FINAL"
+   ],
+   [
+    "401909875",
+    "MEM @ UTAH",
+    "STATUS_FINAL"
+   ],
+   [
+    "401909876",
+    "GS @ DEN",
+    "STATUS_FINAL"
+   ]
+  ]
+ },
+ "espn_injuries": {
+  "browser": {
+   "status": 200,
+   "bytes": 935496,
+   "type": "application/json;charset=UTF-8"
+  },
+  "ua_only": {
+   "status": 200,
+   "bytes": 935496,
+   "type": "application/json;charset=UTF-8"
+  },
+  "none": {
+   "status": 200,
+   "bytes": 935496,
+   "type": "application/json;charset=UTF-8"
+  }
+ },
+ "espn_teams": {
+  "browser": {
+   "status": 200,
+   "bytes": 134851,
+   "type": "application/json"
+  },
+  "ua_only": {
+   "status": 200,
+   "bytes": 134851,
+   "type": "application/json"
+  },
+  "none": {
+   "status": 200,
+   "bytes": 134851,
+   "type": "application/json"
+  }
+ },
+ "bref_per_game": {
+  "browser": {
+   "status": 200,
+   "bytes": 1038111,
+   "type": "text/html"
+  },
+  "ua_only": {
+   "status": 200,
+   "bytes": 1038111,
+   "type": "text/html"
+  },
+  "none": {
+   "status": 200,
+   "bytes": 1038111,
+   "type": "text/html"
+  }
+ },
+ "espn_summary_sample": {
+  "labels": [
+   "MIN",
+   "PTS",
+   "FG",
+   "3PT",
+   "FT",
+   "REB",
+   "AST",
+   "TO",
+   "STL",
+   "BLK",
+   "OREB",
+   "DREB",
+   "PF",
+   "+/-"
+  ],
+  "keys": [
+   "minutes",
+   "points",
+   "fieldGoalsMade-fieldGoalsAttempted",
+   "threePointFieldGoalsMade-threePointFieldGoalsAttempted",
+   "freeThrowsMade-freeThrowsAttempted",
+   "rebounds",
+   "assists",
+   "turnovers",
+   "steals",
+   "blocks",
+   "offensiveRebounds",
+   "defensiveRebounds",
+   "fouls",
+   "plusMinus"
+  ],
+  "first_athlete": {
+   "starter": true,
+   "didNotPlay": false,
+   "reason": "COACH'S DECISION",
+   "stats": [
+    "36",
+    "29",
+    "11-22",
+    "3-6",
+    "4-4",
+    "10",
+    "0",
+    "0",
+    "1",
+    "0",
+    "0",
+    "10",
+    "2",
+    "+6"
+   ]
+  },
+  "athlete_name": "Anthony Davis",
+  "n_athletes": 14
+ }
+}
