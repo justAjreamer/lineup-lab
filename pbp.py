@@ -120,6 +120,10 @@ def stints(cp):
                 on[tm].discard(a_out); on[tm].add(a_in)
                 cur[tm] = sorted(on[tm])
                 continue
+            if tm in (home, away) and k in ("fga", "fta", "oreb", "dreb", "tov") and ids:
+                actor = ids[0]
+                if cp["athletes"].get(actor, [None, None])[1] == tm and actor not in on[tm]:
+                    cur["suspect"] = True        # an unlogged substitution: the actor isn't in our five
             if tm in (home, away):
                 c = cur["n"][tm]
                 if k == "fga":
@@ -130,8 +134,8 @@ def stints(cp):
                     c["oreb"] += 1
                 elif k == "tov":
                     c["tov"] += 1
-            if hs is not None and as_ is not None:
-                last_score = [hs, as_]
+            if hs is not None and as_ is not None:   # scores never fall: a running max ignores plays listed out of order
+                last_score = [max(last_score[0], hs), max(last_score[1], as_)]
         _close(cur, t0 + period_len(per), last_score); out.append(cur)
     for s in out:
         for t in (home, away):
@@ -155,15 +159,21 @@ def possessions(c):
     return c["fga"] + 0.44 * c["fta"] - c["oreb"] + c["tov"]
 
 
-def valid_periods(cp, st):
-    """Periods whose stint points match the official period score (play-by-play feeds occasionally scramble a
-    period, e.g. duplicated overtime plays). Only these periods are used for lineup data."""
+def valid_periods(cp, st, tol=2):
+    """Periods whose stint points match the official period score, and whose running score at the period end matches
+    the official running score, each within `tol` points per team. Play-by-play feeds sometimes miss a free throw
+    near a period end (its point then shows up on the next period's first play: off by 1-2, harmless for lineup
+    ratings) or scramble a period outright (duplicated plays: off by more, rejected)."""
     ls_h, ls_a = cp.get("linescores", [[], []])
-    ok = set()
+    ok, cum_h, cum_a, run_h, run_a = set(), 0, 0, 0, 0
     for per in sorted({s["period"] for s in st}):
         ph = sum(s["pts_home"] for s in st if s["period"] == per)
         pa = sum(s["pts_away"] for s in st if s["period"] == per)
-        if per <= len(ls_h) and per <= len(ls_a) and (ph, pa) == (ls_h[per - 1], ls_a[per - 1]):
+        run_h, run_a = run_h + ph, run_a + pa
+        if per > len(ls_h) or per > len(ls_a):
+            continue
+        cum_h, cum_a = sum(ls_h[:per]), sum(ls_a[:per])
+        if max(abs(ph - ls_h[per - 1]), abs(pa - ls_a[per - 1]), abs(run_h - cum_h), abs(run_a - cum_a)) <= tol:
             ok.add(per)
     return ok
 
@@ -218,6 +228,9 @@ def build_lineups(root, ledger):
         for s in st:
             if s["period"] not in ok or len(s[cp["home"]]) != 5 or len(s[cp["away"]]) != 5:
                 continue
+            if s.get("suspect"):
+                report["suspect_sec"] = report.get("suspect_sec", 0) + (s["end"] - s["start"])
+                continue
             for team, opp, pf, pa in ((cp["home"], cp["away"], s["pts_home"], s["pts_away"]), (cp["away"], cp["home"], s["pts_away"], s["pts_home"])):
                 rows.append({"game": gid, "date": date, "period": s["period"], "team": team, "opp": opp,
                              "players": " | ".join(sorted(names.get(a, a) for a in s[team])),
@@ -228,6 +241,9 @@ def build_lineups(root, ledger):
     if S.empty:
         return report
     S.to_csv(os.path.join(root, "stints.csv"), index=False)
+    # compact copy for the backtest's lineup-cohesion research (one row per team per stint)
+    json.dump([[r.date, r.team, r.players, round(r.sec, 1), int(r.pts_for), int(r.pts_against), round(r.poss_for, 1), round(r.poss_against, 1)]
+               for r in S.itertuples()], open(os.path.join(root, "stints.json"), "w"), separators=(",", ":"))
     L = S.groupby(["team", "players"]).agg(games=("game", "nunique"), sec=("sec", "sum"), pts_for=("pts_for", "sum"),
                                          pts_against=("pts_against", "sum"), poss_for=("poss_for", "sum"),
                                          poss_against=("poss_against", "sum")).reset_index()
@@ -239,5 +255,7 @@ def build_lineups(root, ledger):
     L["net_rtg"] = (L.off_rtg - L.def_rtg).round(1)
     L = L.drop(columns=["sec"]).sort_values("minutes", ascending=False)
     L.to_csv(os.path.join(root, "lineups_2026_27.csv"), index=False)
-    report.update(stints=len(S) // 2, lineups=len(L), lineup_minutes=round(float(L.minutes.sum()) / 2, 1))
+    report.update(stints=len(S) // 2, lineups=len(L), lineup_minutes=round(float(L.minutes.sum()) / 2, 1),
+                  suspect_minutes=round(report.get("suspect_sec", 0) / 60, 1))
+    report.pop("suspect_sec", None)
     return report

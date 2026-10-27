@@ -97,6 +97,10 @@ def scoreboard_games(sb):
             g["home_score"], g["away_score"] = int(comp["home"]["score"]), int(comp["away"]["score"])
         if name == "STATUS_POSTPONED":
             g["postponed"] = True
+        if st == "scheduled":
+            m = market_scoreboard(e["competitions"][0].get("odds"))
+            if m and m.get("p_home") is not None:
+                g["market"] = m
         out.append(g)
     return out
 
@@ -178,6 +182,47 @@ def espn_injuries(j):
             rows.append({"team": team, "player": i["athlete"]["displayName"], "status": i.get("status"),
                          "reason": d.get("type") or "", "date": i.get("date"), "return": d.get("returnDate")})
     return rows
+
+
+# --- betting market (benchmark only; never a model input)
+def _ml(x):
+    """'-625' / '+455' / -750 / 525 -> int moneyline, or None"""
+    try:
+        v = int(str(x).replace("+", "").strip())
+        return v if abs(v) >= 100 else None
+    except (TypeError, ValueError):
+        return None
+
+
+def novig_home(ml_home, ml_away):
+    """Two moneylines -> home win probability with the bookmaker's margin removed (proportional method)."""
+    imp = lambda m: 100 / (m + 100) if m > 0 else -m / (-m + 100)
+    if ml_home is None or ml_away is None:
+        return None
+    h, a = imp(ml_home), imp(ml_away)
+    return round(h / (h + a), 4)
+
+
+def market_scoreboard(odds):
+    """Scoreboard odds block (upcoming games: the current line) -> {provider, spread, ml_home, ml_away, p_home}"""
+    if not odds:
+        return None
+    o = odds[0]
+    mlb = o.get("moneyline") or {}
+    mh = _ml(((mlb.get("home") or {}).get("close") or {}).get("odds")) or _ml((o.get("homeTeamOdds") or {}).get("moneyLine"))
+    ma = _ml(((mlb.get("away") or {}).get("close") or {}).get("odds")) or _ml((o.get("awayTeamOdds") or {}).get("moneyLine"))
+    return {"provider": (o.get("provider") or {}).get("name"), "spread": o.get("spread"), "ml_home": mh, "ml_away": ma,
+            "p_home": novig_home(mh, ma)}
+
+
+def market_pickcenter(pc):
+    """Game summary pickcenter (finished games: the closing line) -> same shape"""
+    if not pc:
+        return None
+    o = pc[0]
+    mh, ma = _ml((o.get("homeTeamOdds") or {}).get("moneyLine")), _ml((o.get("awayTeamOdds") or {}).get("moneyLine"))
+    return {"provider": (o.get("provider") or {}).get("name"), "spread": o.get("spread"), "ml_home": mh, "ml_away": ma,
+            "p_home": novig_home(mh, ma), "closing": True}
 
 
 # --- official NBA injury report: rebuild the table from word positions (text extraction scrambles its rows)
@@ -286,14 +331,24 @@ def fetch(root):
     have = {os.path.basename(f)[:-5] for f in glob.glob(os.path.join(root, "ledger", "*.json"))}
     have_pbp = {os.path.basename(f)[:-5] for f in glob.glob(os.path.join(root, "pbp", "*.json"))}
     new = new_pbp = 0
+    def no_market(gid):   # ledger records from before the market benchmark existed get it backfilled once
+        f = os.path.join(root, "ledger", gid + ".json")
+        return gid in have and "market" not in json.load(open(f))
     for g in cache["games"]:
-        if g["status"] != "final" or (g["id"] in have and g["id"] in have_pbp):
+        if g["status"] != "final" or (g["id"] in have and g["id"] in have_pbp and not no_market(g["id"])):
             continue
         try:
             summ = _get(f"{ESPN}/summary?event={g['espn_id']}")
             if g["id"] not in have:
-                json.dump(compact_summary(summ, g), open(os.path.join(root, "ledger", g["id"] + ".json"), "w"))
+                rec = compact_summary(summ, g)
+                rec["market"] = market_pickcenter(summ.get("pickcenter"))
+                json.dump(rec, open(os.path.join(root, "ledger", g["id"] + ".json"), "w"))
                 new += 1
+            elif no_market(g["id"]):
+                f = os.path.join(root, "ledger", g["id"] + ".json")
+                rec = json.load(open(f))
+                rec["market"] = market_pickcenter(summ.get("pickcenter"))
+                json.dump(rec, open(f, "w"))
             if g["id"] not in have_pbp and summ.get("plays"):
                 json.dump(PBP.compact_plays(summ), open(os.path.join(root, "pbp", g["id"] + ".json"), "w"), separators=(",", ":"))
                 new_pbp += 1
@@ -377,6 +432,14 @@ def build(root):
                    "active": [p["name"] for p in r["players"] if p["team"] == r[side] and p["status"] == "ACTIVE"]}
             for side in ("home", "away")}
     json.dump(ctx, open(os.path.join(root, "game_context.json"), "w"))
+    sp = os.path.join(root, "nba_schedule.json")
+    if os.path.exists(sp):   # closing line for finished games (benchmark), from the ledger
+        sched = json.load(open(sp))
+        close = {r["id"]: r.get("market") for r in recs if r.get("market") and r["market"].get("p_home") is not None}
+        for g in sched["games"]:
+            if g["id"] in close:
+                g["market"] = close[g["id"]]
+        json.dump(sched, open(sp, "w"))
     lu = PBP.build_lineups(root, {r["id"]: r for r in recs})
     through = max(r["date"] for r in recs)
     mp = os.path.join(root, "meta.json")

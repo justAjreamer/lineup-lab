@@ -2,10 +2,14 @@
 # so Lineup Lab's sessions — which can reach GitHub but not NBA.com — can `git clone` it.
 name: NBA data relay
 on:
+  # GitHub can skip or delay scheduled runs, so key windows get two slots. Times are UTC; Central is UTC-5 (CDT)
+  # until Nov 1, then UTC-6 (CST). Every run catches up on anything a skipped run missed.
   schedule:
-    - cron: "15 9 * * *"     # ~4 AM Central: last night's box scores
-    - cron: "35 15 * * *"    # ~10 AM Central: morning injury report, before the early-games run
-    - cron: "15 21 * * *"    # ~4 PM Central: afternoon injury report, before the main run
+    - cron: "15 9 * * *"     # ~4 AM CDT / 3 AM CST: last night's box scores
+    - cron: "10 13 * * *"    # ~8 AM CDT / 7 AM CST: second pass at overnight box scores
+    - cron: "35 15 * * *"    # ~10:35 AM CDT / 9:35 AM CST: morning injury report, before the early-games run
+    - cron: "40 20 * * *"    # ~3:40 PM CDT / 2:40 PM CST: afternoon report
+    - cron: "25 21 * * *"    # ~4:25 PM CDT / 3:25 PM CST: last report before the main run
   workflow_dispatch: {}
 permissions:
   contents: write
