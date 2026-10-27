@@ -24,6 +24,11 @@ import sys
 import tempfile
 import time
 
+try:                       # in the GitHub relay, pbp.py sits next to this file
+    import pbp as PBP
+except ImportError:
+    from lineuplab import pbp as PBP
+
 ESPN = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba"
 INJURY_INDEX = "https://official.nba.com/nba-injury-report-{}-season/"
 HEADERS = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36",
@@ -277,18 +282,25 @@ def fetch(root):
     cache = {"pulled": today.isoformat(), "full_at": today.isoformat() if stale else cache.get("full_at"),
              "games": sorted(known.values(), key=lambda g: (g["date"], g["home"]))}
     json.dump(cache, open(sched_path, "w"))
+    os.makedirs(os.path.join(root, "pbp"), exist_ok=True)
     have = {os.path.basename(f)[:-5] for f in glob.glob(os.path.join(root, "ledger", "*.json"))}
-    new = 0
+    have_pbp = {os.path.basename(f)[:-5] for f in glob.glob(os.path.join(root, "pbp", "*.json"))}
+    new = new_pbp = 0
     for g in cache["games"]:
-        if g["status"] != "final" or g["id"] in have:
+        if g["status"] != "final" or (g["id"] in have and g["id"] in have_pbp):
             continue
         try:
-            rec = compact_summary(_get(f"{ESPN}/summary?event={g['espn_id']}"), g)
-            json.dump(rec, open(os.path.join(root, "ledger", g["id"] + ".json"), "w"))
-            new += 1
+            summ = _get(f"{ESPN}/summary?event={g['espn_id']}")
+            if g["id"] not in have:
+                json.dump(compact_summary(summ, g), open(os.path.join(root, "ledger", g["id"] + ".json"), "w"))
+                new += 1
+            if g["id"] not in have_pbp and summ.get("plays"):
+                json.dump(PBP.compact_plays(summ), open(os.path.join(root, "pbp", g["id"] + ".json"), "w"), separators=(",", ":"))
+                new_pbp += 1
         except Exception as e:  # one bad game never blocks the rest; it is retried next run
-            st["errors"].append(f"box {g['id']}: {e!r}")
+            st["errors"].append(f"game {g['id']}: {e!r}")
         time.sleep(0.25)
+    st["new_pbp"] = new_pbp
     try:
         rows = espn_injuries(_get(f"{ESPN}/injuries"))
         json.dump({"fetched_at": st["fetched_at"], "rows": rows}, open(os.path.join(root, "espn_injuries.json"), "w"))
@@ -365,6 +377,7 @@ def build(root):
                    "active": [p["name"] for p in r["players"] if p["team"] == r[side] and p["status"] == "ACTIVE"]}
             for side in ("home", "away")}
     json.dump(ctx, open(os.path.join(root, "game_context.json"), "w"))
+    lu = PBP.build_lineups(root, {r["id"]: r for r in recs})
     through = max(r["date"] for r in recs)
     mp = os.path.join(root, "meta.json")
     if os.path.exists(mp):
@@ -372,7 +385,7 @@ def build(root):
         m.update(stats_date=through, season_through=f"2026-27 through {dt.date.fromisoformat(through):%b %-d} (ESPN box scores)",
                  rosters_as_of=f"box scores + injury reports, {dt.date.fromisoformat(through):%b %-d}")
         json.dump(m, open(mp, "w"))
-    json.dump({"through": through, "games": len(recs), "players": len(pg), "suspect_games": bad},
+    json.dump({"through": through, "games": len(recs), "players": len(pg), "suspect_games": bad, "lineups": lu},
               open(os.path.join(root, "feed_build.json"), "w"), indent=1)
     print(f"feed build: {len(recs)} games through {through}, {len(pg)} players, {len(bad)} games failing checks")
     return through
@@ -434,10 +447,12 @@ def update(root, relay=None):
             if r.returncode == 0 and os.path.isdir(os.path.join(src, "ledger")):
                 os.makedirs(os.path.join(root, "ledger"), exist_ok=True)
                 n = 0
-                for f in glob.glob(os.path.join(src, "ledger", "*.json")):
-                    dst = os.path.join(root, "ledger", os.path.basename(f))
-                    if not os.path.exists(dst):
-                        open(dst, "w").write(open(f).read()); n += 1
+                for sub in ("ledger", "pbp"):
+                    os.makedirs(os.path.join(root, sub), exist_ok=True)
+                    for f in glob.glob(os.path.join(src, sub, "*.json")):
+                        dst = os.path.join(root, sub, os.path.basename(f))
+                        if not os.path.exists(dst):
+                            open(dst, "w").write(open(f).read()); n += sub == "ledger"
                 for fn in ["nba_schedule.json", "injury_report.json", "espn_injuries.json", "feed_status.json"]:
                     if os.path.exists(os.path.join(src, fn)):
                         open(os.path.join(root, fn), "w").write(open(os.path.join(src, fn)).read())
