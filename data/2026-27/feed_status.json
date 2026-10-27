@@ -1,0 +1,12 @@
+{
+ "fetched_at": "2026-10-27T06:40:21.146106+00:00",
+ "source": "ESPN + NBA injury report",
+ "errors": [
+  "box espn_401909095: ValueError(\"invalid literal for int() with base 10: '--'\")"
+ ],
+ "espn_injury_rows": 83,
+ "official_injury_rows": 28,
+ "new_games": 51,
+ "ledger_games": 51,
+ "schedule_games": 1206
+}
