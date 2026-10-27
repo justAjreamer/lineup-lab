@@ -80,6 +80,8 @@ def scoreboard_games(sb):
         if e.get("season", {}).get("type") != 2:
             continue
         comp = {c["homeAway"]: c for c in e["competitions"][0]["competitors"]}
+        if not {tri(c["team"]["abbreviation"]) for c in comp.values()} <= set(TEAM_NAMES.values()):
+            continue   # placeholder matchups (e.g. NBA Cup knockout "TBD") until the teams are known
         name = e["status"]["type"]["name"]
         st = "final" if name == "STATUS_FINAL" else "scheduled" if name in ("STATUS_SCHEDULED", "STATUS_POSTPONED") else "live"
         t = ct_of(e["date"])
@@ -355,6 +357,14 @@ def build(root):
     act.assign(player=act.name, source_game=act.date + " " + act.gameId)[["player", "team", "source_game"]] \
         .to_csv(os.path.join(root, "feed_box_seen.csv"), index=False)
     availability(root, P)
+    # what was known at tip-off of each finished game: who started and who was dressed (listed active)
+    ctx = {}
+    for r in recs:
+        ctx[f"{r['date']}_{r['away']}-at-{r['home']}"] = {
+            side: {"starters": [p["name"] for p in r["players"] if p["team"] == r[side] and p["starter"]],
+                   "active": [p["name"] for p in r["players"] if p["team"] == r[side] and p["status"] == "ACTIVE"]}
+            for side in ("home", "away")}
+    json.dump(ctx, open(os.path.join(root, "game_context.json"), "w"))
     through = max(r["date"] for r in recs)
     mp = os.path.join(root, "meta.json")
     if os.path.exists(mp):
