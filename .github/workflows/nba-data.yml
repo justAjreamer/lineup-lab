@@ -1,0 +1,30 @@
+# Lineup Lab data relay: fetches official NBA.com data on GitHub's servers (open internet) and commits it,
+# so Lineup Lab's sessions — which can reach GitHub but not NBA.com — can `git clone` it.
+name: NBA data relay
+on:
+  schedule:
+    - cron: "15 9 * * *"     # ~4 AM Central: last night's box scores
+    - cron: "35 15 * * *"    # ~10 AM Central: morning injury report, before the early-games run
+    - cron: "15 21 * * *"    # ~4 PM Central: afternoon injury report, before the main run
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency: relay
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests pypdf
+      - run: python nba_feed.py fetch --root data/2026-27
+      - name: commit new data
+        run: |
+          git config user.name "lineup-lab-relay"
+          git config user.email "lineup-lab-relay@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || git commit -m "NBA data $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
