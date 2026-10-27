@@ -94,9 +94,16 @@ def scoreboard_games(sb):
     return out
 
 
+def _int(x):
+    """ESPN stat cell -> int ('--', '' and None mean 0; '+6' -> 6)."""
+    x = str(x if x is not None else "").replace("+", "").strip()
+    return int(x) if re.fullmatch(r"-?\d+", x) else 0
+
+
 def _ma(s):
-    a, b = (s or "0-0").split("-")
-    return int(a or 0), int(b or 0)
+    """'11-22' -> (11, 22); '--' or missing -> (0, 0)."""
+    m = re.fullmatch(r"(\d+)-(\d+)", str(s or "").strip())
+    return (int(m.group(1)), int(m.group(2))) if m else (0, 0)
 
 
 def compact_summary(s, game):
@@ -113,7 +120,7 @@ def compact_summary(s, game):
             fgm, fga = _ma(v.get("fieldGoalsMade-fieldGoalsAttempted"))
             f3m, f3a = _ma(v.get("threePointFieldGoalsMade-threePointFieldGoalsAttempted"))
             ftm, fta = _ma(v.get("freeThrowsMade-freeThrowsAttempted"))
-            num = lambda k: int(str(v.get(k, "0")).replace("+", "") or 0) if played else 0
+            num = lambda k: _int(v.get(k)) if played else 0
             rec["players"].append({
                 "team": team, "name": a["athlete"]["displayName"], "id": a["athlete"].get("id"),
                 "starter": bool(a.get("starter")), "played": played, "status": "ACTIVE",
