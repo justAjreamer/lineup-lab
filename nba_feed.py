@@ -57,7 +57,8 @@ def _root(args):
     return os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", SEASON)
 
 
-def _get(url, kind="json", tries=3):
+def _get(url, kind="json", tries=5):
+    """GET with backoff (2, 4, 8, 16 s): ESPN occasionally answers with an empty body for a few seconds."""
     import requests
     for i in range(tries):
         try:
@@ -67,7 +68,7 @@ def _get(url, kind="json", tries=3):
         except Exception:
             if i == tries - 1:
                 raise
-            time.sleep(2 * (i + 1))
+            time.sleep(2 ** (i + 1))
 
 
 # ------------------------------------------------------------------ parsing (pure functions, tested offline)
@@ -307,8 +308,14 @@ def fetch(root):
     sched_path = os.path.join(root, "nba_schedule.json")
     cache = json.load(open(sched_path)) if os.path.exists(sched_path) else {"games": [], "full_at": None}
     today = dt.datetime.now(CT).date()
-    first = _get(f"{ESPN}/scoreboard?dates={today:%Y%m%d}")
-    cal = sorted({c[:10] for c in (first.get("leagues") or [{}])[0].get("calendar", [])})
+    try:
+        first = _get(f"{ESPN}/scoreboard?dates={today:%Y%m%d}")
+        cal = sorted({c[:10] for c in (first.get("leagues") or [{}])[0].get("calendar", [])})
+    except Exception as e:   # scoreboard unavailable: keep going with the saved schedule's dates
+        st["errors"].append(f"scoreboard calendar: {e!r}")
+        cal = sorted({g["date"] for g in cache["games"]})
+        if not cal:
+            raise
     stale = not cache.get("full_at") or (dt.date.today() - dt.date.fromisoformat(cache["full_at"])).days >= 7
     known = {g["id"]: g for g in cache["games"]}
     if stale:   # weekly: re-read the whole season (catches reschedules)
