@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-27_11_15AM.pdf",
-"report_time": "2026-10-27 11:15:00",
-"fetched_at": "2026-10-27T15:22:32.132176+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-27_01_15PM.pdf",
+"report_time": "2026-10-27 13:15:00",
+"fetched_at": "2026-10-27T17:16:51.973338+00:00",
 "rows": [
 {
 "team": "BKN",
@@ -36,6 +36,20 @@
 "player": "Ben Saraf",
 "status": "Out",
 "reason": "G League - On Assignment",
+"matchup": "BKN@BOS"
+},
+{
+"team": "BOS",
+"player": "Devin Carter",
+"status": "Out",
+"reason": "Injury/Illness - Illness",
+"matchup": "BKN@BOS"
+},
+{
+"team": "BOS",
+"player": "Derrick White",
+"status": "Probable",
+"reason": "Injury/Illness - Right Hip Synovitis",
 "matchup": "BKN@BOS"
 },
 {
@@ -198,6 +212,41 @@
 "status": "Out",
 "reason": "Injury/Illness - Left Knee Effusion / Swelling",
 "matchup": "POR@LAL"
+},
+{
+"team": "ORL",
+"player": "Paolo Banchero",
+"status": "Out",
+"reason": "Injury/Illness - Right Low Grade High Ankle Sprain",
+"matchup": "ORL@TOR"
+},
+{
+"team": "ORL",
+"player": "Jonathan Isaac",
+"status": "Out",
+"reason": "Injury/Illness - Left Knee Injury Management",
+"matchup": "ORL@TOR"
+},
+{
+"team": "ORL",
+"player": "Izaiyah Nelson",
+"status": "Out",
+"reason": "Injury/Illness - Left Ankle Injury Recovery",
+"matchup": "ORL@TOR"
+},
+{
+"team": "ORL",
+"player": "Noah Penda",
+"status": "Out",
+"reason": "Injury/Illness - Right Partially Torn Hamstring",
+"matchup": "ORL@TOR"
+},
+{
+"team": "ORL",
+"player": "Jalen Suggs",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Contusion / Bone Bruise",
+"matchup": "ORL@TOR"
 }
 ]
 }
