@@ -1,30 +1,12 @@
-Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 1116, in json
-    return complexjson.loads(self.text, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py", line 338, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/json/decoder.py", line 356, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/runner/work/lineup-lab/lineup-lab/nba_feed.py", line 549, in <module>
-    print(json.dumps(fetch(_root(a)), indent=1))
-                     ^^^^^^^^^^^^^^^
-  File "/home/runner/work/lineup-lab/lineup-lab/nba_feed.py", line 310, in fetch
-    first = _get(f"{ESPN}/scoreboard?dates={today:%Y%m%d}")
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/lineup-lab/lineup-lab/nba_feed.py", line 66, in _get
-    return r.json() if kind == "json" else (r.content if kind == "bytes" else r.text)
-           ^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 1120, in json
-    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
-requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-exit=1 at 2026-10-27T17:48Z
+{
+ "fetched_at": "2026-10-27T17:49:33.004716+00:00",
+ "source": "ESPN + NBA injury report",
+ "errors": [],
+ "new_pbp": 0,
+ "espn_injury_rows": 84,
+ "official_injury_rows": 35,
+ "new_games": 0,
+ "ledger_games": 52,
+ "schedule_games": 1206
+}
+exit=0 at 2026-10-27T17:49Z
