@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-28_02_45PM.pdf",
-"report_time": "2026-10-28 14:45:00",
-"fetched_at": "2026-10-28T18:50:19.787957+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-28_04_30PM.pdf",
+"report_time": "2026-10-28 16:30:00",
+"fetched_at": "2026-10-28T20:31:34.083785+00:00",
 "rows": [
 {
 "team": "CHA",
@@ -681,6 +681,41 @@
 "status": "Questionable",
 "reason": "Injury/Illness - Right Thumb Sprain",
 "matchup": "OKC@DAL"
+},
+{
+"team": "LAL",
+"player": "Cameron Carr",
+"status": "Out",
+"reason": "Injury/Illness - Right Oblique Strain",
+"matchup": "LAL@LAC"
+},
+{
+"team": "LAL",
+"player": "Luka Doncic",
+"status": "Out",
+"reason": "Injury/Illness - Back Tightness",
+"matchup": "LAL@LAC"
+},
+{
+"team": "LAL",
+"player": "Walker Kessler",
+"status": "Available",
+"reason": "Injury/Illness - Left Finger Splint",
+"matchup": "LAL@LAC"
+},
+{
+"team": "LAL",
+"player": "Adou Thiero",
+"status": "Out",
+"reason": "Injury/Illness - Left Knee Injury Management",
+"matchup": "LAL@LAC"
+},
+{
+"team": "LAL",
+"player": "Ziaire Williams",
+"status": "Out",
+"reason": "Injury/Illness - Left Foot Inflammation / Soreness",
+"matchup": "LAL@LAC"
 },
 {
 "team": "LAC",
