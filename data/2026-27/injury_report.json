@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-28_12_00PM.pdf",
-"report_time": "2026-10-28 12:00:00",
-"fetched_at": "2026-10-28T16:04:32.284608+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-28_02_45PM.pdf",
+"report_time": "2026-10-28 14:45:00",
+"fetched_at": "2026-10-28T18:50:19.787957+00:00",
 "rows": [
 {
 "team": "CHA",
@@ -36,6 +36,34 @@
 "player": "Grant Williams",
 "status": "Out",
 "reason": "Injury/Illness - Right Hamstring Strain",
+"matchup": "CHA@DET"
+},
+{
+"team": "DET",
+"player": "Jalen Duren",
+"status": "Out",
+"reason": "Injury/Illness - Right Hamstring Strain",
+"matchup": "CHA@DET"
+},
+{
+"team": "DET",
+"player": "Isaiah Joe",
+"status": "Out",
+"reason": "Injury/Illness - Right Hip Contusion",
+"matchup": "CHA@DET"
+},
+{
+"team": "DET",
+"player": "Ugonna Onyenso",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "CHA@DET"
+},
+{
+"team": "DET",
+"player": "Ausar Thompson",
+"status": "Probable",
+"reason": "Injury/Illness - Right Ankle Sprain",
 "matchup": "CHA@DET"
 },
 {
@@ -97,7 +125,7 @@
 {
 "team": "ATL",
 "player": "Aaron Wiggins",
-"status": "Questionable",
+"status": "Probable",
 "reason": "Injury/Illness - Left Knee Contusion",
 "matchup": "MIA@ATL"
 },
@@ -223,7 +251,7 @@
 {
 "team": "WAS",
 "player": "AJ Dybantsa",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Left Ankle Sprain",
 "matchup": "WAS@CLE"
 },
@@ -308,7 +336,7 @@
 "team": "TOR",
 "player": "Nate Bittle",
 "status": "Out",
-"reason": "Injury/Illness - Right Foot Avulsion Fracture",
+"reason": "Injury/Illness - Right Foot Avulsion",
 "matchup": "ORL@TOR"
 },
 {
@@ -356,7 +384,7 @@
 {
 "team": "NOP",
 "player": "Malik Dia",
-"status": "Doubtful",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "DEN@NOP"
 },
@@ -370,14 +398,14 @@
 {
 "team": "NOP",
 "player": "Jaron Pierre Jr.",
-"status": "Doubtful",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "DEN@NOP"
 },
 {
 "team": "NOP",
 "player": "Jordan Poole",
-"status": "Probable",
+"status": "Available",
 "reason": "Injury/Illness - Illness",
 "matchup": "DEN@NOP"
 },
@@ -461,9 +489,16 @@
 {
 "team": "HOU",
 "player": "Marcus Smart",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Forearm Strain",
 "matchup": "HOU@MIL"
+},
+{
+"team": "NYK",
+"player": "Jose Alvarado",
+"status": "Out",
+"reason": "Injury/Illness - Left Ankle Sprain",
+"matchup": "NYK@CHI"
 },
 {
 "team": "CHI",
@@ -485,6 +520,20 @@
 "status": "Questionable",
 "reason": "Injury/Illness - Right Adductor Strain",
 "matchup": "NYK@CHI"
+},
+{
+"team": "SAS",
+"player": "Tobias Harris",
+"status": "Out",
+"reason": "Injury/Illness - Left Calf Strain",
+"matchup": "SAS@UTA"
+},
+{
+"team": "SAS",
+"player": "Jayden Quaintance",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Surgery",
+"matchup": "SAS@UTA"
 },
 {
 "team": "UTA",
@@ -587,14 +636,14 @@
 {
 "team": "DAL",
 "player": "Santi Aldama",
-"status": "Doubtful",
+"status": "Out",
 "reason": "Injury/Illness - Right Knee Surgery",
 "matchup": "OKC@DAL"
 },
 {
 "team": "DAL",
 "player": "Tarik Biberovic",
-"status": "Doubtful",
+"status": "Out",
 "reason": "Injury/Illness - Right Heel Bursitis",
 "matchup": "OKC@DAL"
 },
@@ -622,7 +671,7 @@
 {
 "team": "DAL",
 "player": "Naji Marshall",
-"status": "Questionable",
+"status": "Doubtful",
 "reason": "Injury/Illness - Illness",
 "matchup": "OKC@DAL"
 },
