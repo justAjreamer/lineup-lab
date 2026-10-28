@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-27_07_45PM.pdf",
-"report_time": "2026-10-27 19:45:00",
-"fetched_at": "2026-10-27T23:57:37.523431+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-27_08_30PM.pdf",
+"report_time": "2026-10-27 20:30:00",
+"fetched_at": "2026-10-28T00:37:19.246989+00:00",
 "rows": [
 {
 "team": "BKN",
@@ -835,6 +835,48 @@
 "status": "Questionable",
 "reason": "Injury/Illness - Right Thumb Sprain",
 "matchup": "OKC@DAL"
+},
+{
+"team": "LAC",
+"player": "Bradley Beal",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Injury Management",
+"matchup": "LAL@LAC"
+},
+{
+"team": "LAC",
+"player": "Rui Hachimura",
+"status": "Out",
+"reason": "Injury/Illness - Left Quad Soreness",
+"matchup": "LAL@LAC"
+},
+{
+"team": "LAC",
+"player": "Brandon Ingram",
+"status": "Out",
+"reason": "Injury/Illness - Right Heel Surgery",
+"matchup": "LAL@LAC"
+},
+{
+"team": "LAC",
+"player": "Jordan Miller",
+"status": "Out",
+"reason": "Injury/Illness - Left Rotator Cuff Surgery",
+"matchup": "LAL@LAC"
+},
+{
+"team": "LAC",
+"player": "Yanic Konan Niederhauser",
+"status": "Out",
+"reason": "Injury/Illness - Right Lisfranc Surgery",
+"matchup": "LAL@LAC"
+},
+{
+"team": "LAC",
+"player": "Max Strus",
+"status": "Out",
+"reason": "Injury/Illness - Right Plantar Fascia Tear",
+"matchup": "LAL@LAC"
 }
 ]
 }
