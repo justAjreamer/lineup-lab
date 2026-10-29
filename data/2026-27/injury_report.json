@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-28_08_15PM.pdf",
-"report_time": "2026-10-28 20:15:00",
-"fetched_at": "2026-10-29T00:20:18.619015+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-28_09_00PM.pdf",
+"report_time": "2026-10-28 21:00:00",
+"fetched_at": "2026-10-29T01:07:09.155674+00:00",
 "rows": [
 {
 "team": "CHA",
@@ -685,7 +685,7 @@
 {
 "team": "DAL",
 "player": "Kyrie Irving",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Left Knee Injury",
 "matchup": "OKC@DAL"
 },
@@ -699,14 +699,14 @@
 {
 "team": "DAL",
 "player": "Naji Marshall",
-"status": "Doubtful",
+"status": "Out",
 "reason": "Injury/Illness - Illness",
 "matchup": "OKC@DAL"
 },
 {
 "team": "DAL",
 "player": "Caleb Martin",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Thumb Sprain",
 "matchup": "OKC@DAL"
 },
