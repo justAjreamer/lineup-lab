@@ -1,10 +1,10 @@
 {
- "fetched_at": "2026-10-29T18:56:34.307958+00:00",
+ "fetched_at": "2026-10-29T20:30:20.229081+00:00",
  "source": "ESPN + NBA injury report",
  "errors": [],
  "new_pbp": 0,
- "espn_injury_rows": 88,
- "official_injury_rows": 35,
+ "espn_injury_rows": 90,
+ "official_injury_rows": 39,
  "new_games": 0,
  "ledger_games": 68,
  "schedule_games": 1206

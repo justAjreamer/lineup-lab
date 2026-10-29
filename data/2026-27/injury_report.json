@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-29_02_45PM.pdf",
-"report_time": "2026-10-29 14:45:00",
-"fetched_at": "2026-10-29T18:56:34.307958+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-29_04_15PM.pdf",
+"report_time": "2026-10-29 16:15:00",
+"fetched_at": "2026-10-29T20:30:20.229081+00:00",
 "rows": [
 {
 "team": "CLE",
@@ -173,9 +173,16 @@
 },
 {
 "team": "POR",
+"player": "Robert Williams III",
+"status": "Doubtful",
+"reason": "Injury/Illness - Left Knee Injury Management",
+"matchup": "MEM@POR"
+},
+{
+"team": "POR",
 "player": "Hansen Yang",
-"status": "Questionable",
-"reason": "G League - On Assignment",
+"status": "Available",
+"reason": "-",
 "matchup": "MEM@POR"
 },
 {
@@ -246,6 +253,27 @@
 "player": "Jalen Suggs",
 "status": "Out",
 "reason": "Injury/Illness - Right Knee Contusion / Bone Bruise",
+"matchup": "ORL@TOR"
+},
+{
+"team": "TOR",
+"player": "Nate Bittle",
+"status": "Out",
+"reason": "Injury/Illness - Right Avulsion Fracture",
+"matchup": "ORL@TOR"
+},
+{
+"team": "TOR",
+"player": "Kawhi Leonard",
+"status": "Out",
+"reason": "Injury/Illness - Left Knee Effusion / Swelling",
+"matchup": "ORL@TOR"
+},
+{
+"team": "TOR",
+"player": "Malachi Smith",
+"status": "Out",
+"reason": "G League - Two- Way",
 "matchup": "ORL@TOR"
 }
 ]
