@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-29_08_00PM.pdf",
-"report_time": "2026-10-29 20:00:00",
-"fetched_at": "2026-10-30T00:14:39.866253+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-29_09_00PM.pdf",
+"report_time": "2026-10-29 21:00:00",
+"fetched_at": "2026-10-30T01:12:48.815322+00:00",
 "rows": [
 {
 "team": "CLE",
@@ -165,9 +165,30 @@
 "matchup": "SAC@NOP"
 },
 {
+"team": "MEM",
+"player": "Carson Cooper",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "MEM@POR"
+},
+{
+"team": "MEM",
+"player": "Jahmai Mashack",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "MEM@POR"
+},
+{
+"team": "MEM",
+"player": "Javon Small",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "MEM@POR"
+},
+{
 "team": "POR",
 "player": "Jayson Kent",
-"status": "Questionable",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "MEM@POR"
 },
@@ -181,14 +202,14 @@
 {
 "team": "POR",
 "player": "John Tonje",
-"status": "Questionable",
+"status": "Available",
 "reason": "G League - Two- Way",
 "matchup": "MEM@POR"
 },
 {
 "team": "POR",
 "player": "Robert Williams III",
-"status": "Doubtful",
+"status": "Out",
 "reason": "Injury/Illness - Left Knee Injury Management",
 "matchup": "MEM@POR"
 },
@@ -202,7 +223,7 @@
 {
 "team": "POR",
 "player": "Chris Youngblood",
-"status": "Questionable",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "MEM@POR"
 },
@@ -231,7 +252,7 @@
 "team": "CHA",
 "player": "Dennis Schroder",
 "status": "Questionable",
-"reason": "Injury/Illness - Right Foot",
+"reason": "Injury/Illness - Right Foot Inflammation / Soreness",
 "matchup": "CHA@WAS"
 },
 {
@@ -708,6 +729,27 @@
 "player": "Julian Strawther",
 "status": "Out",
 "reason": "Injury/Illness - Left Knee Sprain",
+"matchup": "DEN@PHX"
+},
+{
+"team": "PHX",
+"player": "Oso Ighodaro",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Oblique Strain",
+"matchup": "DEN@PHX"
+},
+{
+"team": "PHX",
+"player": "Drew Timme",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "DEN@PHX"
+},
+{
+"team": "PHX",
+"player": "Mark Williams",
+"status": "Out",
+"reason": "Injury/Illness - Left Shoulder Surgery",
 "matchup": "DEN@PHX"
 },
 {
