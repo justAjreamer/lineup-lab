@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-31_01_30PM.pdf",
-"report_time": "2026-10-31 13:30:00",
-"fetched_at": "2026-10-31T17:42:32.878423+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-31_03_30PM.pdf",
+"report_time": "2026-10-31 15:30:00",
+"fetched_at": "2026-10-31T19:30:20.890409+00:00",
 "rows": [
 {
 "team": "POR",
@@ -34,14 +34,14 @@
 {
 "team": "POR",
 "player": "Robert Williams III",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Left Knee Injury Management",
 "matchup": "POR@UTA"
 },
 {
 "team": "POR",
 "player": "Chris Youngblood",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Left Ankle Soreness",
 "matchup": "POR@UTA"
 },
@@ -76,7 +76,7 @@
 {
 "team": "UTA",
 "player": "Lauri Markkanen",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Wrist Sprain",
 "matchup": "POR@UTA"
 },
@@ -258,7 +258,7 @@
 {
 "team": "CLE",
 "player": "Meleek Thomas",
-"status": "Questionable",
+"status": "Probable",
 "reason": "Injury/Illness - Right Foot Inflammation / Soreness",
 "matchup": "CLE@MIL"
 },
@@ -275,6 +275,41 @@
 "status": "Out",
 "reason": "Injury/Illness - Right Ankle Sprain",
 "matchup": "CLE@MIL"
+},
+{
+"team": "CLE",
+"player": "Jr., Ernest Udeh",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "CLE@MIL"
+},
+{
+"team": "MIN",
+"player": "Donte DiVincenzo",
+"status": "Out",
+"reason": "Injury/Illness - Right Achilles Tendon Repair / Surgery",
+"matchup": "MIN@SAS"
+},
+{
+"team": "MIN",
+"player": "Anthony Edwards",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Arthroscopy",
+"matchup": "MIN@SAS"
+},
+{
+"team": "MIN",
+"player": "Rudy Gobert",
+"status": "Questionable",
+"reason": "Injury/Illness - Low Back Spasms",
+"matchup": "MIN@SAS"
+},
+{
+"team": "SAS",
+"player": "Stephon Castle",
+"status": "Questionable",
+"reason": "Injury/Illness - Migraine",
+"matchup": "MIN@SAS"
 },
 {
 "team": "SAS",
@@ -422,6 +457,41 @@
 "status": "Out",
 "reason": "Injury/Illness - Right Knee Injury Management",
 "matchup": "OKC@HOU"
+},
+{
+"team": "ORL",
+"player": "Paolo Banchero",
+"status": "Out",
+"reason": "Injury/Illness - Right Low Grade High Ankle Sprain",
+"matchup": "BOS@ORL"
+},
+{
+"team": "ORL",
+"player": "Jonathan Isaac",
+"status": "Out",
+"reason": "Injury/Illness - Left Knee Injury Management",
+"matchup": "BOS@ORL"
+},
+{
+"team": "ORL",
+"player": "Izaiyah Nelson",
+"status": "Out",
+"reason": "Injury/Illness - Left Ankle Injury Recovery",
+"matchup": "BOS@ORL"
+},
+{
+"team": "ORL",
+"player": "Noah Penda",
+"status": "Out",
+"reason": "Injury/Illness - Right Partially Torn Hamstring",
+"matchup": "BOS@ORL"
+},
+{
+"team": "ORL",
+"player": "Jalen Suggs",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Contusion / Bone Bruise",
+"matchup": "BOS@ORL"
 }
 ]
 }
