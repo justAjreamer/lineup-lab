@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-30_07_45PM.pdf",
-"report_time": "2026-10-30 19:45:00",
-"fetched_at": "2026-10-31T00:00:12.383549+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-30_08_45PM.pdf",
+"report_time": "2026-10-30 20:45:00",
+"fetched_at": "2026-10-31T00:56:01.350529+00:00",
 "rows": [
 {
 "team": "CHA",
@@ -622,7 +622,7 @@
 {
 "team": "GSW",
 "player": "Gui Santos",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Left Knee Tendinitis",
 "matchup": "LAL@GSW"
 },
