@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-31_11_15AM.pdf",
-"report_time": "2026-10-31 11:15:00",
-"fetched_at": "2026-10-31T15:20:58.317970+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-31_01_30PM.pdf",
+"report_time": "2026-10-31 13:30:00",
+"fetched_at": "2026-10-31T17:42:32.878423+00:00",
 "rows": [
 {
 "team": "POR",
@@ -86,6 +86,90 @@
 "status": "Out",
 "reason": "Injury/Illness - Right Foot 2nd Plantar Plate Tear",
 "matchup": "POR@UTA"
+},
+{
+"team": "PHI",
+"player": "Dominick Barlow",
+"status": "Out",
+"reason": "Injury/Illness - Low Back Stress Reaction",
+"matchup": "PHI@CHA"
+},
+{
+"team": "PHI",
+"player": "Jaylen Brown",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Patellar Tendinopathy",
+"matchup": "PHI@CHA"
+},
+{
+"team": "PHI",
+"player": "Joel Embiid",
+"status": "Out",
+"reason": "Injury/Illness - Right Foot Plantar Fascia Injury Management",
+"matchup": "PHI@CHA"
+},
+{
+"team": "PHI",
+"player": "Tacko Fall",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Quadriceps Strain",
+"matchup": "PHI@CHA"
+},
+{
+"team": "PHI",
+"player": "Ariel Hukporti",
+"status": "Out",
+"reason": "Injury/Illness - Right Achilles Tendon Rupture / Tear",
+"matchup": "PHI@CHA"
+},
+{
+"team": "PHI",
+"player": "LeBron James",
+"status": "Out",
+"reason": "Injury/Illness - Low Back/Sciatica Management",
+"matchup": "PHI@CHA"
+},
+{
+"team": "PHI",
+"player": "Jabari Walker",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Patellar Tendinopathy",
+"matchup": "PHI@CHA"
+},
+{
+"team": "CHA",
+"player": "Michael Ajayi",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "PHI@CHA"
+},
+{
+"team": "CHA",
+"player": "Kylan Boswell",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "PHI@CHA"
+},
+{
+"team": "CHA",
+"player": "Kon Knueppel",
+"status": "Out",
+"reason": "Injury/Illness - Left Hamstring Strain",
+"matchup": "PHI@CHA"
+},
+{
+"team": "CHA",
+"player": "Coby White",
+"status": "Out",
+"reason": "Injury/Illness - Left Calf Strain",
+"matchup": "PHI@CHA"
+},
+{
+"team": "CHA",
+"player": "Grant Williams",
+"status": "Out",
+"reason": "Injury/Illness - Right Hamstring Strain",
+"matchup": "PHI@CHA"
 },
 {
 "team": "ATL",
@@ -302,6 +386,41 @@
 "player": "Jalen Williams",
 "status": "Out",
 "reason": "Injury/Illness - Left Ankle Surgery",
+"matchup": "OKC@HOU"
+},
+{
+"team": "HOU",
+"player": "Steven Adams",
+"status": "Out",
+"reason": "Injury/Illness - Right Soleus Strain",
+"matchup": "OKC@HOU"
+},
+{
+"team": "HOU",
+"player": "Quadir Copeland",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "OKC@HOU"
+},
+{
+"team": "HOU",
+"player": "Julian Phillips",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "OKC@HOU"
+},
+{
+"team": "HOU",
+"player": "Reed Sheppard",
+"status": "Out",
+"reason": "Injury/Illness - Low Back Soreness",
+"matchup": "OKC@HOU"
+},
+{
+"team": "HOU",
+"player": "Fred VanVleet",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Injury Management",
 "matchup": "OKC@HOU"
 }
 ]
