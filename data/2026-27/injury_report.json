@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-31_07_30PM.pdf",
-"report_time": "2026-10-31 19:30:00",
-"fetched_at": "2026-10-31T23:39:02.033429+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-31_08_00PM.pdf",
+"report_time": "2026-10-31 20:00:00",
+"fetched_at": "2026-11-01T00:15:39.337130+00:00",
 "rows": [
 {
 "team": "POR",
@@ -606,6 +606,41 @@
 "matchup": "BKN@IND"
 },
 {
+"team": "LAC",
+"player": "Bradley Beal",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Injury Management",
+"matchup": "LAC@GSW"
+},
+{
+"team": "LAC",
+"player": "Brandon Ingram",
+"status": "Out",
+"reason": "Injury/Illness - Right Heel Surgery",
+"matchup": "LAC@GSW"
+},
+{
+"team": "LAC",
+"player": "Jordan Miller",
+"status": "Out",
+"reason": "Injury/Illness - Left Rotator Cuff Surgery",
+"matchup": "LAC@GSW"
+},
+{
+"team": "LAC",
+"player": "Yanic Konan Niederhauser",
+"status": "Out",
+"reason": "Injury/Illness - Right Lisfranc Surgery",
+"matchup": "LAC@GSW"
+},
+{
+"team": "LAC",
+"player": "Max Strus",
+"status": "Out",
+"reason": "Injury/Illness - Right Plantar Fascia Tear",
+"matchup": "LAC@GSW"
+},
+{
 "team": "GSW",
 "player": "Jimmy Butler III",
 "status": "Out",
@@ -658,7 +693,7 @@
 "team": "TOR",
 "player": "Kawhi Leonard",
 "status": "Out",
-"reason": "Injury/Illness - Left Knee Injury",
+"reason": "Injury/Illness - Left Knee Injury Management",
 "matchup": "TOR@LAL"
 },
 {
@@ -666,6 +701,27 @@
 "player": "Malachi Smith",
 "status": "Out",
 "reason": "G League - Two- Way",
+"matchup": "TOR@LAL"
+},
+{
+"team": "LAL",
+"player": "Walker Kessler",
+"status": "Available",
+"reason": "Injury/Illness - Left Finger Splint",
+"matchup": "TOR@LAL"
+},
+{
+"team": "LAL",
+"player": "Adou Thiero",
+"status": "Out",
+"reason": "Injury/Illness - Left Knee Injury Management",
+"matchup": "TOR@LAL"
+},
+{
+"team": "LAL",
+"player": "Ziaire Williams",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Foot / Heel Injury Management",
 "matchup": "TOR@LAL"
 }
 ]
