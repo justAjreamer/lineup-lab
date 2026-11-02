@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-02_02_15PM.pdf",
-"report_time": "2026-11-02 14:15:00",
-"fetched_at": "2026-11-02T19:30:12.896983+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-02_05_15PM.pdf",
+"report_time": "2026-11-02 17:15:00",
+"fetched_at": "2026-11-02T22:18:32.525019+00:00",
 "rows": [
 {
 "team": "OKC",
@@ -90,7 +90,7 @@
 {
 "team": "ATL",
 "player": "Keshon Gilbert",
-"status": "Doubtful",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "ATL@IND"
 },
@@ -125,7 +125,7 @@
 {
 "team": "ATL",
 "player": "Jalen Wilson",
-"status": "Doubtful",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "ATL@IND"
 },
@@ -510,7 +510,7 @@
 {
 "team": "SAC",
 "player": "Dylan Cardwell",
-"status": "Probable",
+"status": "Questionable",
 "reason": "Injury/Illness - Left Calf Strain",
 "matchup": "SAC@DAL"
 },
@@ -741,22 +741,36 @@
 {
 "team": "MIA",
 "player": "Tre Donaldson",
-"status": "Out",
+"status": "Available",
 "reason": "G League - Two- Way",
 "matchup": "MIA@LAL"
 },
 {
 "team": "MIA",
 "player": "Vladislav Goldin",
-"status": "Out",
+"status": "Available",
 "reason": "G League - Two- Way",
 "matchup": "MIA@LAL"
 },
 {
 "team": "MIA",
 "player": "Tim Hardaway Jr.",
-"status": "Questionable",
+"status": "Available",
 "reason": "Personal Reasons",
+"matchup": "MIA@LAL"
+},
+{
+"team": "LAL",
+"player": "Walker Kessler",
+"status": "Available",
+"reason": "Injury/Illness - Left Finger Splint",
+"matchup": "MIA@LAL"
+},
+{
+"team": "LAL",
+"player": "Adou Thiero",
+"status": "Out",
+"reason": "Injury/Illness - Left Knee Injury Management",
 "matchup": "MIA@LAL"
 },
 {
@@ -772,6 +786,125 @@
 "status": "Out",
 "reason": "Injury/Illness - Left Shoulder Surgery",
 "matchup": "PHX@GSW"
+},
+{
+"team": "GSW",
+"player": "Jimmy Butler III",
+"status": "Out",
+"reason": "Injury/Illness - Right ACL Repair / Surgery",
+"matchup": "PHX@GSW"
+},
+{
+"team": "GSW",
+"player": "Al Horford",
+"status": "Out",
+"reason": "Injury/Illness - Bilateral Low Back Injury Management",
+"matchup": "PHX@GSW"
+},
+{
+"team": "GSW",
+"player": "Moses Moody",
+"status": "Out",
+"reason": "Injury/Illness - Left Patellar Tendon Repair / Surgery",
+"matchup": "PHX@GSW"
+},
+{
+"team": "GSW",
+"player": "Kristaps Porzingis",
+"status": "Out",
+"reason": "Not With Team",
+"matchup": "PHX@GSW"
+},
+{
+"team": "GSW",
+"player": "Gui Santos",
+"status": "Out",
+"reason": "Injury/Illness - Left Knee Tendinitis",
+"matchup": "PHX@GSW"
+},
+{
+"team": "GSW",
+"player": "Brandon Williams",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Quadriceps Contusion",
+"matchup": "PHX@GSW"
+},
+{
+"team": "TOR",
+"player": "Scottie Barnes",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Hip Soreness / Tightness",
+"matchup": "TOR@LAC"
+},
+{
+"team": "TOR",
+"player": "Nate Bittle",
+"status": "Out",
+"reason": "Injury/Illness - Right Avulsion Fracture",
+"matchup": "TOR@LAC"
+},
+{
+"team": "TOR",
+"player": "Kawhi Leonard",
+"status": "Out",
+"reason": "Injury/Illness - Left Knee Injury Management",
+"matchup": "TOR@LAC"
+},
+{
+"team": "TOR",
+"player": "Jakob Poeltl",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Shoulder Bursitis",
+"matchup": "TOR@LAC"
+},
+{
+"team": "TOR",
+"player": "Malachi Smith",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "TOR@LAC"
+},
+{
+"team": "LAC",
+"player": "Bradley Beal",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Injury Management",
+"matchup": "TOR@LAC"
+},
+{
+"team": "LAC",
+"player": "Rui Hachimura",
+"status": "Out",
+"reason": "Injury/Illness - Left Quadriceps Soreness",
+"matchup": "TOR@LAC"
+},
+{
+"team": "LAC",
+"player": "Brandon Ingram",
+"status": "Out",
+"reason": "Injury/Illness - Right Heel Surgery",
+"matchup": "TOR@LAC"
+},
+{
+"team": "LAC",
+"player": "Derrick Jones Jr.",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Soreness",
+"matchup": "TOR@LAC"
+},
+{
+"team": "LAC",
+"player": "Jordan Miller",
+"status": "Out",
+"reason": "Injury/Illness - Left Rotator Cuff Surgery",
+"matchup": "TOR@LAC"
+},
+{
+"team": "LAC",
+"player": "Yanic Konan Niederhauser",
+"status": "Out",
+"reason": "Injury/Illness - Right Lisfranc Surgery",
+"matchup": "TOR@LAC"
 }
 ]
 }
