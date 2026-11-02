@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-02_05_15PM.pdf",
-"report_time": "2026-11-02 17:15:00",
-"fetched_at": "2026-11-02T22:18:32.525019+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-02_06_00PM.pdf",
+"report_time": "2026-11-02 18:00:00",
+"fetched_at": "2026-11-02T23:12:03.649918+00:00",
 "rows": [
 {
 "team": "OKC",
@@ -104,7 +104,7 @@
 {
 "team": "ATL",
 "player": "Jalen Johnson",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Ankle Sprain",
 "matchup": "ATL@IND"
 },
@@ -153,7 +153,7 @@
 {
 "team": "IND",
 "player": "Larry Nance Jr.",
-"status": "Doubtful",
+"status": "Out",
 "reason": "Injury/Illness - Illness",
 "matchup": "ATL@IND"
 },
@@ -188,7 +188,7 @@
 {
 "team": "IND",
 "player": "Obi Toppin",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Lumbar Sprain",
 "matchup": "ATL@IND"
 },
@@ -244,22 +244,22 @@
 {
 "team": "CHI",
 "player": "Tobe Awaka",
-"status": "Probable",
-"reason": "Injury/Illness - Left Ankle Sprain",
+"status": "Available",
+"reason": "-",
 "matchup": "CHI@PHI"
 },
 {
 "team": "CHI",
 "player": "Nic Claxton",
-"status": "Doubtful",
+"status": "Out",
 "reason": "Injury/Illness - Left Hamstring Strain",
 "matchup": "CHI@PHI"
 },
 {
 "team": "CHI",
 "player": "Jalen Smith",
-"status": "Probable",
-"reason": "Injury/Illness - Left Finger Sprain",
+"status": "Available",
+"reason": "-",
 "matchup": "CHI@PHI"
 },
 {
@@ -468,7 +468,7 @@
 {
 "team": "NOP",
 "player": "Dejounte Murray",
-"status": "Questionable",
+"status": "Out",
 "reason": "Personal Reasons",
 "matchup": "NOP@MEM"
 },
@@ -510,7 +510,7 @@
 {
 "team": "SAC",
 "player": "Dylan Cardwell",
-"status": "Questionable",
+"status": "Doubtful",
 "reason": "Injury/Illness - Left Calf Strain",
 "matchup": "SAC@DAL"
 },
