@@ -1,12 +1,13 @@
 {
- "fetched_at": "2026-11-03T02:59:32.372085+00:00",
+ "fetched_at": "2026-11-03T17:04:29.945355+00:00",
  "source": "ESPN + NBA injury report",
- "errors": [],
- "new_pbp": 2,
+ "errors": [
+  "official injury report: RuntimeError('https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-03_12_00PM.pdf parsed to 0 rows (format changed?)')"
+ ],
+ "new_pbp": 12,
  "espn_injury_rows": 93,
- "official_injury_rows": 132,
- "new_games": 2,
- "ledger_games": 95,
+ "new_games": 12,
+ "ledger_games": 107,
  "schedule_games": 1206
 }
-exit=0 at 2026-11-03T02:59Z
+exit=0 at 2026-11-03T17:04Z
