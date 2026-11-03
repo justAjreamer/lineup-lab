@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-02_06_00PM.pdf",
-"report_time": "2026-11-02 18:00:00",
-"fetched_at": "2026-11-02T23:12:03.649918+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-02_09_30PM.pdf",
+"report_time": "2026-11-02 21:30:00",
+"fetched_at": "2026-11-03T02:36:21.384943+00:00",
 "rows": [
 {
 "team": "OKC",
@@ -76,7 +76,7 @@
 {
 "team": "CLE",
 "player": "Peyton Watson",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Right Hamstring Tightness / Soreness",
 "matchup": "OKC@CLE"
 },
@@ -237,7 +237,7 @@
 {
 "team": "NYK",
 "player": "Jose Alvarado",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Left Ankle Sprain",
 "matchup": "BKN@NYK"
 },
@@ -272,7 +272,7 @@
 {
 "team": "PHI",
 "player": "Joel Embiid",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Foot Plantar Fascia Injury Management",
 "matchup": "CHI@PHI"
 },
@@ -419,7 +419,7 @@
 {
 "team": "MIN",
 "player": "LaMelo Ball",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Wrist Contusion",
 "matchup": "MIL@MIN"
 },
@@ -440,7 +440,7 @@
 {
 "team": "MIN",
 "player": "Terrence Shannon Jr",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Hip Contusion",
 "matchup": "MIL@MIN"
 },
@@ -496,29 +496,36 @@
 {
 "team": "MEM",
 "player": "Scotty Pippen Jr.",
-"status": "Doubtful",
+"status": "Out",
 "reason": "Injury/Illness - Low Back Soreness",
 "matchup": "NOP@MEM"
 },
 {
 "team": "MEM",
 "player": "Quinten Post",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Right Ankle Sprain",
+"matchup": "NOP@MEM"
+},
+{
+"team": "MEM",
+"player": "Javon Small",
+"status": "Out",
+"reason": "G League - Two- Way",
 "matchup": "NOP@MEM"
 },
 {
 "team": "SAC",
 "player": "Dylan Cardwell",
-"status": "Doubtful",
+"status": "Out",
 "reason": "Injury/Illness - Left Calf Strain",
 "matchup": "SAC@DAL"
 },
 {
 "team": "SAC",
 "player": "Zach LaVine",
-"status": "Questionable",
-"reason": "Injury/Illness - Right Elbow Inflammation / Soreness",
+"status": "Available",
+"reason": "-",
 "matchup": "SAC@DAL"
 },
 {
@@ -552,7 +559,7 @@
 {
 "team": "DAL",
 "player": "Santi Aldama",
-"status": "Doubtful",
+"status": "Out",
 "reason": "Injury/Illness - Right Knee Surgery",
 "matchup": "SAC@DAL"
 },
@@ -573,7 +580,7 @@
 {
 "team": "DAL",
 "player": "Kyrie Irving",
-"status": "Doubtful",
+"status": "Out",
 "reason": "Injury/Illness - Left Knee Injury Management",
 "matchup": "SAC@DAL"
 },
@@ -636,7 +643,7 @@
 {
 "team": "HOU",
 "player": "Reed Sheppard",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Low Back Strain",
 "matchup": "BOS@HOU"
 },
@@ -650,7 +657,7 @@
 {
 "team": "UTA",
 "player": "Kobe Bufkin",
-"status": "Questionable",
+"status": "Available",
 "reason": "G League - Two- Way",
 "matchup": "UTA@SAS"
 },
@@ -720,7 +727,7 @@
 {
 "team": "DEN",
 "player": "Alpha Diallo",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Wrist Sprain",
 "matchup": "POR@DEN"
 },
@@ -775,6 +782,20 @@
 },
 {
 "team": "PHX",
+"player": "Duop Reath",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "PHX@GSW"
+},
+{
+"team": "PHX",
+"player": "Pat Spencer",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "PHX@GSW"
+},
+{
+"team": "PHX",
 "player": "Drew Timme",
 "status": "Out",
 "reason": "G League - Two- Way",
@@ -798,7 +819,7 @@
 "team": "GSW",
 "player": "Al Horford",
 "status": "Out",
-"reason": "Injury/Illness - Bilateral Low Back Injury Management",
+"reason": "Injury/Illness - Bilateral Low Back",
 "matchup": "PHX@GSW"
 },
 {
@@ -825,14 +846,14 @@
 {
 "team": "GSW",
 "player": "Brandon Williams",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Quadriceps Contusion",
 "matchup": "PHX@GSW"
 },
 {
 "team": "TOR",
 "player": "Scottie Barnes",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Left Hip Soreness / Tightness",
 "matchup": "TOR@LAC"
 },
@@ -853,7 +874,7 @@
 {
 "team": "TOR",
 "player": "Jakob Poeltl",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Shoulder Bursitis",
 "matchup": "TOR@LAC"
 },
