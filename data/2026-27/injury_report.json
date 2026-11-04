@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-03_07_45PM.pdf",
-"report_time": "2026-11-03 19:45:00",
-"fetched_at": "2026-11-04T00:50:46.722416+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-03_08_15PM.pdf",
+"report_time": "2026-11-03 20:15:00",
+"fetched_at": "2026-11-04T01:32:32.190105+00:00",
 "rows": [
 {
 "team": "ATL",
@@ -739,6 +739,20 @@
 "matchup": "DAL@SAS"
 },
 {
+"team": "LAL",
+"player": "Walker Kessler",
+"status": "Available",
+"reason": "Injury/Illness - Left Finger Splint",
+"matchup": "LAL@SAC"
+},
+{
+"team": "LAL",
+"player": "Adou Thiero",
+"status": "Out",
+"reason": "Injury/Illness - Left Knee Injury Management",
+"matchup": "LAL@SAC"
+},
+{
 "team": "SAC",
 "player": "Precious Achiuwa",
 "status": "Probable",
@@ -772,6 +786,27 @@
 "status": "Out",
 "reason": "Injury/Illness - Right Achilles Tendon Repair / Surgery",
 "matchup": "LAL@SAC"
+},
+{
+"team": "MIA",
+"player": "Giannis Antetokounmpo",
+"status": "Probable",
+"reason": "Injury/Illness - Right Wrist Sprain",
+"matchup": "MIA@LAC"
+},
+{
+"team": "MIA",
+"player": "Myron Gardner",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Quadriceps Contusion",
+"matchup": "MIA@LAC"
+},
+{
+"team": "MIA",
+"player": "Dru Smith",
+"status": "Available",
+"reason": "Injury/Illness - Facial Laceration",
+"matchup": "MIA@LAC"
 },
 {
 "team": "LAC",
