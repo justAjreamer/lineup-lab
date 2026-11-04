@@ -1,19 +1,19 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-04_12_15PM.pdf",
-"report_time": "2026-11-04 12:15:00",
-"fetched_at": "2026-11-04T17:16:55.198380+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-04_03_15PM.pdf",
+"report_time": "2026-11-04 15:15:00",
+"fetched_at": "2026-11-04T20:24:52.517095+00:00",
 "rows": [
 {
 "team": "ATL",
 "player": "RayJ Dennis",
-"status": "Questionable",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "ATL@WAS"
 },
 {
 "team": "ATL",
 "player": "Keshon Gilbert",
-"status": "Doubtful",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "ATL@WAS"
 },
@@ -48,7 +48,7 @@
 {
 "team": "ATL",
 "player": "Jalen Wilson",
-"status": "Doubtful",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "ATL@WAS"
 },
@@ -64,6 +64,13 @@
 "player": "Justin Champagnie",
 "status": "Out",
 "reason": "Injury/Illness - Right Foot Surgery",
+"matchup": "ATL@WAS"
+},
+{
+"team": "WAS",
+"player": "Bilal Coulibaly",
+"status": "Questionable",
+"reason": "Injury/Illness - Illness",
 "matchup": "ATL@WAS"
 },
 {
@@ -118,7 +125,7 @@
 {
 "team": "DET",
 "player": "Elijah Harkless",
-"status": "Questionable",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "PHI@DET"
 },
@@ -132,7 +139,7 @@
 {
 "team": "DET",
 "player": "Isaac Jones",
-"status": "Questionable",
+"status": "Available",
 "reason": "G League - Two- Way",
 "matchup": "PHI@DET"
 },
@@ -167,7 +174,7 @@
 {
 "team": "CHA",
 "player": "Kon Knueppel",
-"status": "Probable",
+"status": "Available",
 "reason": "Injury/Illness - Left Hamstring Strain",
 "matchup": "CHA@BKN"
 },
@@ -182,7 +189,7 @@
 "team": "CHA",
 "player": "Grant Williams",
 "status": "Out",
-"reason": "Injury/Illness - Right Hamstring Strain",
+"reason": "G League - On Assignment",
 "matchup": "CHA@BKN"
 },
 {
@@ -244,9 +251,16 @@
 {
 "team": "NYK",
 "player": "Josh Hart",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Right Ankle Soreness",
 "matchup": "CHI@NYK"
+},
+{
+"team": "MIL",
+"player": "Kam Jones",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Ankle Sprain",
+"matchup": "MIL@BOS"
 },
 {
 "team": "BOS",
@@ -279,7 +293,7 @@
 {
 "team": "BOS",
 "player": "Jayson Tatum",
-"status": "Questionable",
+"status": "Out",
 "reason": "Rest",
 "matchup": "MIL@BOS"
 },
@@ -503,7 +517,7 @@
 {
 "team": "NOP",
 "player": "Trey Murphy III",
-"status": "Probable",
+"status": "Questionable",
 "reason": "Injury/Illness - Bilateral Patella Tendinopathy",
 "matchup": "UTA@NOP"
 },
@@ -524,7 +538,7 @@
 {
 "team": "NOP",
 "player": "Julian Reese",
-"status": "Probable",
+"status": "Available",
 "reason": "G League - Two- Way",
 "matchup": "UTA@NOP"
 },
@@ -545,7 +559,7 @@
 {
 "team": "MIN",
 "player": "Terrence Shannon Jr",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Hip Contusion",
 "matchup": "MIN@HOU"
 },
@@ -559,7 +573,7 @@
 {
 "team": "HOU",
 "player": "Clint Capela",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Right Ankle Sprain",
 "matchup": "MIN@HOU"
 },
@@ -608,7 +622,7 @@
 {
 "team": "PHX",
 "player": "Rasheer Fleming",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Ankle Sprain",
 "matchup": "POR@PHX"
 },
@@ -685,7 +699,7 @@
 {
 "team": "DAL",
 "player": "Santi Aldama",
-"status": "Questionable",
+"status": "Doubtful",
 "reason": "Injury/Illness - Right Knee Surgery",
 "matchup": "DAL@SAS"
 },
@@ -797,15 +811,8 @@
 {
 "team": "MIA",
 "player": "Myron Gardner",
-"status": "Questionable",
-"reason": "Injury/Illness - Right Quadriceps Contusion",
-"matchup": "MIA@LAC"
-},
-{
-"team": "MIA",
-"player": "Dru Smith",
 "status": "Available",
-"reason": "Injury/Illness - Facial Laceration",
+"reason": "Injury/Illness - Right Quadriceps Contusion",
 "matchup": "MIA@LAC"
 },
 {
@@ -824,6 +831,13 @@
 },
 {
 "team": "LAC",
+"player": "Isaiah Jackson",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Groin Soreness",
+"matchup": "MIA@LAC"
+},
+{
+"team": "LAC",
 "player": "Jordan Miller",
 "status": "Out",
 "reason": "Injury/Illness - Left Rotator Cuff Surgery",
@@ -835,6 +849,41 @@
 "status": "Out",
 "reason": "Injury/Illness - Right Lisfranc Surgery",
 "matchup": "MIA@LAC"
+},
+{
+"team": "ORL",
+"player": "Paolo Banchero",
+"status": "Out",
+"reason": "Injury/Illness - Right High Ankle Sprain",
+"matchup": "ORL@PHX"
+},
+{
+"team": "ORL",
+"player": "Jonathan Isaac",
+"status": "Out",
+"reason": "Injury/Illness - Left Knee Injury Management",
+"matchup": "ORL@PHX"
+},
+{
+"team": "ORL",
+"player": "Izaiyah Nelson",
+"status": "Out",
+"reason": "Injury/Illness - Left Ankle Injury Recovery",
+"matchup": "ORL@PHX"
+},
+{
+"team": "ORL",
+"player": "Noah Penda",
+"status": "Out",
+"reason": "Injury/Illness - Right Partially Torn Hamstring",
+"matchup": "ORL@PHX"
+},
+{
+"team": "ORL",
+"player": "Jalen Suggs",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Contusion / Bone Bruise",
+"matchup": "ORL@PHX"
 }
 ]
 }
