@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-04_03_15PM.pdf",
-"report_time": "2026-11-04 15:15:00",
-"fetched_at": "2026-11-04T20:24:52.517095+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-04_04_15PM.pdf",
+"report_time": "2026-11-04 16:15:00",
+"fetched_at": "2026-11-04T21:27:35.713821+00:00",
 "rows": [
 {
 "team": "ATL",
@@ -769,8 +769,8 @@
 {
 "team": "SAC",
 "player": "Precious Achiuwa",
-"status": "Probable",
-"reason": "Injury/Illness - Left Ankle Soreness",
+"status": "Available",
+"reason": "-",
 "matchup": "LAL@SAC"
 },
 {
@@ -785,6 +785,13 @@
 "player": "Sean Pedulla",
 "status": "Out",
 "reason": "G League - Two- Way",
+"matchup": "LAL@SAC"
+},
+{
+"team": "SAC",
+"player": "Daeqwon Plowden",
+"status": "Out",
+"reason": "Injury/Illness - Illness",
 "matchup": "LAL@SAC"
 },
 {
