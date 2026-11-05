@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-05_12_15PM.pdf",
-"report_time": "2026-11-05 12:15:00",
-"fetched_at": "2026-11-05T17:25:14.682314+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-05_03_30PM.pdf",
+"report_time": "2026-11-05 15:30:00",
+"fetched_at": "2026-11-05T20:38:41.902045+00:00",
 "rows": [
 {
 "team": null,
@@ -40,6 +40,27 @@
 },
 {
 "team": null,
+"player": "Rasheer Fleming",
+"status": "Out",
+"reason": "Injury/Illness - Left Ankle Sprain",
+"matchup": "ORL@PHX"
+},
+{
+"team": null,
+"player": "Jordan Goodwin",
+"status": "Out",
+"reason": "Injury/Illness - Right Calf Soreness",
+"matchup": "ORL@PHX"
+},
+{
+"team": null,
+"player": "Mark Williams",
+"status": "Out",
+"reason": "Injury/Illness - Left Shoulder Surgery",
+"matchup": "ORL@PHX"
+},
+{
+"team": null,
 "player": "Jimmy Butler III",
 "status": "Out",
 "reason": "Injury/Illness - Right ACL Repair / Surgery",
@@ -65,6 +86,41 @@
 "status": "Out",
 "reason": "Injury/Illness - Left Knee Tendinitis",
 "matchup": "MIA@GSW"
+},
+{
+"team": null,
+"player": "Malik Dia",
+"status": "Doubtful",
+"reason": "G League - Two- Way",
+"matchup": "MIN@NOP"
+},
+{
+"team": null,
+"player": "Yves Missi",
+"status": "Out",
+"reason": "Injury/Illness - Left Knee Contusion / Bone Bruise",
+"matchup": "MIN@NOP"
+},
+{
+"team": null,
+"player": "Trey Murphy III",
+"status": "Probable",
+"reason": "Injury/Illness - Bilateral Patella Tendinopathy",
+"matchup": "MIN@NOP"
+},
+{
+"team": null,
+"player": "Jaron Pierre Jr.",
+"status": "Doubtful",
+"reason": "G League - Two- Way",
+"matchup": "MIN@NOP"
+},
+{
+"team": null,
+"player": "Julian Reese",
+"status": "Probable",
+"reason": "G League - Two- Way",
+"matchup": "MIN@NOP"
 }
 ]
 }
