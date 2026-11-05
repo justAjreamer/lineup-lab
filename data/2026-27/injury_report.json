@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-04_04_15PM.pdf",
-"report_time": "2026-11-04 16:15:00",
-"fetched_at": "2026-11-04T21:27:35.713821+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-04_07_45PM.pdf",
+"report_time": "2026-11-04 19:45:00",
+"fetched_at": "2026-11-05T01:00:44.437823+00:00",
 "rows": [
 {
 "team": "ATL",
@@ -27,7 +27,7 @@
 {
 "team": "ATL",
 "player": "Jalen Johnson",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Ankle Sprain",
 "matchup": "ATL@WAS"
 },
@@ -69,21 +69,21 @@
 {
 "team": "WAS",
 "player": "Bilal Coulibaly",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Illness",
 "matchup": "ATL@WAS"
 },
 {
 "team": "WAS",
 "player": "Anthony Gill",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Low Back Spasms",
 "matchup": "ATL@WAS"
 },
 {
 "team": "WAS",
 "player": "Alex Sarr",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Left Knee Soreness",
 "matchup": "ATL@WAS"
 },
@@ -181,7 +181,7 @@
 {
 "team": "CHA",
 "player": "Coby White",
-"status": "Probable",
+"status": "Available",
 "reason": "Injury/Illness - Left Calf Injury Management",
 "matchup": "CHA@BKN"
 },
@@ -189,7 +189,7 @@
 "team": "CHA",
 "player": "Grant Williams",
 "status": "Out",
-"reason": "G League - On Assignment",
+"reason": "Injury/Illness - Right Hamstring Strain",
 "matchup": "CHA@BKN"
 },
 {
@@ -237,15 +237,15 @@
 {
 "team": "CHI",
 "player": "Nic Claxton",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Hamstring Strain",
 "matchup": "CHI@NYK"
 },
 {
 "team": "CHI",
 "player": "Jalen Smith",
-"status": "Probable",
-"reason": "Injury/Illness - Left Finger Sprain",
+"status": "Available",
+"reason": "-",
 "matchup": "CHI@NYK"
 },
 {
@@ -258,7 +258,7 @@
 {
 "team": "MIL",
 "player": "Kam Jones",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Right Ankle Sprain",
 "matchup": "MIL@BOS"
 },
@@ -272,21 +272,21 @@
 {
 "team": "BOS",
 "player": "Christopher Cenac Jr.",
-"status": "Questionable",
-"reason": "G League - On Assignment",
+"status": "Available",
+"reason": "-",
 "matchup": "MIL@BOS"
 },
 {
 "team": "BOS",
 "player": "Dillon Mitchell",
-"status": "Questionable",
-"reason": "G League - Two- Way",
+"status": "Available",
+"reason": "-",
 "matchup": "MIL@BOS"
 },
 {
 "team": "BOS",
 "player": "Payton Pritchard",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Shoulder Contusion",
 "matchup": "MIL@BOS"
 },
@@ -300,7 +300,7 @@
 {
 "team": "BOS",
 "player": "Amari Williams",
-"status": "Questionable",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "MIL@BOS"
 },
@@ -377,14 +377,14 @@
 {
 "team": "OKC",
 "player": "Jaylin Williams",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Low Back Spasms",
 "matchup": "CLE@OKC"
 },
 {
 "team": "IND",
 "player": "Kobe Brown",
-"status": "Questionable",
+"status": "Available",
 "reason": "G League - Two- Way",
 "matchup": "IND@MEM"
 },
@@ -412,7 +412,7 @@
 {
 "team": "IND",
 "player": "Kelly Oubre Jr.",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Calf Contusion",
 "matchup": "IND@MEM"
 },
@@ -426,29 +426,36 @@
 {
 "team": "IND",
 "player": "Jalen Slawson",
-"status": "Questionable",
+"status": "Available",
 "reason": "G League - Two- Way",
 "matchup": "IND@MEM"
 },
 {
 "team": "IND",
 "player": "Braden Smith",
-"status": "Questionable",
+"status": "Available",
 "reason": "G League - Two- Way",
 "matchup": "IND@MEM"
 },
 {
 "team": "IND",
 "player": "Obi Toppin",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Lumbar Strain",
 "matchup": "IND@MEM"
 },
 {
 "team": "IND",
 "player": "Ivica Zubac",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Left Ankle Sprain",
+"matchup": "IND@MEM"
+},
+{
+"team": "MEM",
+"player": "Carson Cooper",
+"status": "Out",
+"reason": "G League - Two- Way",
 "matchup": "IND@MEM"
 },
 {
@@ -461,8 +468,15 @@
 {
 "team": "MEM",
 "player": "Quinten Post",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Ankle Sprain",
+"matchup": "IND@MEM"
+},
+{
+"team": "MEM",
+"player": "Javon Small",
+"status": "Out",
+"reason": "G League - Two- Way",
 "matchup": "IND@MEM"
 },
 {
@@ -475,7 +489,7 @@
 {
 "team": "UTA",
 "player": "Mo Bamba",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Ankle Sprain",
 "matchup": "UTA@NOP"
 },
@@ -503,7 +517,7 @@
 {
 "team": "NOP",
 "player": "Malik Dia",
-"status": "Doubtful",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "UTA@NOP"
 },
@@ -517,21 +531,21 @@
 {
 "team": "NOP",
 "player": "Trey Murphy III",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Bilateral Patella Tendinopathy",
 "matchup": "UTA@NOP"
 },
 {
 "team": "NOP",
 "player": "Jaron Pierre Jr.",
-"status": "Doubtful",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "UTA@NOP"
 },
 {
 "team": "NOP",
 "player": "Jordan Poole",
-"status": "Probable",
+"status": "Available",
 "reason": "Injury/Illness - Left Ankle Tendinopathy / Tendinitis",
 "matchup": "UTA@NOP"
 },
@@ -819,7 +833,7 @@
 "team": "MIA",
 "player": "Myron Gardner",
 "status": "Available",
-"reason": "Injury/Illness - Right Quadriceps Contusion",
+"reason": "Injury/Illness - Right Quadriceps",
 "matchup": "MIA@LAC"
 },
 {
@@ -891,6 +905,34 @@
 "status": "Out",
 "reason": "Injury/Illness - Right Knee Contusion / Bone Bruise",
 "matchup": "ORL@PHX"
+},
+{
+"team": "GSW",
+"player": "Jimmy Butler III",
+"status": "Out",
+"reason": "Injury/Illness - Right ACL Repair / Surgery",
+"matchup": "MIA@GSW"
+},
+{
+"team": "GSW",
+"player": "Moses Moody",
+"status": "Out",
+"reason": "Injury/Illness - Left Patellar Tendon Repair / Surgery",
+"matchup": "MIA@GSW"
+},
+{
+"team": "GSW",
+"player": "Kristaps Porzingis",
+"status": "Out",
+"reason": "Not With Team",
+"matchup": "MIA@GSW"
+},
+{
+"team": "GSW",
+"player": "Gui Santos",
+"status": "Out",
+"reason": "Injury/Illness - Left Knee Tendinitis",
+"matchup": "MIA@GSW"
 }
 ]
 }
