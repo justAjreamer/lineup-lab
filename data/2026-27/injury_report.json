@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-04_07_45PM.pdf",
-"report_time": "2026-11-04 19:45:00",
-"fetched_at": "2026-11-05T01:00:44.437823+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-04_08_30PM.pdf",
+"report_time": "2026-11-04 20:30:00",
+"fetched_at": "2026-11-05T01:35:41.315280+00:00",
 "rows": [
 {
 "team": "ATL",
@@ -643,8 +643,15 @@
 {
 "team": "PHX",
 "player": "Jordan Goodwin",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Right Calf Soreness",
+"matchup": "POR@PHX"
+},
+{
+"team": "PHX",
+"player": "Drew Timme",
+"status": "Out",
+"reason": "G League - Two- Way",
 "matchup": "POR@PHX"
 },
 {
@@ -671,7 +678,7 @@
 {
 "team": "TOR",
 "player": "Jakob Poeltl",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Left Shoulder Bursitis",
 "matchup": "TOR@DEN"
 },
@@ -685,14 +692,14 @@
 {
 "team": "DEN",
 "player": "Alpha Diallo",
-"status": "Probable",
+"status": "Available",
 "reason": "Injury/Illness - Right Wrist Sprain",
 "matchup": "TOR@DEN"
 },
 {
 "team": "DEN",
 "player": "Cameron Johnson",
-"status": "Probable",
+"status": "Available",
 "reason": "Injury/Illness - Lower Body Injury Management",
 "matchup": "TOR@DEN"
 },
@@ -713,7 +720,7 @@
 {
 "team": "DAL",
 "player": "Santi Aldama",
-"status": "Doubtful",
+"status": "Out",
 "reason": "Injury/Illness - Right Knee Surgery",
 "matchup": "DAL@SAS"
 },
@@ -833,7 +840,7 @@
 "team": "MIA",
 "player": "Myron Gardner",
 "status": "Available",
-"reason": "Injury/Illness - Right Quadriceps",
+"reason": "Injury/Illness - Right Quadriceps Contusion",
 "matchup": "MIA@LAC"
 },
 {
