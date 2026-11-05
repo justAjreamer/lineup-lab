@@ -252,9 +252,16 @@ def parse_injury_words(pages):
     rows, team, matchup, cols = [], None, None, None
     names = sorted(TEAM_NAMES, key=len, reverse=True)
     for words in pages:
-        hdr = {w: x for x, y, w in words if w in ("Matchup", "Team", "Player", "Current", "Reason")}
+        # column positions come only from the header row (the same words can recur lower on the page, e.g. in notes)
+        py = [y for x, y, w in words if w == "Player"]
+        hdr = {}
+        if py:
+            hy0 = max(py)
+            for x, y, w in words:
+                if abs(y - hy0) <= 2 and w in ("Matchup", "Team", "Player", "Current", "Reason") and w not in hdr:
+                    hdr[w] = x
         if {"Team", "Player", "Current", "Reason"} <= set(hdr):
-            hy = max(y for x, y, w in words if w == "Player")
+            hy = hy0
             cols = [("matchup", hdr.get("Matchup", hdr["Team"] - 60)), ("team", hdr["Team"]), ("player", hdr["Player"]),
                     ("status", hdr["Current"]), ("reason", hdr["Reason"])]
         elif cols:   # continuation pages repeat only the title: keep page 1's columns, skip the title line
@@ -515,7 +522,14 @@ def availability(root, P):
     rp = os.path.join(root, "injury_report.json")
     if os.path.exists(rp):
         rep = json.load(open(rp))
+        cur_team = P.sort_values(["date", "gameId"]).groupby("name").team.last().to_dict()
         for r in rep["rows"]:
+            if not r.get("team"):   # team cell not read: use the player's current team if it's in this row's game
+                t = cur_team.get(r["player"])
+                if t and (not r.get("matchup") or t in r["matchup"].split("@")):
+                    r["team"] = t
+            if not r.get("team"):
+                continue
             s = {"Out": "out", "Doubtful": "doubtful", "Questionable": "questionable"}.get(r["status"], "active")
             out[r["player"]] = (r["team"], s, f"NBA report {rep.get('report_time', '')[:16]}: {r['status']} — {r['reason']}")
     pd.DataFrame([{"player": k, "team": t, "status": s, "note": n} for k, (t, s, n) in sorted(out.items())],
