@@ -1,122 +1,178 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-05_03_30PM.pdf",
-"report_time": "2026-11-05 15:30:00",
-"fetched_at": "2026-11-05T20:38:41.902045+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-05_04_30PM.pdf",
+"report_time": "2026-11-05 16:30:00",
+"fetched_at": "2026-11-05T21:32:39.173520+00:00",
 "rows": [
 {
-"team": null,
+"team": "ORL",
 "player": "Paolo Banchero",
 "status": "Out",
 "reason": "Injury/Illness - Right High Ankle Sprain",
 "matchup": "ORL@PHX"
 },
 {
-"team": null,
+"team": "ORL",
 "player": "Jonathan Isaac",
 "status": "Out",
 "reason": "Injury/Illness - Left Knee Injury Management",
 "matchup": "ORL@PHX"
 },
 {
-"team": null,
+"team": "ORL",
 "player": "Izaiyah Nelson",
 "status": "Out",
 "reason": "Injury/Illness - Left Ankle Injury Recovery",
 "matchup": "ORL@PHX"
 },
 {
-"team": null,
+"team": "ORL",
 "player": "Noah Penda",
 "status": "Out",
 "reason": "Injury/Illness - Right Partially Torn Hamstring",
 "matchup": "ORL@PHX"
 },
 {
-"team": null,
+"team": "ORL",
 "player": "Jalen Suggs",
 "status": "Out",
 "reason": "Injury/Illness - Right Knee Contusion / Bone Bruise",
 "matchup": "ORL@PHX"
 },
 {
-"team": null,
+"team": "PHX",
 "player": "Rasheer Fleming",
 "status": "Out",
 "reason": "Injury/Illness - Left Ankle Sprain",
 "matchup": "ORL@PHX"
 },
 {
-"team": null,
+"team": "PHX",
 "player": "Jordan Goodwin",
 "status": "Out",
 "reason": "Injury/Illness - Right Calf Soreness",
 "matchup": "ORL@PHX"
 },
 {
-"team": null,
+"team": "PHX",
 "player": "Mark Williams",
 "status": "Out",
 "reason": "Injury/Illness - Left Shoulder Surgery",
 "matchup": "ORL@PHX"
 },
 {
-"team": null,
+"team": "MIA",
+"player": "Giannis Antetokounmpo",
+"status": "Available",
+"reason": "Injury/Illness - Right Wrist Sprain",
+"matchup": "MIA@GSW"
+},
+{
+"team": "MIA",
+"player": "Tre Donaldson",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "MIA@GSW"
+},
+{
+"team": "MIA",
+"player": "Vladislav Goldin",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "MIA@GSW"
+},
+{
+"team": "GSW",
 "player": "Jimmy Butler III",
 "status": "Out",
 "reason": "Injury/Illness - Right ACL Repair / Surgery",
 "matchup": "MIA@GSW"
 },
 {
-"team": null,
+"team": "GSW",
 "player": "Moses Moody",
 "status": "Out",
 "reason": "Injury/Illness - Left Patellar Tendon Repair / Surgery",
 "matchup": "MIA@GSW"
 },
 {
-"team": null,
+"team": "GSW",
 "player": "Kristaps Porzingis",
 "status": "Out",
 "reason": "Not With Team",
 "matchup": "MIA@GSW"
 },
 {
-"team": null,
+"team": "GSW",
 "player": "Gui Santos",
 "status": "Out",
 "reason": "Injury/Illness - Left Knee Tendinitis",
 "matchup": "MIA@GSW"
 },
 {
-"team": null,
+"team": "BOS",
+"player": "Devin Carter",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "BOS@CHA"
+},
+{
+"team": "BOS",
+"player": "Christopher Cenac Jr.",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "BOS@CHA"
+},
+{
+"team": "BOS",
+"player": "Dillon Mitchell",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "BOS@CHA"
+},
+{
+"team": "BOS",
+"player": "Payton Pritchard",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Eye Abrasion",
+"matchup": "BOS@CHA"
+},
+{
+"team": "BOS",
+"player": "Amari Williams",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "BOS@CHA"
+},
+{
+"team": "NOP",
 "player": "Malik Dia",
 "status": "Doubtful",
 "reason": "G League - Two- Way",
 "matchup": "MIN@NOP"
 },
 {
-"team": null,
+"team": "NOP",
 "player": "Yves Missi",
 "status": "Out",
 "reason": "Injury/Illness - Left Knee Contusion / Bone Bruise",
 "matchup": "MIN@NOP"
 },
 {
-"team": null,
+"team": "NOP",
 "player": "Trey Murphy III",
 "status": "Probable",
 "reason": "Injury/Illness - Bilateral Patella Tendinopathy",
 "matchup": "MIN@NOP"
 },
 {
-"team": null,
+"team": "NOP",
 "player": "Jaron Pierre Jr.",
 "status": "Doubtful",
 "reason": "G League - Two- Way",
 "matchup": "MIN@NOP"
 },
 {
-"team": null,
+"team": "NOP",
 "player": "Julian Reese",
 "status": "Probable",
 "reason": "G League - Two- Way",
