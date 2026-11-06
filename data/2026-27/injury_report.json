@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-05_04_30PM.pdf",
-"report_time": "2026-11-05 16:30:00",
-"fetched_at": "2026-11-05T21:32:39.173520+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-05_08_00PM.pdf",
+"report_time": "2026-11-05 20:00:00",
+"fetched_at": "2026-11-06T01:05:52.398716+00:00",
 "rows": [
 {
 "team": "ORL",
@@ -54,6 +54,13 @@
 },
 {
 "team": "PHX",
+"player": "Drew Timme",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "ORL@PHX"
+},
+{
+"team": "PHX",
 "player": "Mark Williams",
 "status": "Out",
 "reason": "Injury/Illness - Left Shoulder Surgery",
@@ -91,7 +98,7 @@
 "team": "GSW",
 "player": "Moses Moody",
 "status": "Out",
-"reason": "Injury/Illness - Left Patellar Tendon Repair / Surgery",
+"reason": "Injury/Illness - Left Patellar Tendon",
 "matchup": "MIA@GSW"
 },
 {
@@ -144,6 +151,258 @@
 "matchup": "BOS@CHA"
 },
 {
+"team": "CHA",
+"player": "Michael Ajayi",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "BOS@CHA"
+},
+{
+"team": "CHA",
+"player": "Christian Anderson",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "BOS@CHA"
+},
+{
+"team": "CHA",
+"player": "Kylan Boswell",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "BOS@CHA"
+},
+{
+"team": "CHA",
+"player": "Moussa Diabate",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Quadriceps Tendinopathy",
+"matchup": "BOS@CHA"
+},
+{
+"team": "CHA",
+"player": "PJ Hall",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "BOS@CHA"
+},
+{
+"team": "CHA",
+"player": "Kon Knueppel",
+"status": "Out",
+"reason": "Injury/Illness - Left Hamstring Strain",
+"matchup": "BOS@CHA"
+},
+{
+"team": "CHA",
+"player": "Dennis Schroder",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Soreness",
+"matchup": "BOS@CHA"
+},
+{
+"team": "CHA",
+"player": "Hannes Steinbach",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "BOS@CHA"
+},
+{
+"team": "CHA",
+"player": "Grant Williams",
+"status": "Out",
+"reason": "Injury/Illness - Right Hamstring Strain",
+"matchup": "BOS@CHA"
+},
+{
+"team": "WAS",
+"player": "Reece Beekman",
+"status": "Out",
+"reason": "Injury/Illness - Right AC Joint Injury",
+"matchup": "WAS@ATL"
+},
+{
+"team": "WAS",
+"player": "Justin Champagnie",
+"status": "Out",
+"reason": "Injury/Illness - Right Foot Surgery",
+"matchup": "WAS@ATL"
+},
+{
+"team": "WAS",
+"player": "Anthony Davis",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Ankle Sprain",
+"matchup": "WAS@ATL"
+},
+{
+"team": "WAS",
+"player": "Felix Okpara",
+"status": "Doubtful",
+"reason": "G League - Two- Way",
+"matchup": "WAS@ATL"
+},
+{
+"team": "WAS",
+"player": "Tristan Vukcevic",
+"status": "Out",
+"reason": "Injury/Illness - Left Hip Impingement",
+"matchup": "WAS@ATL"
+},
+{
+"team": "WAS",
+"player": "Jamir Watkins",
+"status": "Out",
+"reason": "Injury/Illness - Left ACL Repair / Surgery",
+"matchup": "WAS@ATL"
+},
+{
+"team": "ATL",
+"player": "RayJ Dennis",
+"status": "Questionable",
+"reason": "G League - Two- Way",
+"matchup": "WAS@ATL"
+},
+{
+"team": "ATL",
+"player": "Keshon Gilbert",
+"status": "Out",
+"reason": "Injury/Illness - Left Knee Inflammation",
+"matchup": "WAS@ATL"
+},
+{
+"team": "ATL",
+"player": "Mouhamed Gueye",
+"status": "Out",
+"reason": "Injury/Illness - Left Foot Fracture",
+"matchup": "WAS@ATL"
+},
+{
+"team": "ATL",
+"player": "Jalen Johnson",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Ankle Sprain",
+"matchup": "WAS@ATL"
+},
+{
+"team": "ATL",
+"player": "Jock Landale",
+"status": "Out",
+"reason": "Injury/Illness - Left Hip Strain",
+"matchup": "WAS@ATL"
+},
+{
+"team": "ATL",
+"player": "Asa Newell",
+"status": "Out",
+"reason": "Injury/Illness - Left Great Toe Hyperextension",
+"matchup": "WAS@ATL"
+},
+{
+"team": "ATL",
+"player": "Henri Veesaar",
+"status": "Out",
+"reason": "Injury/Illness - Right ACL Tear",
+"matchup": "WAS@ATL"
+},
+{
+"team": "ATL",
+"player": "Jalen Wilson",
+"status": "Questionable",
+"reason": "G League - Two- Way",
+"matchup": "WAS@ATL"
+},
+{
+"team": "PHI",
+"player": "Dominick Barlow",
+"status": "Out",
+"reason": "Injury/Illness - Low Back Stress Reaction",
+"matchup": "PHI@CLE"
+},
+{
+"team": "PHI",
+"player": "Adem Bona",
+"status": "Doubtful",
+"reason": "Injury/Illness - Cervical Spine Sprain",
+"matchup": "PHI@CLE"
+},
+{
+"team": "PHI",
+"player": "Ariel Hukporti",
+"status": "Out",
+"reason": "Injury/Illness - Right Achilles Tendon Rupture / Tear",
+"matchup": "PHI@CLE"
+},
+{
+"team": "CLE",
+"player": "Jarrett Allen",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Contusion",
+"matchup": "PHI@CLE"
+},
+{
+"team": "CLE",
+"player": "Khalifa Diop",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "PHI@CLE"
+},
+{
+"team": "CLE",
+"player": "Tyrese Proctor",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Ankle Sprain",
+"matchup": "PHI@CLE"
+},
+{
+"team": "CLE",
+"player": "Nae'Qwan Tomlin",
+"status": "Out",
+"reason": "Injury/Illness - Low Back Stress Reaction",
+"matchup": "PHI@CLE"
+},
+{
+"team": "CLE",
+"player": "Jaylon Tyson",
+"status": "Out",
+"reason": "Injury/Illness - Right Ankle Sprain",
+"matchup": "PHI@CLE"
+},
+{
+"team": "CLE",
+"player": "Jr., Ernest Udeh",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "PHI@CLE"
+},
+{
+"team": "CLE",
+"player": "Peyton Watson",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Hamstring Injury Management",
+"matchup": "PHI@CLE"
+},
+{
+"team": "MIN",
+"player": "Donte DiVincenzo",
+"status": "Out",
+"reason": "Injury/Illness - Right Achilles Tendon Repair / Surgery",
+"matchup": "MIN@NOP"
+},
+{
+"team": "MIN",
+"player": "Anthony Edwards",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Arthroscopy",
+"matchup": "MIN@NOP"
+},
+{
+"team": "MIN",
+"player": "Terrence Shannon Jr",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Hip Contusion",
+"matchup": "MIN@NOP"
+},
+{
 "team": "NOP",
 "player": "Malik Dia",
 "status": "Doubtful",
@@ -177,6 +436,300 @@
 "status": "Probable",
 "reason": "G League - Two- Way",
 "matchup": "MIN@NOP"
+},
+{
+"team": "OKC",
+"player": "Chet Holmgren",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee/ Injury Recovery",
+"matchup": "OKC@MEM"
+},
+{
+"team": "OKC",
+"player": "Thomas Sorber",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Surgery",
+"matchup": "OKC@MEM"
+},
+{
+"team": "OKC",
+"player": "Nikola Topic",
+"status": "Out",
+"reason": "Injury/Illness - Low Back Surgery",
+"matchup": "OKC@MEM"
+},
+{
+"team": "OKC",
+"player": "Cason Wallace",
+"status": "Out",
+"reason": "Injury/Illness - Left Shoulder Surgery",
+"matchup": "OKC@MEM"
+},
+{
+"team": "OKC",
+"player": "Jalen Williams",
+"status": "Out",
+"reason": "Injury/Illness - Left Ankle Surgery",
+"matchup": "OKC@MEM"
+},
+{
+"team": "OKC",
+"player": "Jaylin Williams",
+"status": "Out",
+"reason": "Injury/Illness - Low back Spasms",
+"matchup": "OKC@MEM"
+},
+{
+"team": "MEM",
+"player": "Scotty Pippen Jr.",
+"status": "Out",
+"reason": "Injury/Illness - Lumbar Disc Herniation",
+"matchup": "OKC@MEM"
+},
+{
+"team": "MEM",
+"player": "Isaiah Stewart",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Bone Bruise",
+"matchup": "OKC@MEM"
+},
+{
+"team": "TOR",
+"player": "Nate Bittle",
+"status": "Out",
+"reason": "Injury/Illness - Right Avulsion Fracture",
+"matchup": "TOR@MIL"
+},
+{
+"team": "TOR",
+"player": "Kawhi Leonard",
+"status": "Out",
+"reason": "Injury/Illness - Left Knee Injury Management",
+"matchup": "TOR@MIL"
+},
+{
+"team": "TOR",
+"player": "Kevin McCullar Jr.",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "TOR@MIL"
+},
+{
+"team": "TOR",
+"player": "Malachi Smith",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "TOR@MIL"
+},
+{
+"team": "MIL",
+"player": "Kam Jones",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "TOR@MIL"
+},
+{
+"team": "MIL",
+"player": "Bogoljub Markovic",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "TOR@MIL"
+},
+{
+"team": "MIL",
+"player": "Pete Nance",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "TOR@MIL"
+},
+{
+"team": "MIL",
+"player": "Cormac Ryan",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "TOR@MIL"
+},
+{
+"team": "UTA",
+"player": "Trey Alexander",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "UTA@DAL"
+},
+{
+"team": "UTA",
+"player": "Harrison Ingram",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "UTA@DAL"
+},
+{
+"team": "UTA",
+"player": "Jaren Jackson Jr.",
+"status": "Out",
+"reason": "Injury/Illness - Right MCL Tear",
+"matchup": "UTA@DAL"
+},
+{
+"team": "UTA",
+"player": "Jusuf Nurkic",
+"status": "Out",
+"reason": "Injury/Illness - Right 2nd Plantar Plate Tear",
+"matchup": "UTA@DAL"
+},
+{
+"team": "DAL",
+"player": "Santi Aldama",
+"status": "Probable",
+"reason": "Injury/Illness - Right Knee Surgery",
+"matchup": "UTA@DAL"
+},
+{
+"team": "DAL",
+"player": "Tarik Biberovic",
+"status": "Out",
+"reason": "Injury/Illness - Right Heel Bursitis",
+"matchup": "UTA@DAL"
+},
+{
+"team": "DAL",
+"player": "Max Christie",
+"status": "Probable",
+"reason": "Injury/Illness - Right Hip Soreness / Tightness",
+"matchup": "UTA@DAL"
+},
+{
+"team": "DAL",
+"player": "Sergio de Larrea",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Sprain",
+"matchup": "UTA@DAL"
+},
+{
+"team": "DAL",
+"player": "Dereck Lively II",
+"status": "Out",
+"reason": "Injury/Illness - Right Foot Surgery",
+"matchup": "UTA@DAL"
+},
+{
+"team": "DAL",
+"player": "Caleb Martin",
+"status": "Available",
+"reason": "Injury/Illness - Right Thumb Splint",
+"matchup": "UTA@DAL"
+},
+{
+"team": "POR",
+"player": "Vit Krejci",
+"status": "Out",
+"reason": "Injury/Illness - Left Ankle Fracture",
+"matchup": "POR@LAL"
+},
+{
+"team": "POR",
+"player": "Ja Morant",
+"status": "Out",
+"reason": "Injury/Illness - Left Hamstring Strain",
+"matchup": "POR@LAL"
+},
+{
+"team": "POR",
+"player": "Shaedon Sharpe",
+"status": "Out",
+"reason": "Injury/Illness - Right Meniscus Surgery",
+"matchup": "POR@LAL"
+},
+{
+"team": "POR",
+"player": "John Tonje",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "POR@LAL"
+},
+{
+"team": "LAL",
+"player": "Cameron Carr",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "POR@LAL"
+},
+{
+"team": "LAL",
+"player": "Bronny James",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "POR@LAL"
+},
+{
+"team": "LAL",
+"player": "Walker Kessler",
+"status": "Available",
+"reason": "Injury/Illness - Left Finger Splint",
+"matchup": "POR@LAL"
+},
+{
+"team": "LAL",
+"player": "Sandro Mamukelashvili",
+"status": "Questionable",
+"reason": "Injury/Illness - Illness",
+"matchup": "POR@LAL"
+},
+{
+"team": "SAS",
+"player": "Maliq Brown",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "SAS@SAC"
+},
+{
+"team": "SAS",
+"player": "Ja'Kobi Gillespie",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "SAS@SAC"
+},
+{
+"team": "SAS",
+"player": "Tobias Harris",
+"status": "Out",
+"reason": "Injury/Illness - Left Calf Strain",
+"matchup": "SAS@SAC"
+},
+{
+"team": "SAS",
+"player": "Jayden Quaintance",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Surgery",
+"matchup": "SAS@SAC"
+},
+{
+"team": "SAC",
+"player": "Keegan Murray",
+"status": "Out",
+"reason": "Injury/Illness - Left Ankle Capsulitis",
+"matchup": "SAS@SAC"
+},
+{
+"team": "SAC",
+"player": "Sean Pedulla",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "SAS@SAC"
+},
+{
+"team": "SAC",
+"player": "Maxime Raynaud",
+"status": "Out",
+"reason": "Injury/Illness - Right Patella Subluxation",
+"matchup": "SAS@SAC"
+},
+{
+"team": "SAC",
+"player": "Ben Simmons",
+"status": "Out",
+"reason": "Injury/Illness - Right Achilles Tendon Repair / Surgery",
+"matchup": "SAS@SAC"
 }
 ]
 }
