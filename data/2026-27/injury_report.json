@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-05_08_00PM.pdf",
-"report_time": "2026-11-05 20:00:00",
-"fetched_at": "2026-11-06T01:05:52.398716+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-05_08_30PM.pdf",
+"report_time": "2026-11-05 20:30:00",
+"fetched_at": "2026-11-06T01:42:13.584247+00:00",
 "rows": [
 {
 "team": "ORL",
@@ -336,7 +336,7 @@
 "team": "CLE",
 "player": "Jarrett Allen",
 "status": "Questionable",
-"reason": "Injury/Illness - Right Contusion",
+"reason": "Injury/Illness - Right Knee Contusion",
 "matchup": "PHI@CLE"
 },
 {
@@ -492,6 +492,13 @@
 "status": "Out",
 "reason": "Injury/Illness - Right Knee Bone Bruise",
 "matchup": "OKC@MEM"
+},
+{
+"team": "TOR",
+"player": "Scottie Barnes",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Adductor / Groin Soreness / Tightness",
+"matchup": "TOR@MIL"
 },
 {
 "team": "TOR",
