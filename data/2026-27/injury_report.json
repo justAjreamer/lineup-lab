@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-06_11_30AM.pdf",
-"report_time": "2026-11-06 11:30:00",
-"fetched_at": "2026-11-06T16:46:46.000300+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-06_02_45PM.pdf",
+"report_time": "2026-11-06 14:45:00",
+"fetched_at": "2026-11-06T19:57:10.160763+00:00",
 "rows": [
 {
 "team": "BOS",
@@ -27,7 +27,7 @@
 {
 "team": "BOS",
 "player": "Payton Pritchard",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Eye Abrasion",
 "matchup": "BOS@CHA"
 },
@@ -62,7 +62,7 @@
 {
 "team": "CHA",
 "player": "Moussa Diabate",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Right Quadriceps Tendinopathy",
 "matchup": "BOS@CHA"
 },
@@ -83,7 +83,7 @@
 {
 "team": "CHA",
 "player": "Dennis Schroder",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Soreness",
 "matchup": "BOS@CHA"
 },
@@ -286,14 +286,14 @@
 {
 "team": "MIN",
 "player": "Terrence Shannon Jr",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Hip Contusion",
 "matchup": "MIN@NOP"
 },
 {
 "team": "NOP",
 "player": "Malik Dia",
-"status": "Doubtful",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "MIN@NOP"
 },
@@ -307,21 +307,21 @@
 {
 "team": "NOP",
 "player": "Trey Murphy III",
-"status": "Probable",
+"status": "Available",
 "reason": "Injury/Illness - Bilateral Patella Tendinopathy",
 "matchup": "MIN@NOP"
 },
 {
 "team": "NOP",
 "player": "Jaron Pierre Jr.",
-"status": "Doubtful",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "MIN@NOP"
 },
 {
 "team": "NOP",
 "player": "Julian Reese",
-"status": "Probable",
+"status": "Available",
 "reason": "G League - Two- Way",
 "matchup": "MIN@NOP"
 },
@@ -418,6 +418,20 @@
 },
 {
 "team": "TOR",
+"player": "Jakob Poeltl",
+"status": "Probable",
+"reason": "Injury/Illness - Left Shoulder Bursitis",
+"matchup": "TOR@MIL"
+},
+{
+"team": "TOR",
+"player": "Immanuel Quickley",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Hamstring Tightness / Soreness",
+"matchup": "TOR@MIL"
+},
+{
+"team": "TOR",
 "player": "Malachi Smith",
 "status": "Out",
 "reason": "G League - Two- Way",
@@ -505,6 +519,13 @@
 "player": "Sergio de Larrea",
 "status": "Out",
 "reason": "Injury/Illness - Right Knee Sprain",
+"matchup": "UTA@DAL"
+},
+{
+"team": "DAL",
+"player": "Kyrie Irving",
+"status": "Probable",
+"reason": "Injury/Illness - Illness",
 "matchup": "UTA@DAL"
 },
 {
