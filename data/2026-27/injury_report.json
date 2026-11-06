@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-06_02_45PM.pdf",
-"report_time": "2026-11-06 14:45:00",
-"fetched_at": "2026-11-06T19:57:10.160763+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-06_03_45PM.pdf",
+"report_time": "2026-11-06 15:45:00",
+"fetched_at": "2026-11-06T21:01:40.648539+00:00",
 "rows": [
 {
 "team": "BOS",
@@ -653,6 +653,41 @@
 "status": "Out",
 "reason": "Injury/Illness - Right Achilles Tendon Repair / Surgery",
 "matchup": "SAS@SAC"
+},
+{
+"team": "HOU",
+"player": "Steven Adams",
+"status": "Out",
+"reason": "Injury/Illness - Right Soleus Strain",
+"matchup": "HOU@PHX"
+},
+{
+"team": "HOU",
+"player": "Clint Capela",
+"status": "Out",
+"reason": "Injury/Illness - Right Ankle Sprain",
+"matchup": "HOU@PHX"
+},
+{
+"team": "HOU",
+"player": "Quadir Copeland",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "HOU@PHX"
+},
+{
+"team": "HOU",
+"player": "Julian Phillips",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "HOU@PHX"
+},
+{
+"team": "HOU",
+"player": "Bruce Thornton",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "HOU@PHX"
 }
 ]
 }
