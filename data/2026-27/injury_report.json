@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-07_01_00PM.pdf",
-"report_time": "2026-11-07 13:00:00",
-"fetched_at": "2026-11-07T18:01:41.488391+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-07_02_30PM.pdf",
+"report_time": "2026-11-07 14:30:00",
+"fetched_at": "2026-11-07T19:34:55.585390+00:00",
 "rows": [
 {
 "team": "DEN",
@@ -214,10 +214,101 @@
 "matchup": "NYK@CLE"
 },
 {
+"team": "WAS",
+"player": "Reece Beekman",
+"status": "Out",
+"reason": "Injury/Illness - Right AC Joint Injury",
+"matchup": "WAS@OKC"
+},
+{
+"team": "WAS",
+"player": "Justin Champagnie",
+"status": "Out",
+"reason": "Injury/Illness - Right Foot Surgery",
+"matchup": "WAS@OKC"
+},
+{
+"team": "WAS",
+"player": "Anthony Davis",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Ankle Sprain",
+"matchup": "WAS@OKC"
+},
+{
+"team": "WAS",
+"player": "Felix Okpara",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "WAS@OKC"
+},
+{
+"team": "WAS",
+"player": "Tristan Vukcevic",
+"status": "Out",
+"reason": "Injury/Illness - Left Hip Impingement",
+"matchup": "WAS@OKC"
+},
+{
+"team": "WAS",
+"player": "Jamir Watkins",
+"status": "Out",
+"reason": "Injury/Illness - Left ACL Repair / Surgery",
+"matchup": "WAS@OKC"
+},
+{
+"team": "OKC",
+"player": "Chet Holmgren",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee/ Injury Recovery",
+"matchup": "WAS@OKC"
+},
+{
+"team": "OKC",
+"player": "Thomas Sorber",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Surgery",
+"matchup": "WAS@OKC"
+},
+{
+"team": "OKC",
+"player": "Nikola Topic",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "WAS@OKC"
+},
+{
+"team": "OKC",
+"player": "Cason Wallace",
+"status": "Out",
+"reason": "Injury/Illness - Left Shoulder Surgery",
+"matchup": "WAS@OKC"
+},
+{
+"team": "OKC",
+"player": "Jalen Williams",
+"status": "Out",
+"reason": "Injury/Illness - Left Ankle Surgery",
+"matchup": "WAS@OKC"
+},
+{
+"team": "OKC",
+"player": "Jaylin Williams",
+"status": "Out",
+"reason": "Injury/Illness - Low Back Spasms",
+"matchup": "WAS@OKC"
+},
+{
 "team": "ORL",
 "player": "Paolo Banchero",
 "status": "Out",
 "reason": "Injury/Illness - Right High Ankle Sprain",
+"matchup": "ORL@GSW"
+},
+{
+"team": "ORL",
+"player": "Desmond Bane",
+"status": "Out",
+"reason": "Injury/Illness - Illness",
 "matchup": "ORL@GSW"
 },
 {
@@ -252,7 +343,7 @@
 "team": "GSW",
 "player": "Jimmy Butler III",
 "status": "Out",
-"reason": "Injury/Illness - Right ACL Repair / Surgery",
+"reason": "Injury/Illness - Right ACL Repair /",
 "matchup": "ORL@GSW"
 },
 {
@@ -321,7 +412,7 @@
 {
 "team": "HOU",
 "player": "Bruce Thornton",
-"status": "Out",
+"status": "Available",
 "reason": "G League - On Assignment",
 "matchup": "HOU@PHX"
 },
@@ -345,6 +436,27 @@
 "status": "Out",
 "reason": "Injury/Illness - Left Shoulder Surgery",
 "matchup": "HOU@PHX"
+},
+{
+"team": "NOP",
+"player": "Malik Dia",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "NOP@LAC"
+},
+{
+"team": "NOP",
+"player": "Yves Missi",
+"status": "Out",
+"reason": "Injury/Illness - Left Knee Contusion / Bone Bruise",
+"matchup": "NOP@LAC"
+},
+{
+"team": "NOP",
+"player": "Jaron Pierre Jr.",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "NOP@LAC"
 }
 ]
 }
