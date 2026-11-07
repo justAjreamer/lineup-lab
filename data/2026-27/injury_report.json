@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-07_10_30AM.pdf",
-"report_time": "2026-11-07 10:30:00",
-"fetched_at": "2026-11-07T15:40:27.028530+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-07_01_00PM.pdf",
+"report_time": "2026-11-07 13:00:00",
+"fetched_at": "2026-11-07T18:01:41.488391+00:00",
 "rows": [
 {
 "team": "DEN",
@@ -102,10 +102,115 @@
 "matchup": "BKN@ATL"
 },
 {
+"team": "ATL",
+"player": "RayJ Dennis",
+"status": "Questionable",
+"reason": "G League - Two- Way",
+"matchup": "BKN@ATL"
+},
+{
+"team": "ATL",
+"player": "Keshon Gilbert",
+"status": "Out",
+"reason": "Inflammation/Non- Surgical Injury/Illness - Left Left Knee Procedure",
+"matchup": "BKN@ATL"
+},
+{
+"team": "ATL",
+"player": "Mouhamed Gueye",
+"status": "Out",
+"reason": "Injury/Illness - Left Foot Fracture",
+"matchup": "BKN@ATL"
+},
+{
+"team": "ATL",
+"player": "Jalen Johnson",
+"status": "Probable",
+"reason": "Injury/Illness - Left Ankle Sprain",
+"matchup": "BKN@ATL"
+},
+{
+"team": "ATL",
+"player": "Jock Landale",
+"status": "Out",
+"reason": "Injury/Illness - Left Hip Strain",
+"matchup": "BKN@ATL"
+},
+{
+"team": "ATL",
+"player": "Asa Newell",
+"status": "Out",
+"reason": "Injury/Illness - Left Left Great Toe Hyperextension",
+"matchup": "BKN@ATL"
+},
+{
+"team": "ATL",
+"player": "Henri Veesaar",
+"status": "Out",
+"reason": "Injury/Illness - Right ACL Tear",
+"matchup": "BKN@ATL"
+},
+{
+"team": "ATL",
+"player": "Jalen Wilson",
+"status": "Questionable",
+"reason": "G League - Two- Way",
+"matchup": "BKN@ATL"
+},
+{
 "team": "NYK",
 "player": "Josh Hart",
 "status": "Out",
 "reason": "Injury/Illness - Right Ankle Soreness",
+"matchup": "NYK@CLE"
+},
+{
+"team": "CLE",
+"player": "Jarrett Allen",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Contusion",
+"matchup": "NYK@CLE"
+},
+{
+"team": "CLE",
+"player": "Khalifa Diop",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "NYK@CLE"
+},
+{
+"team": "CLE",
+"player": "Tristan Enaruna",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "NYK@CLE"
+},
+{
+"team": "CLE",
+"player": "Sam Merrill",
+"status": "Out",
+"reason": "Injury/Illness - Right Elbow Injury Management",
+"matchup": "NYK@CLE"
+},
+{
+"team": "CLE",
+"player": "Nae'Qwan Tomlin",
+"status": "Out",
+"reason": "Injury/Illness - Low Back Stress Reaction",
+"matchup": "NYK@CLE"
+},
+{
+"team": "CLE",
+"player": "Jaylon Tyson",
+"status": "Out",
+"reason": "Injury/Illness - Right Ankle Sprain",
+"matchup": "NYK@CLE"
+},
+{
+"team": "CLE",
+"player": "Jr., Ernest Udeh",
+"status": "Out",
+"reason": "G League - Two- Way",
 "matchup": "NYK@CLE"
 },
 {
