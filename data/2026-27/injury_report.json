@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-07_06_45PM.pdf",
-"report_time": "2026-11-07 18:45:00",
-"fetched_at": "2026-11-07T23:53:22.731798+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-07_07_45PM.pdf",
+"report_time": "2026-11-07 19:45:00",
+"fetched_at": "2026-11-08T00:49:36.786291+00:00",
 "rows": [
 {
 "team": "DEN",
@@ -349,7 +349,7 @@
 {
 "team": "GSW",
 "player": "Draymond Green",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Elbow Inflammation / Soreness",
 "matchup": "ORL@GSW"
 },
@@ -377,7 +377,7 @@
 {
 "team": "GSW",
 "player": "Gui Santos",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Left Knee Tendinitis",
 "matchup": "ORL@GSW"
 },
@@ -758,6 +758,20 @@
 "status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "BOS@MIL"
+},
+{
+"team": "MIA",
+"player": "Tre Donaldson",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "MIA@SAC"
+},
+{
+"team": "MIA",
+"player": "Vladislav Goldin",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "MIA@SAC"
 },
 {
 "team": "NOP",
