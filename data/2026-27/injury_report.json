@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-08_01_15PM.pdf",
-"report_time": "2026-11-08 13:15:00",
-"fetched_at": "2026-11-08T18:20:58.959110+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-08_02_45PM.pdf",
+"report_time": "2026-11-08 14:45:00",
+"fetched_at": "2026-11-08T19:54:55.875886+00:00",
 "rows": [
 {
 "team": "PHI",
@@ -34,15 +34,15 @@
 {
 "team": "CHI",
 "player": "Tobe Awaka",
-"status": "Questionable",
-"reason": "Injury/Illness - Left MCL Sprain",
+"status": "Available",
+"reason": "-",
 "matchup": "PHI@CHI"
 },
 {
 "team": "CHI",
 "player": "Nic Claxton",
-"status": "Questionable",
-"reason": "Injury/Illness - Left Hamstring Strain",
+"status": "Available",
+"reason": "-",
 "matchup": "PHI@CHI"
 },
 {
@@ -55,7 +55,7 @@
 {
 "team": "CHI",
 "player": "Norman Powell",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Right Shoulder Inflammation / Soreness",
 "matchup": "PHI@CHI"
 },
@@ -69,8 +69,8 @@
 {
 "team": "CHI",
 "player": "Jalen Smith",
-"status": "Probable",
-"reason": "Injury/Illness - Left Finger Sprain",
+"status": "Available",
+"reason": "-",
 "matchup": "PHI@CHI"
 },
 {
@@ -193,6 +193,48 @@
 "matchup": "UTA@MIN"
 },
 {
+"team": "BKN",
+"player": "Tyler Bilodeau",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "BKN@DAL"
+},
+{
+"team": "BKN",
+"player": "Mikel Brown Jr.",
+"status": "Out",
+"reason": "Injury/Illness - Back, Injury Management",
+"matchup": "BKN@DAL"
+},
+{
+"team": "BKN",
+"player": "Egor Demin",
+"status": "Out",
+"reason": "Injury/Illness - Right Bone Bruise",
+"matchup": "BKN@DAL"
+},
+{
+"team": "BKN",
+"player": "Joshua Jefferson",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "BKN@DAL"
+},
+{
+"team": "BKN",
+"player": "Grant Nelson",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "BKN@DAL"
+},
+{
+"team": "BKN",
+"player": "Ben Saraf",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "BKN@DAL"
+},
+{
 "team": "DAL",
 "player": "Tarik Biberovic",
 "status": "Out",
@@ -281,6 +323,13 @@
 "player": "Cormac Ryan",
 "status": "Out",
 "reason": "G League - Two- Way",
+"matchup": "BOS@MIL"
+},
+{
+"team": "MIL",
+"player": "Gary Trent Jr.",
+"status": "Questionable",
+"reason": "Injury/Illness - Illness",
 "matchup": "BOS@MIL"
 },
 {
