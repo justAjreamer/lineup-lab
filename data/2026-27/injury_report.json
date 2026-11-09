@@ -1,12 +1,12 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_05_45PM.pdf",
-"report_time": "2026-11-09 17:45:00",
-"fetched_at": "2026-11-09T22:58:34.120662+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_06_45PM.pdf",
+"report_time": "2026-11-09 18:45:00",
+"fetched_at": "2026-11-09T23:50:25.313179+00:00",
 "rows": [
 {
 "team": "CLE",
 "player": "Jarrett Allen",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Knee Contusion",
 "matchup": "CLE@CHA"
 },
@@ -188,14 +188,14 @@
 {
 "team": "WAS",
 "player": "Bilal Coulibaly",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Hand Soreness",
 "matchup": "WAS@DET"
 },
 {
 "team": "WAS",
 "player": "Anthony Davis",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Ankle Sprain",
 "matchup": "WAS@DET"
 },
@@ -223,7 +223,7 @@
 {
 "team": "DET",
 "player": "Elijah Harkless",
-"status": "Questionable",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "WAS@DET"
 },
@@ -237,7 +237,7 @@
 {
 "team": "DET",
 "player": "Isaac Jones",
-"status": "Questionable",
+"status": "Available",
 "reason": "G League - Two- Way",
 "matchup": "WAS@DET"
 },
@@ -253,6 +253,13 @@
 "player": "Karim Lopez",
 "status": "Out",
 "reason": "G League - On Assignment",
+"matchup": "MEM@TOR"
+},
+{
+"team": "MEM",
+"player": "Jahmai Mashack",
+"status": "Out",
+"reason": "G League - Two- Way",
 "matchup": "MEM@TOR"
 },
 {
@@ -279,7 +286,7 @@
 {
 "team": "TOR",
 "player": "Scottie Barnes",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Groin Strain",
 "matchup": "MEM@TOR"
 },
@@ -307,14 +314,14 @@
 {
 "team": "TOR",
 "player": "Collin Murray- Boyles",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Illness",
 "matchup": "MEM@TOR"
 },
 {
 "team": "TOR",
 "player": "Immanuel Quickley",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Right Hamstring Tightness / Soreness",
 "matchup": "MEM@TOR"
 },
@@ -342,7 +349,7 @@
 {
 "team": "IND",
 "player": "T.J. McConnell",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Hamstring Strain",
 "matchup": "IND@DAL"
 },
@@ -370,7 +377,7 @@
 {
 "team": "DAL",
 "player": "Morez Johnson Jr.",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Shin / Tibia Contusion",
 "matchup": "IND@DAL"
 },
@@ -667,6 +674,48 @@
 "status": "Out",
 "reason": "Injury/Illness - Right Achilles Tendon Rupture / Tear",
 "matchup": "BOS@PHI"
+},
+{
+"team": "MIA",
+"player": "Giannis Antetokounmpo",
+"status": "Probable",
+"reason": "Injury/Illness - Right Wrist Sprain",
+"matchup": "MIA@UTA"
+},
+{
+"team": "ORL",
+"player": "Paolo Banchero",
+"status": "Out",
+"reason": "Injury/Illness - Right High Ankle Sprain",
+"matchup": "ORL@SAC"
+},
+{
+"team": "ORL",
+"player": "Jonathan Isaac",
+"status": "Out",
+"reason": "Injury/Illness - Left Knee Injury Management",
+"matchup": "ORL@SAC"
+},
+{
+"team": "ORL",
+"player": "Izaiyah Nelson",
+"status": "Out",
+"reason": "Injury/Illness - Left Ankle Injury recovery",
+"matchup": "ORL@SAC"
+},
+{
+"team": "ORL",
+"player": "Noah Penda",
+"status": "Out",
+"reason": "Injury/Illness - Right Partially Torn Hamstring",
+"matchup": "ORL@SAC"
+},
+{
+"team": "ORL",
+"player": "Jalen Suggs",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Contusion / Bone Bruise",
+"matchup": "ORL@SAC"
 }
 ]
 }
