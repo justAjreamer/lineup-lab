@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-08_06_45PM.pdf",
-"report_time": "2026-11-08 18:45:00",
-"fetched_at": "2026-11-08T23:57:49.753454+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-08_08_00PM.pdf",
+"report_time": "2026-11-08 20:00:00",
+"fetched_at": "2026-11-09T01:04:47.337432+00:00",
 "rows": [
 {
 "team": "PHI",
@@ -286,7 +286,7 @@
 {
 "team": "BOS",
 "player": "Mitchell Robinson",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Illness",
 "matchup": "BOS@MIL"
 },
@@ -328,7 +328,7 @@
 {
 "team": "MIL",
 "player": "Gary Trent Jr.",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Illness",
 "matchup": "BOS@MIL"
 },
@@ -349,8 +349,8 @@
 {
 "team": "SAC",
 "player": "Jonathan Mogbo",
-"status": "Out",
-"reason": "G League - Two- Way",
+"status": "Available",
+"reason": "-",
 "matchup": "MIA@SAC"
 },
 {
@@ -377,7 +377,7 @@
 {
 "team": "SAC",
 "player": "Domantas Sabonis",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Knee Soreness",
 "matchup": "MIA@SAC"
 },
@@ -800,6 +800,90 @@
 "status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "DEN@HOU"
+},
+{
+"team": "SAS",
+"player": "Maliq Brown",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "SAS@PHX"
+},
+{
+"team": "SAS",
+"player": "Ja'Kobi Gillespie",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "SAS@PHX"
+},
+{
+"team": "SAS",
+"player": "Tobias Harris",
+"status": "Out",
+"reason": "Injury/Illness - Left Calf Strain",
+"matchup": "SAS@PHX"
+},
+{
+"team": "SAS",
+"player": "Jayden Quaintance",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Surgery",
+"matchup": "SAS@PHX"
+},
+{
+"team": "SAS",
+"player": "Devin Vassell",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Adductor Tightness",
+"matchup": "SAS@PHX"
+},
+{
+"team": "PHX",
+"player": "Jordan Goodwin",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Calf Injury Management",
+"matchup": "SAS@PHX"
+},
+{
+"team": "PHX",
+"player": "Mark Williams",
+"status": "Out",
+"reason": "Injury/Illness - Left Shoulder Surgery",
+"matchup": "SAS@PHX"
+},
+{
+"team": "GSW",
+"player": "Jimmy Butler III",
+"status": "Out",
+"reason": "Injury/Illness - Right ACL Repair / Surgery",
+"matchup": "NOP@GSW"
+},
+{
+"team": "GSW",
+"player": "Moses Moody",
+"status": "Out",
+"reason": "Injury/Illness - Left Patellar Tendon Repair / Surgery",
+"matchup": "NOP@GSW"
+},
+{
+"team": "GSW",
+"player": "Kristaps Porzingis",
+"status": "Out",
+"reason": "Not With Team",
+"matchup": "NOP@GSW"
+},
+{
+"team": "GSW",
+"player": "Will Richard",
+"status": "Out",
+"reason": "Injury/Illness - Left Thumb UCL Tear",
+"matchup": "NOP@GSW"
+},
+{
+"team": "GSW",
+"player": "Gui Santos",
+"status": "Probable",
+"reason": "Injury/Illness - Left Knee Tendinitis",
+"matchup": "NOP@GSW"
 }
 ]
 }
