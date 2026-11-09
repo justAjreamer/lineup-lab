@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_02_45PM.pdf",
-"report_time": "2026-11-09 14:45:00",
-"fetched_at": "2026-11-09T19:50:03.163350+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_05_45PM.pdf",
+"report_time": "2026-11-09 17:45:00",
+"fetched_at": "2026-11-09T22:58:34.120662+00:00",
 "rows": [
 {
 "team": "CLE",
@@ -48,7 +48,7 @@
 {
 "team": "CHA",
 "player": "Michael Ajayi",
-"status": "Questionable",
+"status": "Available",
 "reason": "G League - Two- Way",
 "matchup": "CLE@CHA"
 },
@@ -62,14 +62,14 @@
 {
 "team": "CHA",
 "player": "Moussa Diabate",
-"status": "Doubtful",
+"status": "Out",
 "reason": "Injury/Illness - Right Quadriceps Tendinopathy",
 "matchup": "CLE@CHA"
 },
 {
 "team": "CHA",
 "player": "PJ Hall",
-"status": "Questionable",
+"status": "Available",
 "reason": "G League - Two- Way",
 "matchup": "CLE@CHA"
 },
@@ -118,14 +118,14 @@
 {
 "team": "LAL",
 "player": "Austin Reaves",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Illness",
 "matchup": "LAL@ATL"
 },
 {
 "team": "ATL",
 "player": "RayJ Dennis",
-"status": "Questionable",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "LAL@ATL"
 },
@@ -146,8 +146,8 @@
 {
 "team": "ATL",
 "player": "Jock Landale",
-"status": "Questionable",
-"reason": "Injury/Illness - Left Hip Strain",
+"status": "Available",
+"reason": "Injury/Illness - Face mask",
 "matchup": "LAL@ATL"
 },
 {
@@ -167,7 +167,7 @@
 {
 "team": "ATL",
 "player": "Jalen Wilson",
-"status": "Questionable",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "LAL@ATL"
 },
@@ -300,7 +300,7 @@
 {
 "team": "TOR",
 "player": "Kevin McCullar Jr.",
-"status": "Out",
+"status": "Available",
 "reason": "G League - Two- Way",
 "matchup": "MEM@TOR"
 },
@@ -321,7 +321,7 @@
 {
 "team": "TOR",
 "player": "Malachi Smith",
-"status": "Out",
+"status": "Available",
 "reason": "G League - Two- Way",
 "matchup": "MEM@TOR"
 },
@@ -522,6 +522,48 @@
 "matchup": "SAS@PHX"
 },
 {
+"team": "NOP",
+"player": "Malik Dia",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "NOP@GSW"
+},
+{
+"team": "NOP",
+"player": "Yves Missi",
+"status": "Out",
+"reason": "Injury/Illness - Left Knee Contusion / Bone Bruise",
+"matchup": "NOP@GSW"
+},
+{
+"team": "NOP",
+"player": "Trey Murphy III",
+"status": "Out",
+"reason": "Injury/Illness - Bilateral Patellar Tendinopathy",
+"matchup": "NOP@GSW"
+},
+{
+"team": "NOP",
+"player": "Jaron Pierre Jr.",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "NOP@GSW"
+},
+{
+"team": "NOP",
+"player": "Trendon Watford",
+"status": "Out",
+"reason": "Injury/Illness - Right Ankle Sprain",
+"matchup": "NOP@GSW"
+},
+{
+"team": "NOP",
+"player": "Zion Williamson",
+"status": "Out",
+"reason": "Rest",
+"matchup": "NOP@GSW"
+},
+{
 "team": "GSW",
 "player": "Jimmy Butler III",
 "status": "Out",
@@ -562,6 +604,69 @@
 "status": "Probable",
 "reason": "Injury/Illness - Left Knee Tendinitis",
 "matchup": "NOP@GSW"
+},
+{
+"team": "MIL",
+"player": "Tyler Herro",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Contusion",
+"matchup": "MIL@NYK"
+},
+{
+"team": "NYK",
+"player": "Josh Hart",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Ankle Soreness",
+"matchup": "MIL@NYK"
+},
+{
+"team": "BOS",
+"player": "Devin Carter",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "BOS@PHI"
+},
+{
+"team": "BOS",
+"player": "Christopher Cenac Jr.",
+"status": "Questionable",
+"reason": "G League - On Assignment",
+"matchup": "BOS@PHI"
+},
+{
+"team": "BOS",
+"player": "Dillon Mitchell",
+"status": "Questionable",
+"reason": "G League - Two- Way",
+"matchup": "BOS@PHI"
+},
+{
+"team": "BOS",
+"player": "Amari Williams",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "BOS@PHI"
+},
+{
+"team": "PHI",
+"player": "Dominick Barlow",
+"status": "Out",
+"reason": "Injury/Illness - Low Back Stress Reaction",
+"matchup": "BOS@PHI"
+},
+{
+"team": "PHI",
+"player": "Adem Bona",
+"status": "Out",
+"reason": "Injury/Illness - Cervical Spine Sprain",
+"matchup": "BOS@PHI"
+},
+{
+"team": "PHI",
+"player": "Ariel Hukporti",
+"status": "Out",
+"reason": "Injury/Illness - Right Achilles Tendon Rupture / Tear",
+"matchup": "BOS@PHI"
 }
 ]
 }
