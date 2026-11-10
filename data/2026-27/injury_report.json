@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_03_15PM.pdf",
-"report_time": "2026-11-10 15:15:00",
-"fetched_at": "2026-11-10T20:27:29.798589+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_04_15PM.pdf",
+"report_time": "2026-11-10 16:15:00",
+"fetched_at": "2026-11-10T21:24:59.927083+00:00",
 "rows": [
 {
 "team": "MIL",
@@ -230,8 +230,8 @@
 {
 "team": "SAC",
 "player": "Keegan Murray",
-"status": "Questionable",
-"reason": "Injury/Illness - Right Wrist Soreness",
+"status": "Available",
+"reason": "-",
 "matchup": "ORL@SAC"
 },
 {
@@ -251,8 +251,8 @@
 {
 "team": "SAC",
 "player": "Domantas Sabonis",
-"status": "Questionable",
-"reason": "Injury/Illness - Left Knee Soreness",
+"status": "Available",
+"reason": "-",
 "matchup": "ORL@SAC"
 },
 {
@@ -373,6 +373,34 @@
 "status": "Out",
 "reason": "Injury/Illness - Right Ankle Sprain",
 "matchup": "BKN@NOP"
+},
+{
+"team": "HOU",
+"player": "Steven Adams",
+"status": "Out",
+"reason": "Injury/Illness - Right Soleus Strain",
+"matchup": "GSW@HOU"
+},
+{
+"team": "HOU",
+"player": "Clint Capela",
+"status": "Out",
+"reason": "Injury/Illness - Right Ankle Sprain",
+"matchup": "GSW@HOU"
+},
+{
+"team": "HOU",
+"player": "Quadir Copeland",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "GSW@HOU"
+},
+{
+"team": "HOU",
+"player": "Julian Phillips",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "GSW@HOU"
 }
 ]
 }
