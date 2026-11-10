@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_12_00PM.pdf",
-"report_time": "2026-11-10 12:00:00",
-"fetched_at": "2026-11-10T17:03:50.347750+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_03_15PM.pdf",
+"report_time": "2026-11-10 15:15:00",
+"fetched_at": "2026-11-10T20:27:29.798589+00:00",
 "rows": [
 {
 "team": "MIL",
@@ -11,9 +11,16 @@
 "matchup": "MIL@NYK"
 },
 {
+"team": "MIL",
+"player": "Kel'el Ware",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Ankle Sprain",
+"matchup": "MIL@NYK"
+},
+{
 "team": "NYK",
 "player": "Josh Hart",
-"status": "Questionable",
+"status": "Doubtful",
 "reason": "Injury/Illness - Illness",
 "matchup": "MIL@NYK"
 },
@@ -90,7 +97,7 @@
 {
 "team": "LAC",
 "player": "Nick Martinelli",
-"status": "Questionable",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "LAC@PHX"
 },
@@ -106,6 +113,13 @@
 "player": "Yanic Konan Niederhauser",
 "status": "Out",
 "reason": "Injury/Illness - Right Lisfranc Surgery",
+"matchup": "LAC@PHX"
+},
+{
+"team": "PHX",
+"player": "Mark Williams",
+"status": "Out",
+"reason": "Injury/Illness - Left Shoulder Surgery",
 "matchup": "LAC@PHX"
 },
 {
@@ -125,7 +139,7 @@
 {
 "team": "UTA",
 "player": "Kobe Bufkin",
-"status": "Out",
+"status": "Questionable",
 "reason": "G League - Two- Way",
 "matchup": "MIA@UTA"
 },
@@ -139,7 +153,7 @@
 {
 "team": "UTA",
 "player": "Harrison Ingram",
-"status": "Out",
+"status": "Questionable",
 "reason": "G League - Two- Way",
 "matchup": "MIA@UTA"
 },
@@ -153,7 +167,7 @@
 {
 "team": "UTA",
 "player": "Lauri Markkanen",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Right Wrist Sprain",
 "matchup": "MIA@UTA"
 },
@@ -292,6 +306,13 @@
 },
 {
 "team": "POR",
+"player": "Jayson Kent",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "OKC@POR"
+},
+{
+"team": "POR",
 "player": "Vit Krejci",
 "status": "Out",
 "reason": "Injury/Illness - Left Ankle Fracture",
@@ -317,6 +338,41 @@
 "status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "OKC@POR"
+},
+{
+"team": "NOP",
+"player": "Malik Dia",
+"status": "Doubtful",
+"reason": "G League - Two- Way",
+"matchup": "BKN@NOP"
+},
+{
+"team": "NOP",
+"player": "Yves Missi",
+"status": "Out",
+"reason": "Injury/Illness - Left Knee Contusion / Bone Bruise",
+"matchup": "BKN@NOP"
+},
+{
+"team": "NOP",
+"player": "Trey Murphy III",
+"status": "Probable",
+"reason": "Injury/Illness - Bilateral Patellar Tendinopathy",
+"matchup": "BKN@NOP"
+},
+{
+"team": "NOP",
+"player": "Jaron Pierre Jr.",
+"status": "Doubtful",
+"reason": "G League - Two- Way",
+"matchup": "BKN@NOP"
+},
+{
+"team": "NOP",
+"player": "Trendon Watford",
+"status": "Out",
+"reason": "Injury/Illness - Right Ankle Sprain",
+"matchup": "BKN@NOP"
 }
 ]
 }
