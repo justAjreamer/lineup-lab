@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_07_45PM.pdf",
-"report_time": "2026-11-10 19:45:00",
-"fetched_at": "2026-11-11T00:51:11.915419+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_08_15PM.pdf",
+"report_time": "2026-11-10 20:15:00",
+"fetched_at": "2026-11-11T01:21:24.421871+00:00",
 "rows": [
 {
 "team": "MIL",
@@ -125,7 +125,7 @@
 {
 "team": "MIA",
 "player": "Giannis Antetokounmpo",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Wrist Sprain",
 "matchup": "MIA@UTA"
 },
@@ -139,7 +139,7 @@
 {
 "team": "UTA",
 "player": "Kobe Bufkin",
-"status": "Questionable",
+"status": "Available",
 "reason": "G League - Two- Way",
 "matchup": "MIA@UTA"
 },
@@ -153,7 +153,7 @@
 {
 "team": "UTA",
 "player": "Harrison Ingram",
-"status": "Questionable",
+"status": "Available",
 "reason": "G League - Two- Way",
 "matchup": "MIA@UTA"
 },
