@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_03_00PM.pdf",
-"report_time": "2026-11-11 15:00:00",
-"fetched_at": "2026-11-11T20:11:13.834086+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_05_00PM.pdf",
+"report_time": "2026-11-11 17:00:00",
+"fetched_at": "2026-11-11T22:13:35.981827+00:00",
 "rows": [
 {
 "team": "BOS",
@@ -216,7 +216,7 @@
 {
 "team": "BKN",
 "player": "Nolan Traore",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Right Calf Tightness / Soreness",
 "matchup": "BKN@NOP"
 },
@@ -272,14 +272,14 @@
 {
 "team": "MEM",
 "player": "Karim Lopez",
-"status": "Out",
+"status": "Available",
 "reason": "G League - On Assignment",
 "matchup": "DEN@MEM"
 },
 {
 "team": "MEM",
 "player": "Jahmai Mashack",
-"status": "Questionable",
+"status": "Available",
 "reason": "G League - Two- Way",
 "matchup": "DEN@MEM"
 },
@@ -562,6 +562,202 @@
 "status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "GSW@HOU"
+},
+{
+"team": "OKC",
+"player": "Chet Holmgren",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee/ Injury Recovery",
+"matchup": "OKC@POR"
+},
+{
+"team": "OKC",
+"player": "Ajay Mitchell",
+"status": "Out",
+"reason": "Injury/Illness - Left Ankle Sprain",
+"matchup": "OKC@POR"
+},
+{
+"team": "OKC",
+"player": "Thomas Sorber",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Surgery",
+"matchup": "OKC@POR"
+},
+{
+"team": "OKC",
+"player": "Nikola Topic",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "OKC@POR"
+},
+{
+"team": "OKC",
+"player": "Cason Wallace",
+"status": "Out",
+"reason": "Injury/Illness - Left Shoulder Surgery",
+"matchup": "OKC@POR"
+},
+{
+"team": "OKC",
+"player": "Jalen Williams",
+"status": "Out",
+"reason": "Injury/Illness - Left Ankle Surgery",
+"matchup": "OKC@POR"
+},
+{
+"team": "OKC",
+"player": "Jaylin Williams",
+"status": "Out",
+"reason": "Injury/Illness - Low Back Spasms",
+"matchup": "OKC@POR"
+},
+{
+"team": "POR",
+"player": "Vit Krejci",
+"status": "Out",
+"reason": "Injury/Illness - Left Ankle Fracture",
+"matchup": "OKC@POR"
+},
+{
+"team": "POR",
+"player": "Ja Morant",
+"status": "Out",
+"reason": "Injury/Illness - Left Hamstring Strain",
+"matchup": "OKC@POR"
+},
+{
+"team": "POR",
+"player": "Shaedon Sharpe",
+"status": "Out",
+"reason": "Injury/Illness - Right Meniscus Surgery",
+"matchup": "OKC@POR"
+},
+{
+"team": "POR",
+"player": "Chris Youngblood",
+"status": "Out",
+"reason": "Injury/Illness - Right Bone Bruise",
+"matchup": "OKC@POR"
+},
+{
+"team": "DET",
+"player": "Jalen Duren",
+"status": "Out",
+"reason": "Injury/Illness - Right Hamstring Strain",
+"matchup": "DET@WAS"
+},
+{
+"team": "DET",
+"player": "Elijah Harkless",
+"status": "Questionable",
+"reason": "G League - Two- Way",
+"matchup": "DET@WAS"
+},
+{
+"team": "DET",
+"player": "Isaiah Joe",
+"status": "Out",
+"reason": "Injury/Illness - Right Hip Contusion",
+"matchup": "DET@WAS"
+},
+{
+"team": "DET",
+"player": "Isaac Jones",
+"status": "Questionable",
+"reason": "G League - Two- Way",
+"matchup": "DET@WAS"
+},
+{
+"team": "DET",
+"player": "Chaz Lanier",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "DET@WAS"
+},
+{
+"team": "DET",
+"player": "Ebuka Okorie",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "DET@WAS"
+},
+{
+"team": "DET",
+"player": "Ugonna Onyenso",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "DET@WAS"
+},
+{
+"team": "PHI",
+"player": "Dominick Barlow",
+"status": "Out",
+"reason": "Injury/Illness - Low Back Stress Reaction",
+"matchup": "TOR@PHI"
+},
+{
+"team": "PHI",
+"player": "Adem Bona",
+"status": "Out",
+"reason": "Injury/Illness - Cervical Spine Sprain",
+"matchup": "TOR@PHI"
+},
+{
+"team": "PHI",
+"player": "Joel Embiid",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Foot Plantar Fascia Injury Management",
+"matchup": "TOR@PHI"
+},
+{
+"team": "PHI",
+"player": "Ariel Hukporti",
+"status": "Out",
+"reason": "Injury/Illness - Right Achilles Tendon Rupture / Tear",
+"matchup": "TOR@PHI"
+},
+{
+"team": "PHI",
+"player": "LeBron James",
+"status": "Questionable",
+"reason": "Injury/Illness - Low Back/Sciatica Management",
+"matchup": "TOR@PHI"
+},
+{
+"team": "DAL",
+"player": "Tarik Biberovic",
+"status": "Out",
+"reason": "Injury/Illness - Right Heel Bursitis",
+"matchup": "DAL@MIN"
+},
+{
+"team": "DAL",
+"player": "Sergio de Larrea",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Sprain",
+"matchup": "DAL@MIN"
+},
+{
+"team": "DAL",
+"player": "Morez Johnson Jr.",
+"status": "Probable",
+"reason": "Injury/Illness - Left Shin / Tibia Contusion",
+"matchup": "DAL@MIN"
+},
+{
+"team": "DAL",
+"player": "Dereck Lively II",
+"status": "Out",
+"reason": "Injury/Illness - Right Foot Surgery",
+"matchup": "DAL@MIN"
+},
+{
+"team": "DAL",
+"player": "Caleb Martin",
+"status": "Available",
+"reason": "Injury/Illness - Right Thumb Splint",
+"matchup": "DAL@MIN"
 }
 ]
 }
