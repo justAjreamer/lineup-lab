@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-12_03_45PM.pdf",
-"report_time": "2026-11-12 15:45:00",
-"fetched_at": "2026-11-12T20:47:26.774151+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-12_04_45PM.pdf",
+"report_time": "2026-11-12 16:45:00",
+"fetched_at": "2026-11-12T21:54:12.514866+00:00",
 "rows": [
 {
 "team": "DET",
@@ -268,6 +268,62 @@
 "status": "Out",
 "reason": "Injury/Illness - Left Shoulder Surgery",
 "matchup": "CHA@PHX"
+},
+{
+"team": "CHI",
+"player": "Tobe Awaka",
+"status": "Out",
+"reason": "Injury/Illness - Disc Irritation",
+"matchup": "ATL@CHI"
+},
+{
+"team": "CHI",
+"player": "Norman Powell",
+"status": "Questionable",
+"reason": "Injury/Illness - Low Back Spasms",
+"matchup": "ATL@CHI"
+},
+{
+"team": "CHI",
+"player": "Dailyn Swain",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Disc Irritation",
+"matchup": "ATL@CHI"
+},
+{
+"team": "CHI",
+"player": "Caleb Wilson",
+"status": "Out",
+"reason": "Injury/Illness - Right Metacarpal Fracture",
+"matchup": "ATL@CHI"
+},
+{
+"team": "MIA",
+"player": "Giannis Antetokounmpo",
+"status": "Probable",
+"reason": "Injury/Illness - Right Wrist Sprain",
+"matchup": "CLE@MIA"
+},
+{
+"team": "MIA",
+"player": "Vladislav Goldin",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "CLE@MIA"
+},
+{
+"team": "MIA",
+"player": "Pelle Larsson",
+"status": "Questionable",
+"reason": "Injury/Illness - Illness",
+"matchup": "CLE@MIA"
+},
+{
+"team": "MIA",
+"player": "Klay Thompson",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Ankle Soreness",
+"matchup": "CLE@MIA"
 },
 {
 "team": "NOP",
