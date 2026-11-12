@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_05_00PM.pdf",
-"report_time": "2026-11-11 17:00:00",
-"fetched_at": "2026-11-11T22:13:35.981827+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_08_45PM.pdf",
+"report_time": "2026-11-11 20:45:00",
+"fetched_at": "2026-11-12T01:59:08.640713+00:00",
 "rows": [
 {
 "team": "BOS",
@@ -54,16 +54,30 @@
 },
 {
 "team": "TOR",
+"player": "Kevin McCullar Jr.",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "BOS@TOR"
+},
+{
+"team": "TOR",
 "player": "Collin Murray- Boyles",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Illness",
 "matchup": "BOS@TOR"
 },
 {
 "team": "TOR",
 "player": "Immanuel Quickley",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Hamstring Injury Management",
+"matchup": "BOS@TOR"
+},
+{
+"team": "TOR",
+"player": "Malachi Smith",
+"status": "Out",
+"reason": "G League - Two- Way",
 "matchup": "BOS@TOR"
 },
 {
@@ -90,7 +104,7 @@
 {
 "team": "CLE",
 "player": "Jaylon Tyson",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Ankle Sprain",
 "matchup": "CLE@NYK"
 },
@@ -104,14 +118,14 @@
 {
 "team": "NYK",
 "player": "Josh Hart",
-"status": "Probable",
+"status": "Available",
 "reason": "Injury/Illness - Illness",
 "matchup": "CLE@NYK"
 },
 {
 "team": "NYK",
 "player": "Karl- Anthony Towns",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Left Sore Calf",
 "matchup": "CLE@NYK"
 },
@@ -160,7 +174,7 @@
 {
 "team": "IND",
 "player": "T.J. McConnell",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Hamstring Strain",
 "matchup": "WAS@IND"
 },
@@ -223,7 +237,7 @@
 {
 "team": "NOP",
 "player": "Malik Dia",
-"status": "Doubtful",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "BKN@NOP"
 },
@@ -244,14 +258,14 @@
 {
 "team": "NOP",
 "player": "Trey Murphy III",
-"status": "Doubtful",
+"status": "Out",
 "reason": "Injury/Illness - Bilateral Patellar Tendinopathy",
 "matchup": "BKN@NOP"
 },
 {
 "team": "NOP",
 "player": "Jaron Pierre Jr.",
-"status": "Probable",
+"status": "Available",
 "reason": "G League - Two- Way",
 "matchup": "BKN@NOP"
 },
@@ -307,7 +321,7 @@
 {
 "team": "MEM",
 "player": "Isaiah Stewart",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Knee Bone Bruise",
 "matchup": "DEN@MEM"
 },
@@ -328,7 +342,7 @@
 {
 "team": "MIL",
 "player": "Tyler Herro",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Knee Contusion",
 "matchup": "LAL@MIL"
 },
@@ -370,7 +384,7 @@
 {
 "team": "SAS",
 "player": "Devin Vassell",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Adductor Tightness",
 "matchup": "SAS@CHI"
 },
@@ -384,29 +398,36 @@
 {
 "team": "CHI",
 "player": "Zach Collins",
-"status": "Questionable",
-"reason": "Injury/Illness - Respiratory Illness",
+"status": "Available",
+"reason": "-",
 "matchup": "SAS@CHI"
 },
 {
 "team": "CHI",
 "player": "Norman Powell",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Low Back Spasms",
 "matchup": "SAS@CHI"
 },
 {
 "team": "CHI",
 "player": "Jaylin Sellers",
+"status": "Available",
+"reason": "-",
+"matchup": "SAS@CHI"
+},
+{
+"team": "CHI",
+"player": "Dailyn Swain",
 "status": "Out",
-"reason": "G League - On Assignment",
+"reason": "Injury/Illness - Right Disc Irritation",
 "matchup": "SAS@CHI"
 },
 {
 "team": "CHI",
 "player": "Caleb Wilson",
-"status": "Questionable",
-"reason": "Injury/Illness - Right Hip Soreness / Tightness",
+"status": "Available",
+"reason": "-",
 "matchup": "SAS@CHI"
 },
 {
@@ -419,14 +440,14 @@
 {
 "team": "ORL",
 "player": "Jamal Cain",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Shoulder Contusion",
 "matchup": "ORL@UTA"
 },
 {
 "team": "ORL",
 "player": "Tristan da Silva",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Calf Strain",
 "matchup": "ORL@UTA"
 },
@@ -468,7 +489,7 @@
 {
 "team": "UTA",
 "player": "Keyonte George",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Ankle Sprain",
 "matchup": "ORL@UTA"
 },
@@ -524,7 +545,7 @@
 {
 "team": "GSW",
 "player": "Will Richard",
-"status": "Probable",
+"status": "Available",
 "reason": "Injury/Illness - Left Thumb UCL Tear",
 "matchup": "GSW@HOU"
 },
@@ -758,6 +779,90 @@
 "status": "Available",
 "reason": "Injury/Illness - Right Thumb Splint",
 "matchup": "DAL@MIN"
+},
+{
+"team": "MIN",
+"player": "Joan Beringer",
+"status": "Available",
+"reason": "Injury/Illness - Face Mask",
+"matchup": "DAL@MIN"
+},
+{
+"team": "MIN",
+"player": "Donte DiVincenzo",
+"status": "Out",
+"reason": "Injury/Illness - Right Achilles Tendon Repair / Surgery",
+"matchup": "DAL@MIN"
+},
+{
+"team": "MIN",
+"player": "Anthony Edwards",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Arthroscopy",
+"matchup": "DAL@MIN"
+},
+{
+"team": "CHA",
+"player": "Michael Ajayi",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "CHA@PHX"
+},
+{
+"team": "CHA",
+"player": "Kylan Boswell",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "CHA@PHX"
+},
+{
+"team": "CHA",
+"player": "Moussa Diabate",
+"status": "Probable",
+"reason": "Injury/Illness - Right Quadriceps Tendinopathy",
+"matchup": "CHA@PHX"
+},
+{
+"team": "CHA",
+"player": "Kon Knueppel",
+"status": "Out",
+"reason": "Injury/Illness - Left Hamstring Strain",
+"matchup": "CHA@PHX"
+},
+{
+"team": "CHA",
+"player": "Brandon Miller",
+"status": "Out",
+"reason": "Injury/Illness - Right Hip Strain",
+"matchup": "CHA@PHX"
+},
+{
+"team": "CHA",
+"player": "Dennis Schroder",
+"status": "Out",
+"reason": "Injury/Illness - Left Hamstring Strain",
+"matchup": "CHA@PHX"
+},
+{
+"team": "CHA",
+"player": "Hannes Steinbach",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "CHA@PHX"
+},
+{
+"team": "CHA",
+"player": "Grant Williams",
+"status": "Probable",
+"reason": "Injury/Illness - Right Hamstring Strain",
+"matchup": "CHA@PHX"
+},
+{
+"team": "PHX",
+"player": "Mark Williams",
+"status": "Out",
+"reason": "Injury/Illness - Left Shoulder Surgery",
+"matchup": "CHA@PHX"
 }
 ]
 }
