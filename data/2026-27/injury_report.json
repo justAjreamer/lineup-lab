@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-12_12_30PM.pdf",
-"report_time": "2026-11-12 12:30:00",
-"fetched_at": "2026-11-12T17:36:36.416734+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-12_03_45PM.pdf",
+"report_time": "2026-11-12 15:45:00",
+"fetched_at": "2026-11-12T20:47:26.774151+00:00",
 "rows": [
 {
 "team": "DET",
@@ -53,6 +53,69 @@
 "matchup": "DET@WAS"
 },
 {
+"team": "WAS",
+"player": "Reece Beekman",
+"status": "Out",
+"reason": "Injury/Illness - Right AC Joint Injury",
+"matchup": "DET@WAS"
+},
+{
+"team": "WAS",
+"player": "Justin Champagnie",
+"status": "Out",
+"reason": "Injury/Illness - Right Foot Surgery",
+"matchup": "DET@WAS"
+},
+{
+"team": "WAS",
+"player": "Tristan Vukcevic",
+"status": "Out",
+"reason": "Injury/Illness - Left Hip Impingement",
+"matchup": "DET@WAS"
+},
+{
+"team": "WAS",
+"player": "Jamir Watkins",
+"status": "Out",
+"reason": "Injury/Illness - Left ACL Repair / Surgery",
+"matchup": "DET@WAS"
+},
+{
+"team": "TOR",
+"player": "Scottie Barnes",
+"status": "Out",
+"reason": "Injury/Illness - Left Groin Strain",
+"matchup": "TOR@PHI"
+},
+{
+"team": "TOR",
+"player": "Nate Bittle",
+"status": "Out",
+"reason": "Injury/Illness - Right Foot Avulsion Fracture",
+"matchup": "TOR@PHI"
+},
+{
+"team": "TOR",
+"player": "Trayce Jackson- Davis",
+"status": "Out",
+"reason": "Injury/Illness - Illness",
+"matchup": "TOR@PHI"
+},
+{
+"team": "TOR",
+"player": "Kawhi Leonard",
+"status": "Out",
+"reason": "Injury/Illness - Left Knee Injury Management",
+"matchup": "TOR@PHI"
+},
+{
+"team": "TOR",
+"player": "Kevin McCullar Jr.",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "TOR@PHI"
+},
+{
 "team": "PHI",
 "player": "Dominick Barlow",
 "status": "Out",
@@ -83,7 +146,7 @@
 {
 "team": "PHI",
 "player": "LeBron James",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Low Back/Sciatica Management",
 "matchup": "TOR@PHI"
 },
@@ -160,7 +223,7 @@
 {
 "team": "CHA",
 "player": "Moussa Diabate",
-"status": "Probable",
+"status": "Available",
 "reason": "Injury/Illness - Right Quadriceps Tendinopathy",
 "matchup": "CHA@PHX"
 },
@@ -195,7 +258,7 @@
 {
 "team": "CHA",
 "player": "Grant Williams",
-"status": "Probable",
+"status": "Available",
 "reason": "Injury/Illness - Right Hamstring Strain",
 "matchup": "CHA@PHX"
 },
@@ -205,6 +268,55 @@
 "status": "Out",
 "reason": "Injury/Illness - Left Shoulder Surgery",
 "matchup": "CHA@PHX"
+},
+{
+"team": "NOP",
+"player": "Malik Dia",
+"status": "Doubtful",
+"reason": "G League - Two- Way",
+"matchup": "MEM@NOP"
+},
+{
+"team": "NOP",
+"player": "Bennedict Mathurin",
+"status": "Doubtful",
+"reason": "Injury/Illness - Right Thumb Sprain",
+"matchup": "MEM@NOP"
+},
+{
+"team": "NOP",
+"player": "Bryce McGowens",
+"status": "Doubtful",
+"reason": "Injury/Illness - Left Elbow Infection",
+"matchup": "MEM@NOP"
+},
+{
+"team": "NOP",
+"player": "Yves Missi",
+"status": "Doubtful",
+"reason": "Injury/Illness - Left Knee Contusion / Bone Bruise",
+"matchup": "MEM@NOP"
+},
+{
+"team": "NOP",
+"player": "Trey Murphy III",
+"status": "Doubtful",
+"reason": "Injury/Illness - Bilateral Patellar Tendinopathy",
+"matchup": "MEM@NOP"
+},
+{
+"team": "NOP",
+"player": "Jaron Pierre Jr.",
+"status": "Questionable",
+"reason": "G League - Two- Way",
+"matchup": "MEM@NOP"
+},
+{
+"team": "NOP",
+"player": "Trendon Watford",
+"status": "Out",
+"reason": "Injury/Illness - Right Ankle Sprain",
+"matchup": "MEM@NOP"
 }
 ]
 }
