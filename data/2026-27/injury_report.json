@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-13_12_00PM.pdf",
-"report_time": "2026-11-13 12:00:00",
-"fetched_at": "2026-11-13T17:13:47.894189+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-13_03_15PM.pdf",
+"report_time": "2026-11-13 15:15:00",
+"fetched_at": "2026-11-13T20:28:48.262407+00:00",
 "rows": [
 {
 "team": "ORL",
@@ -139,7 +139,7 @@
 {
 "team": "ATL",
 "player": "Jalen Wilson",
-"status": "Doubtful",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "ATL@CHI"
 },
@@ -155,6 +155,13 @@
 "player": "Norman Powell",
 "status": "Questionable",
 "reason": "Injury/Illness - Low Back Spasms",
+"matchup": "ATL@CHI"
+},
+{
+"team": "CHI",
+"player": "Jaylin Sellers",
+"status": "Out",
+"reason": "G League - Two- Way",
 "matchup": "ATL@CHI"
 },
 {
@@ -209,7 +216,7 @@
 {
 "team": "MIA",
 "player": "Giannis Antetokounmpo",
-"status": "Probable",
+"status": "Available",
 "reason": "Injury/Illness - Right Wrist Sprain",
 "matchup": "CLE@MIA"
 },
@@ -223,14 +230,14 @@
 {
 "team": "MIA",
 "player": "Pelle Larsson",
-"status": "Questionable",
+"status": "Doubtful",
 "reason": "Injury/Illness - Illness",
 "matchup": "CLE@MIA"
 },
 {
 "team": "MIA",
 "player": "Klay Thompson",
-"status": "Questionable",
+"status": "Probable",
 "reason": "Injury/Illness - Left Ankle Soreness",
 "matchup": "CLE@MIA"
 },
@@ -279,42 +286,49 @@
 {
 "team": "NOP",
 "player": "Malik Dia",
-"status": "Questionable",
+"status": "Available",
 "reason": "G League - Two- Way",
 "matchup": "MEM@NOP"
 },
 {
 "team": "NOP",
 "player": "Bennedict Mathurin",
-"status": "Doubtful",
+"status": "Questionable",
 "reason": "Injury/Illness - Right Thumb Sprain",
 "matchup": "MEM@NOP"
 },
 {
 "team": "NOP",
 "player": "Bryce McGowens",
-"status": "Doubtful",
+"status": "Out",
 "reason": "Injury/Illness - Left Elbow Infection",
 "matchup": "MEM@NOP"
 },
 {
 "team": "NOP",
 "player": "Yves Missi",
-"status": "Doubtful",
+"status": "Out",
 "reason": "Injury/Illness - Left Knee Contusion / Bone Bruise",
 "matchup": "MEM@NOP"
 },
 {
 "team": "NOP",
 "player": "Trey Murphy III",
-"status": "Doubtful",
+"status": "Out",
 "reason": "Injury/Illness - Bilateral Patellar Tendinopathy",
 "matchup": "MEM@NOP"
 },
 {
 "team": "NOP",
+"player": "Dejounte Murray",
+"status": "Out",
+"reason": "Injury/Illness - Left Ankle Sprain",
+"matchup": "MEM@NOP"
+},
+{
+"team": "NOP",
 "player": "Jaron Pierre Jr.",
-"status": "Questionable",
+"status": "Available",
 "reason": "G League - Two- Way",
 "matchup": "MEM@NOP"
 },
