@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_01_30PM.pdf",
-"report_time": "2026-11-14 13:30:00",
-"fetched_at": "2026-11-14T18:43:36.088946+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_02_45PM.pdf",
+"report_time": "2026-11-14 14:45:00",
+"fetched_at": "2026-11-14T20:03:27.093635+00:00",
 "rows": [
 {
 "team": "DEN",
@@ -33,6 +33,13 @@
 },
 {
 "team": "NOP",
+"player": "Malik Dia",
+"status": "Questionable",
+"reason": "G League - Two- Way",
+"matchup": "DEN@NOP"
+},
+{
+"team": "NOP",
 "player": "Bryce McGowens",
 "status": "Out",
 "reason": "Injury/Illness - Left Elbow Infection",
@@ -57,6 +64,20 @@
 "player": "Dejounte Murray",
 "status": "Out",
 "reason": "Injury/Illness - Left Ankle Sprain",
+"matchup": "DEN@NOP"
+},
+{
+"team": "NOP",
+"player": "Jaron Pierre Jr.",
+"status": "Probable",
+"reason": "G League - Two- Way",
+"matchup": "DEN@NOP"
+},
+{
+"team": "NOP",
+"player": "Julian Reese",
+"status": "Questionable",
+"reason": "G League - Two- Way",
 "matchup": "DEN@NOP"
 },
 {
@@ -112,7 +133,7 @@
 "team": "CLE",
 "player": "Jarrett Allen",
 "status": "Questionable",
-"reason": "Injury/Illness - Right Knee Injury",
+"reason": "Injury/Illness - Right Knee Injury Management",
 "matchup": "DAL@CLE"
 },
 {
@@ -203,7 +224,49 @@
 "team": "BKN",
 "player": "Nolan Traore",
 "status": "Probable",
-"reason": "Injury/Illness - Right Calf Tightness / Soreness",
+"reason": "Injury/Illness - Right Calf Tightness /",
+"matchup": "BKN@MEM"
+},
+{
+"team": "MEM",
+"player": "Zach Edey",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Ankle Injury Management",
+"matchup": "BKN@MEM"
+},
+{
+"team": "MEM",
+"player": "Jerami Grant",
+"status": "Questionable",
+"reason": "Injury/Illness - Head Injury",
+"matchup": "BKN@MEM"
+},
+{
+"team": "MEM",
+"player": "Ty Jerome",
+"status": "Out",
+"reason": "Injury/Illness - Right Hip Soreness",
+"matchup": "BKN@MEM"
+},
+{
+"team": "MEM",
+"player": "Scotty Pippen Jr.",
+"status": "Out",
+"reason": "Injury/Illness - Lumbar Disc Herniation",
+"matchup": "BKN@MEM"
+},
+{
+"team": "MEM",
+"player": "Quinten Post",
+"status": "Out",
+"reason": "Injury/Illness - Concussion Protocol",
+"matchup": "BKN@MEM"
+},
+{
+"team": "MEM",
+"player": "Richie Saunders",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Surgery",
 "matchup": "BKN@MEM"
 },
 {
