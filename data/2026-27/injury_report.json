@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_10_45AM.pdf",
-"report_time": "2026-11-14 10:45:00",
-"fetched_at": "2026-11-14T15:50:07.092233+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_01_30PM.pdf",
+"report_time": "2026-11-14 13:30:00",
+"fetched_at": "2026-11-14T18:43:36.088946+00:00",
 "rows": [
 {
 "team": "DEN",
@@ -32,6 +32,41 @@
 "matchup": "DEN@NOP"
 },
 {
+"team": "NOP",
+"player": "Bryce McGowens",
+"status": "Out",
+"reason": "Injury/Illness - Left Elbow Infection",
+"matchup": "DEN@NOP"
+},
+{
+"team": "NOP",
+"player": "Yves Missi",
+"status": "Probable",
+"reason": "Injury/Illness - Left Knee Contusion / Bone Bruise",
+"matchup": "DEN@NOP"
+},
+{
+"team": "NOP",
+"player": "Trey Murphy III",
+"status": "Out",
+"reason": "Injury/Illness - Bilateral Patellar Tendinopathy",
+"matchup": "DEN@NOP"
+},
+{
+"team": "NOP",
+"player": "Dejounte Murray",
+"status": "Out",
+"reason": "Injury/Illness - Left Ankle Sprain",
+"matchup": "DEN@NOP"
+},
+{
+"team": "NOP",
+"player": "Trendon Watford",
+"status": "Out",
+"reason": "Injury/Illness - Right Ankle Sprain",
+"matchup": "DEN@NOP"
+},
+{
 "team": "DAL",
 "player": "Tarik Biberovic",
 "status": "Out",
@@ -41,7 +76,7 @@
 {
 "team": "DAL",
 "player": "Max Christie",
-"status": "Questionable",
+"status": "Doubtful",
 "reason": "Injury/Illness - Left Ankle Sprain",
 "matchup": "DAL@CLE"
 },
@@ -74,6 +109,62 @@
 "matchup": "DAL@CLE"
 },
 {
+"team": "CLE",
+"player": "Jarrett Allen",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Knee Injury",
+"matchup": "DAL@CLE"
+},
+{
+"team": "CLE",
+"player": "James Harden",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Lower Leg/Calf Tightness",
+"matchup": "DAL@CLE"
+},
+{
+"team": "CLE",
+"player": "Sam Merrill",
+"status": "Out",
+"reason": "Injury/Illness - Right Elbow Injury Management",
+"matchup": "DAL@CLE"
+},
+{
+"team": "CLE",
+"player": "Donovan Mitchell",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Knee Contusion/Injury Management",
+"matchup": "DAL@CLE"
+},
+{
+"team": "CLE",
+"player": "Evan Mobley",
+"status": "Out",
+"reason": "Injury/Illness - Left Great Toe Sprain",
+"matchup": "DAL@CLE"
+},
+{
+"team": "CLE",
+"player": "Nae'Qwan Tomlin",
+"status": "Out",
+"reason": "Injury/Illness - Low Back Stress Reaction",
+"matchup": "DAL@CLE"
+},
+{
+"team": "CLE",
+"player": "Jr., Ernest Udeh",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "DAL@CLE"
+},
+{
+"team": "CLE",
+"player": "Peyton Watson",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Hamstring Injury Management",
+"matchup": "DAL@CLE"
+},
+{
 "team": "BKN",
 "player": "Tyler Bilodeau",
 "status": "Out",
@@ -83,7 +174,7 @@
 {
 "team": "BKN",
 "player": "Mikel Brown Jr.",
-"status": "Questionable",
+"status": "Probable",
 "reason": "Injury/Illness - Illness",
 "matchup": "BKN@MEM"
 },
@@ -116,6 +207,55 @@
 "matchup": "BKN@MEM"
 },
 {
+"team": "CHI",
+"player": "Tobe Awaka",
+"status": "Out",
+"reason": "Injury/Illness - Disc Irritation",
+"matchup": "CHI@MIN"
+},
+{
+"team": "CHI",
+"player": "Nic Claxton",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Hamstring Injury Management",
+"matchup": "CHI@MIN"
+},
+{
+"team": "CHI",
+"player": "Norman Powell",
+"status": "Questionable",
+"reason": "Injury/Illness - Low Back Injury Management",
+"matchup": "CHI@MIN"
+},
+{
+"team": "CHI",
+"player": "Jaylin Sellers",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "CHI@MIN"
+},
+{
+"team": "CHI",
+"player": "Jalen Smith",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Finger Sprain",
+"matchup": "CHI@MIN"
+},
+{
+"team": "CHI",
+"player": "Dailyn Swain",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "CHI@MIN"
+},
+{
+"team": "CHI",
+"player": "Caleb Wilson",
+"status": "Out",
+"reason": "Injury/Illness - Right Metacarpal Fracture",
+"matchup": "CHI@MIN"
+},
+{
 "team": "MIN",
 "player": "Joan Beringer",
 "status": "Available",
@@ -146,7 +286,7 @@
 {
 "team": "DET",
 "player": "Elijah Harkless",
-"status": "Questionable",
+"status": "Available",
 "reason": "G League - Two- Way",
 "matchup": "DET@MIA"
 },
@@ -160,7 +300,7 @@
 {
 "team": "DET",
 "player": "Isaac Jones",
-"status": "Questionable",
+"status": "Available",
 "reason": "G League - Two- Way",
 "matchup": "DET@MIA"
 },
@@ -183,6 +323,34 @@
 "player": "Ugonna Onyenso",
 "status": "Out",
 "reason": "G League - Two- Way",
+"matchup": "DET@MIA"
+},
+{
+"team": "MIA",
+"player": "Giannis Antetokounmpo",
+"status": "Probable",
+"reason": "Injury/Illness - Right Wrist Sprain",
+"matchup": "DET@MIA"
+},
+{
+"team": "MIA",
+"player": "Vladislav Goldin",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "DET@MIA"
+},
+{
+"team": "MIA",
+"player": "Pelle Larsson",
+"status": "Doubtful",
+"reason": "Injury/Illness - Illness",
+"matchup": "DET@MIA"
+},
+{
+"team": "MIA",
+"player": "Klay Thompson",
+"status": "Probable",
+"reason": "Injury/Illness - Left Ankle Sprain",
 "matchup": "DET@MIA"
 }
 ]
