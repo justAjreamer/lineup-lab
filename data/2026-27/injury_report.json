@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-13_04_30PM.pdf",
-"report_time": "2026-11-13 16:30:00",
-"fetched_at": "2026-11-13T21:33:56.844738+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-13_07_45PM.pdf",
+"report_time": "2026-11-13 19:45:00",
+"fetched_at": "2026-11-14T00:59:45.916941+00:00",
 "rows": [
 {
 "team": "ORL",
@@ -13,14 +13,14 @@
 {
 "team": "ORL",
 "player": "Jamal Cain",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Left Shoulder Contusion",
 "matchup": "MIL@ORL"
 },
 {
 "team": "ORL",
 "player": "Tristan da Silva",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Left Calf Strain",
 "matchup": "MIL@ORL"
 },
@@ -48,7 +48,7 @@
 {
 "team": "ORL",
 "player": "Jalen Suggs",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Knee Contusion / Bone Bruise",
 "matchup": "MIL@ORL"
 },
@@ -69,14 +69,14 @@
 {
 "team": "IND",
 "player": "T.J. McConnell",
-"status": "Probable",
+"status": "Available",
 "reason": "Injury/Illness - Right Hamstring Strain",
 "matchup": "NYK@IND"
 },
 {
 "team": "IND",
 "player": "Aaron Nesmith",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Knee Soreness",
 "matchup": "NYK@IND"
 },
@@ -90,14 +90,14 @@
 {
 "team": "ATL",
 "player": "RayJ Dennis",
-"status": "Questionable",
+"status": "Available",
 "reason": "G League - Two- Way",
 "matchup": "ATL@CHI"
 },
 {
 "team": "ATL",
 "player": "Kingston Flemings",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Lumbar Spasm",
 "matchup": "ATL@CHI"
 },
@@ -153,8 +153,8 @@
 {
 "team": "CHI",
 "player": "Norman Powell",
-"status": "Questionable",
-"reason": "Injury/Illness - Low Back Spasms",
+"status": "Available",
+"reason": "-",
 "matchup": "ATL@CHI"
 },
 {
@@ -167,7 +167,7 @@
 {
 "team": "CHI",
 "player": "Dailyn Swain",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Right Disc Irritation",
 "matchup": "ATL@CHI"
 },
@@ -230,14 +230,14 @@
 {
 "team": "MIA",
 "player": "Pelle Larsson",
-"status": "Doubtful",
+"status": "Out",
 "reason": "Injury/Illness - Illness",
 "matchup": "CLE@MIA"
 },
 {
 "team": "MIA",
 "player": "Klay Thompson",
-"status": "Probable",
+"status": "Out",
 "reason": "Injury/Illness - Left Ankle Soreness",
 "matchup": "CLE@MIA"
 },
@@ -293,7 +293,7 @@
 {
 "team": "NOP",
 "player": "Bennedict Mathurin",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Thumb Sprain",
 "matchup": "MEM@NOP"
 },
@@ -639,6 +639,188 @@
 "status": "Out",
 "reason": "Injury/Illness - Right Lisfranc Surgery",
 "matchup": "OKC@LAC"
+},
+{
+"team": "DEN",
+"player": "DaRon Holmes II",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "DEN@NOP"
+},
+{
+"team": "DEN",
+"player": "Ryan Nembhard",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "DEN@NOP"
+},
+{
+"team": "DEN",
+"player": "Julian Strawther",
+"status": "Out",
+"reason": "Injury/Illness - Left Knee Sprain",
+"matchup": "DEN@NOP"
+},
+{
+"team": "DEN",
+"player": "Cam Whitmore",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "DEN@NOP"
+},
+{
+"team": "DAL",
+"player": "Tarik Biberovic",
+"status": "Out",
+"reason": "Injury/Illness - Right Heel Bursitis",
+"matchup": "DAL@CLE"
+},
+{
+"team": "DAL",
+"player": "Max Christie",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Ankle Sprain",
+"matchup": "DAL@CLE"
+},
+{
+"team": "DAL",
+"player": "Sergio de Larrea",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Sprain",
+"matchup": "DAL@CLE"
+},
+{
+"team": "DAL",
+"player": "Morez Johnson Jr.",
+"status": "Probable",
+"reason": "Injury/Illness - Left Shin / Tibia Contusion",
+"matchup": "DAL@CLE"
+},
+{
+"team": "DAL",
+"player": "Dereck Lively II",
+"status": "Out",
+"reason": "Injury/Illness - Right Foot Surgery",
+"matchup": "DAL@CLE"
+},
+{
+"team": "DAL",
+"player": "Caleb Martin",
+"status": "Available",
+"reason": "Injury/Illness - Right Thumb Splint",
+"matchup": "DAL@CLE"
+},
+{
+"team": "BKN",
+"player": "Tyler Bilodeau",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "BKN@MEM"
+},
+{
+"team": "BKN",
+"player": "Mikel Brown Jr.",
+"status": "Questionable",
+"reason": "Injury/Illness - Illness",
+"matchup": "BKN@MEM"
+},
+{
+"team": "BKN",
+"player": "Joshua Jefferson",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "BKN@MEM"
+},
+{
+"team": "BKN",
+"player": "Grant Nelson",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "BKN@MEM"
+},
+{
+"team": "BKN",
+"player": "Ben Saraf",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "BKN@MEM"
+},
+{
+"team": "BKN",
+"player": "Nolan Traore",
+"status": "Probable",
+"reason": "Injury/Illness - Right Calf Tightness / Soreness",
+"matchup": "BKN@MEM"
+},
+{
+"team": "MIN",
+"player": "Joan Beringer",
+"status": "Available",
+"reason": "Injury/Illness - Face Mask",
+"matchup": "CHI@MIN"
+},
+{
+"team": "MIN",
+"player": "Donte DiVincenzo",
+"status": "Out",
+"reason": "Injury/Illness - Right Achilles Tendon Repair / Surgery",
+"matchup": "CHI@MIN"
+},
+{
+"team": "MIN",
+"player": "Anthony Edwards",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Arthroscopy",
+"matchup": "CHI@MIN"
+},
+{
+"team": "DET",
+"player": "Jalen Duren",
+"status": "Out",
+"reason": "Injury/Illness - Right Hamstring Strain",
+"matchup": "DET@MIA"
+},
+{
+"team": "DET",
+"player": "Elijah Harkless",
+"status": "Questionable",
+"reason": "G League - Two- Way",
+"matchup": "DET@MIA"
+},
+{
+"team": "DET",
+"player": "Isaiah Joe",
+"status": "Out",
+"reason": "Injury/Illness - Right Hip Contusion",
+"matchup": "DET@MIA"
+},
+{
+"team": "DET",
+"player": "Isaac Jones",
+"status": "Questionable",
+"reason": "G League - Two- Way",
+"matchup": "DET@MIA"
+},
+{
+"team": "DET",
+"player": "Chaz Lanier",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "DET@MIA"
+},
+{
+"team": "DET",
+"player": "Ebuka Okorie",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "DET@MIA"
+},
+{
+"team": "DET",
+"player": "Ugonna Onyenso",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "DET@MIA"
 }
 ]
 }
