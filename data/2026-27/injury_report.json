@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-15_11_15AM.pdf",
-"report_time": "2026-11-15 11:15:00",
-"fetched_at": "2026-11-15T16:22:45.629993+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-15_02_15PM.pdf",
+"report_time": "2026-11-15 14:15:00",
+"fetched_at": "2026-11-15T19:22:11.944840+00:00",
 "rows": [
 {
 "team": "IND",
@@ -20,21 +20,21 @@
 {
 "team": "IND",
 "player": "T.J. McConnell",
-"status": "Probable",
+"status": "Available",
 "reason": "Injury/Illness - Right Hamstring Strain",
 "matchup": "IND@PHI"
 },
 {
 "team": "IND",
 "player": "Andrew Nembhard",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Hip Soreness / Tightness",
 "matchup": "IND@PHI"
 },
 {
 "team": "IND",
 "player": "Aaron Nesmith",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Left Hand Sprain",
 "matchup": "IND@PHI"
 },
@@ -173,6 +173,13 @@
 },
 {
 "team": "LAC",
+"player": "Nick Martinelli",
+"status": "Questionable",
+"reason": "G League - Two- Way",
+"matchup": "CHA@LAC"
+},
+{
+"team": "LAC",
 "player": "Jordan Miller",
 "status": "Out",
 "reason": "Injury/Illness - Left Rotator Cuff Surgery",
@@ -190,6 +197,13 @@
 "player": "Maliq Brown",
 "status": "Out",
 "reason": "G League - Two- Way",
+"matchup": "SAS@UTA"
+},
+{
+"team": "SAS",
+"player": "De'Aaron Fox",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Hip Tightness",
 "matchup": "SAS@UTA"
 },
 {
@@ -263,6 +277,62 @@
 "matchup": "SAS@UTA"
 },
 {
+"team": "DAL",
+"player": "Santi Aldama",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Ankle Sprain",
+"matchup": "DAL@BOS"
+},
+{
+"team": "DAL",
+"player": "Tarik Biberovic",
+"status": "Out",
+"reason": "Injury/Illness - Right Heel Bursitis",
+"matchup": "DAL@BOS"
+},
+{
+"team": "DAL",
+"player": "Max Christie",
+"status": "Doubtful",
+"reason": "Injury/Illness - Left Ankle Sprain",
+"matchup": "DAL@BOS"
+},
+{
+"team": "DAL",
+"player": "Sergio de Larrea",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Sprain",
+"matchup": "DAL@BOS"
+},
+{
+"team": "DAL",
+"player": "Daniel Gafford",
+"status": "Probable",
+"reason": "Injury/Illness - Right Shoulder Stinger",
+"matchup": "DAL@BOS"
+},
+{
+"team": "DAL",
+"player": "Kyrie Irving",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Knee Injury Management",
+"matchup": "DAL@BOS"
+},
+{
+"team": "DAL",
+"player": "Dereck Lively II",
+"status": "Out",
+"reason": "Injury/Illness - Right Foot Surgery",
+"matchup": "DAL@BOS"
+},
+{
+"team": "DAL",
+"player": "Caleb Martin",
+"status": "Available",
+"reason": "Injury/Illness - Right Thumb Splint",
+"matchup": "DAL@BOS"
+},
+{
 "team": "BOS",
 "player": "Devin Carter",
 "status": "Questionable",
@@ -328,7 +398,7 @@
 {
 "team": "HOU",
 "player": "Steven Adams",
-"status": "Probable",
+"status": "Available",
 "reason": "Injury/Illness - Right Soleus Strain",
 "matchup": "HOU@WAS"
 },
@@ -447,8 +517,8 @@
 {
 "team": "ATL",
 "player": "Jock Landale",
-"status": "Available",
-"reason": "Injury/Illness - Face Mask",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Hip Inflammation",
 "matchup": "ATL@MIL"
 },
 {
@@ -498,6 +568,13 @@
 "player": "Pete Nance",
 "status": "Out",
 "reason": "G League - Two- Way",
+"matchup": "ATL@MIL"
+},
+{
+"team": "MIL",
+"player": "Ryan Rollins",
+"status": "Questionable",
+"reason": "Injury/Illness - Illness",
 "matchup": "ATL@MIL"
 },
 {
@@ -590,6 +667,34 @@
 "status": "Out",
 "reason": "Injury/Illness - Right Achilles Tendon Repair / Surgery",
 "matchup": "OKC@SAC"
+},
+{
+"team": "ORL",
+"player": "Paolo Banchero",
+"status": "Out",
+"reason": "Injury/Illness - Right High Ankle Sprain",
+"matchup": "ORL@BOS"
+},
+{
+"team": "ORL",
+"player": "Jonathan Isaac",
+"status": "Out",
+"reason": "Injury/Illness - Left Knee Injury Management",
+"matchup": "ORL@BOS"
+},
+{
+"team": "ORL",
+"player": "Izaiyah Nelson",
+"status": "Out",
+"reason": "Injury/Illness - Left Ankle Injury Recovery",
+"matchup": "ORL@BOS"
+},
+{
+"team": "ORL",
+"player": "Noah Penda",
+"status": "Out",
+"reason": "Injury/Illness - Right Partially Torn Hamstring",
+"matchup": "ORL@BOS"
 }
 ]
 }
