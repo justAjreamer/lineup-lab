@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-15_02_15PM.pdf",
-"report_time": "2026-11-15 14:15:00",
-"fetched_at": "2026-11-15T19:22:11.944840+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-15_03_15PM.pdf",
+"report_time": "2026-11-15 15:15:00",
+"fetched_at": "2026-11-15T20:31:38.089404+00:00",
 "rows": [
 {
 "team": "IND",
@@ -90,7 +90,7 @@
 {
 "team": "LAL",
 "player": "Bronny James",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Illness",
 "matchup": "LAL@PHX"
 },
@@ -104,15 +104,22 @@
 {
 "team": "LAL",
 "player": "Collin Sexton",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Orbital Laceration",
 "matchup": "LAL@PHX"
 },
 {
 "team": "LAL",
 "player": "Adou Thiero",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Left Ankle Sprain",
+"matchup": "LAL@PHX"
+},
+{
+"team": "PHX",
+"player": "Drew Timme",
+"status": "Out",
+"reason": "G League - Two- Way",
 "matchup": "LAL@PHX"
 },
 {
@@ -174,7 +181,7 @@
 {
 "team": "LAC",
 "player": "Nick Martinelli",
-"status": "Questionable",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "CHA@LAC"
 },
@@ -447,7 +454,7 @@
 {
 "team": "WAS",
 "player": "Bub Carrington",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Chest / Sternum Contusion",
 "matchup": "HOU@WAS"
 },
@@ -475,7 +482,7 @@
 {
 "team": "WAS",
 "player": "Alex Sarr",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Illness",
 "matchup": "HOU@WAS"
 },
@@ -546,7 +553,7 @@
 "team": "MIL",
 "player": "Ousmane Dieng",
 "status": "Out",
-"reason": "Injury/Illness - Left Finger Sprain",
+"reason": "Injury/Illness - Left Finger Fracture",
 "matchup": "ATL@MIL"
 },
 {
@@ -643,8 +650,8 @@
 {
 "team": "SAC",
 "player": "Keegan Murray",
-"status": "Questionable",
-"reason": "Injury/Illness - Illness",
+"status": "Available",
+"reason": "-",
 "matchup": "OKC@SAC"
 },
 {
