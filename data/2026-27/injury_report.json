@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_07_00PM.pdf",
-"report_time": "2026-11-14 19:00:00",
-"fetched_at": "2026-11-15T00:10:56.706591+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-14_08_00PM.pdf",
+"report_time": "2026-11-14 20:00:00",
+"fetched_at": "2026-11-15T01:10:05.957625+00:00",
 "rows": [
 {
 "team": "DEN",
@@ -223,7 +223,7 @@
 {
 "team": "BKN",
 "player": "Michael Porter Jr.",
-"status": "Questionable",
+"status": "Out",
 "reason": "Personal Reasons",
 "matchup": "BKN@MEM"
 },
@@ -244,14 +244,14 @@
 {
 "team": "MEM",
 "player": "Zach Edey",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Ankle Injury Management",
 "matchup": "BKN@MEM"
 },
 {
 "team": "MEM",
 "player": "Jerami Grant",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Head Injury",
 "matchup": "BKN@MEM"
 },
@@ -453,6 +453,13 @@
 },
 {
 "team": "IND",
+"player": "Andrew Nembhard",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Hip Soreness /",
+"matchup": "IND@PHI"
+},
+{
+"team": "IND",
 "player": "Aaron Nesmith",
 "status": "Questionable",
 "reason": "Injury/Illness - Left Hand Sprain",
@@ -492,6 +499,118 @@
 "status": "Out",
 "reason": "Injury/Illness - Right Achilles Tendon Rupture / Tear",
 "matchup": "IND@PHI"
+},
+{
+"team": "LAL",
+"player": "Cameron Carr",
+"status": "Out",
+"reason": "Injury/Illness - Illness",
+"matchup": "LAL@PHX"
+},
+{
+"team": "LAL",
+"player": "Quentin Grimes",
+"status": "Available",
+"reason": "Injury/Illness - Right Finger Splint",
+"matchup": "LAL@PHX"
+},
+{
+"team": "LAL",
+"player": "Bronny James",
+"status": "Questionable",
+"reason": "Injury/Illness - Illness",
+"matchup": "LAL@PHX"
+},
+{
+"team": "LAL",
+"player": "Austin Reaves",
+"status": "Out",
+"reason": "Injury/Illness - Left Heel Contusion / Bone Bruise",
+"matchup": "LAL@PHX"
+},
+{
+"team": "LAL",
+"player": "Collin Sexton",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Orbital Laceration",
+"matchup": "LAL@PHX"
+},
+{
+"team": "LAL",
+"player": "Adou Thiero",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Ankle Sprain",
+"matchup": "LAL@PHX"
+},
+{
+"team": "PHX",
+"player": "Mark Williams",
+"status": "Out",
+"reason": "Injury/Illness - Left Shoulder Surgery",
+"matchup": "LAL@PHX"
+},
+{
+"team": "CHA",
+"player": "Michael Ajayi",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "CHA@LAC"
+},
+{
+"team": "CHA",
+"player": "Kylan Boswell",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "CHA@LAC"
+},
+{
+"team": "CHA",
+"player": "Kon Knueppel",
+"status": "Out",
+"reason": "Injury/Illness - Left Hamstring Strain",
+"matchup": "CHA@LAC"
+},
+{
+"team": "CHA",
+"player": "Dennis Schroder",
+"status": "Out",
+"reason": "Injury/Illness - Left Hamstring Strain",
+"matchup": "CHA@LAC"
+},
+{
+"team": "CHA",
+"player": "Hannes Steinbach",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "CHA@LAC"
+},
+{
+"team": "SAS",
+"player": "Maliq Brown",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "SAS@UTA"
+},
+{
+"team": "SAS",
+"player": "Ja'Kobi Gillespie",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "SAS@UTA"
+},
+{
+"team": "SAS",
+"player": "Tobias Harris",
+"status": "Out",
+"reason": "Injury/Illness - Left Calf Strain",
+"matchup": "SAS@UTA"
+},
+{
+"team": "SAS",
+"player": "Jayden Quaintance",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Surgery",
+"matchup": "SAS@UTA"
 },
 {
 "team": "UTA",
@@ -658,7 +777,7 @@
 "team": "WAS",
 "player": "Bub Carrington",
 "status": "Questionable",
-"reason": "Injury/Illness - Chest / Sternum",
+"reason": "Injury/Illness - Chest / Sternum Contusion",
 "matchup": "HOU@WAS"
 },
 {
@@ -786,6 +905,90 @@
 "status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "ATL@MIL"
+},
+{
+"team": "OKC",
+"player": "Chet Holmgren",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee/ Injury Recovery",
+"matchup": "OKC@SAC"
+},
+{
+"team": "OKC",
+"player": "Ajay Mitchell",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Ankle Sprain",
+"matchup": "OKC@SAC"
+},
+{
+"team": "OKC",
+"player": "Thomas Sorber",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Surgery",
+"matchup": "OKC@SAC"
+},
+{
+"team": "OKC",
+"player": "Cason Wallace",
+"status": "Out",
+"reason": "Injury/Illness - Left Shoulder Surgery",
+"matchup": "OKC@SAC"
+},
+{
+"team": "OKC",
+"player": "Jalen Williams",
+"status": "Out",
+"reason": "Injury/Illness - Left Ankle Surgery",
+"matchup": "OKC@SAC"
+},
+{
+"team": "OKC",
+"player": "Jaylin Williams",
+"status": "Out",
+"reason": "Injury/Illness - Low Back Spasms",
+"matchup": "OKC@SAC"
+},
+{
+"team": "SAC",
+"player": "Precious Achiuwa",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Ankle Soreness",
+"matchup": "OKC@SAC"
+},
+{
+"team": "SAC",
+"player": "Jonathan Mogbo",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "OKC@SAC"
+},
+{
+"team": "SAC",
+"player": "Keegan Murray",
+"status": "Questionable",
+"reason": "Injury/Illness - Illness",
+"matchup": "OKC@SAC"
+},
+{
+"team": "SAC",
+"player": "Sean Pedulla",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "OKC@SAC"
+},
+{
+"team": "SAC",
+"player": "Maxime Raynaud",
+"status": "Out",
+"reason": "Injury/Illness - Right Patella Subluxation",
+"matchup": "OKC@SAC"
+},
+{
+"team": "SAC",
+"player": "Ben Simmons",
+"status": "Out",
+"reason": "Injury/Illness - Right Achilles Tendon Repair / Surgery",
+"matchup": "OKC@SAC"
 }
 ]
 }
