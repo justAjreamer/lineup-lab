@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-16_05_45PM.pdf",
-"report_time": "2026-11-16 17:45:00",
-"fetched_at": "2026-11-16T22:52:29.128464+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-16_06_45PM.pdf",
+"report_time": "2026-11-16 18:45:00",
+"fetched_at": "2026-11-16T23:48:59.539587+00:00",
 "rows": [
 {
 "team": "CHI",
@@ -90,7 +90,7 @@
 {
 "team": "MEM",
 "player": "Zach Edey",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Left Ankle Injury Management",
 "matchup": "MEM@WAS"
 },
@@ -118,7 +118,7 @@
 {
 "team": "MEM",
 "player": "Quinten Post",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Concussion Protocol",
 "matchup": "MEM@WAS"
 },
@@ -160,7 +160,7 @@
 {
 "team": "WAS",
 "player": "Felix Okpara",
-"status": "Questionable",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "MEM@WAS"
 },
@@ -251,7 +251,7 @@
 {
 "team": "HOU",
 "player": "Amen Thompson",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Knee Soreness",
 "matchup": "HOU@MIA"
 },
