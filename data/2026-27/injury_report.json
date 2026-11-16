@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-15_07_00PM.pdf",
-"report_time": "2026-11-15 19:00:00",
-"fetched_at": "2026-11-16T00:18:43.546350+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-15_08_00PM.pdf",
+"report_time": "2026-11-15 20:00:00",
+"fetched_at": "2026-11-16T01:15:04.020518+00:00",
 "rows": [
 {
 "team": "IND",
@@ -601,7 +601,7 @@
 {
 "team": "OKC",
 "player": "Ajay Mitchell",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Left Ankle Sprain",
 "matchup": "OKC@SAC"
 },
@@ -636,8 +636,22 @@
 {
 "team": "SAC",
 "player": "Precious Achiuwa",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Ankle Soreness",
+"matchup": "OKC@SAC"
+},
+{
+"team": "SAC",
+"player": "De'Andre Hunter",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Hip Soreness / Tightness",
+"matchup": "OKC@SAC"
+},
+{
+"team": "SAC",
+"player": "Zach LaVine",
+"status": "Out",
+"reason": "Injury/Illness - Illness",
 "matchup": "OKC@SAC"
 },
 {
@@ -707,7 +721,7 @@
 "team": "CHI",
 "player": "Caleb Wilson",
 "status": "Out",
-"reason": "Injury/Illness - Right Metacarpal",
+"reason": "Injury/Illness - Right Metacarpal Fracture",
 "matchup": "CHI@CLE"
 },
 {
