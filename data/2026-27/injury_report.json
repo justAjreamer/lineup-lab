@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-16_06_45PM.pdf",
-"report_time": "2026-11-16 18:45:00",
-"fetched_at": "2026-11-16T23:48:59.539587+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-16_10_00PM.pdf",
+"report_time": "2026-11-16 22:00:00",
+"fetched_at": "2026-11-17T03:06:17.496733+00:00",
 "rows": [
 {
 "team": "CHI",
@@ -27,8 +27,8 @@
 {
 "team": "CHI",
 "player": "Jalen Smith",
-"status": "Questionable",
-"reason": "Injury/Illness - Left Finger Sprain",
+"status": "Available",
+"reason": "-",
 "matchup": "CHI@CLE"
 },
 {
@@ -300,7 +300,7 @@
 {
 "team": "PHI",
 "player": "Joel Embiid",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Foot Plantar Fascia Injury Management",
 "matchup": "PHI@BKN"
 },
@@ -384,7 +384,7 @@
 {
 "team": "GSW",
 "player": "Gui Santos",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Ankle Inflammation",
 "matchup": "GSW@NOP"
 },
@@ -510,8 +510,15 @@
 {
 "team": "PHX",
 "player": "Ryan Dunn",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Thumb Soreness",
+"matchup": "PHX@DEN"
+},
+{
+"team": "PHX",
+"player": "Drew Timme",
+"status": "Out",
+"reason": "G League - Two- Way",
 "matchup": "PHX@DEN"
 },
 {
@@ -553,7 +560,7 @@
 "team": "TOR",
 "player": "Nate Bittle",
 "status": "Out",
-"reason": "Injury/Illness - Right Foot Avulsion Fracture",
+"reason": "Injury/Illness - Right Foot Avulsion",
 "matchup": "NYK@TOR"
 },
 {
@@ -653,6 +660,132 @@
 "status": "Out",
 "reason": "Injury/Illness - Right Knee Surgery",
 "matchup": "DET@SAS"
+},
+{
+"team": "UTA",
+"player": "Kobe Bufkin",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "UTA@LAC"
+},
+{
+"team": "UTA",
+"player": "Jaxson Hayes",
+"status": "Out",
+"reason": "Injury/Illness - Left Knee Strain",
+"matchup": "UTA@LAC"
+},
+{
+"team": "UTA",
+"player": "Harrison Ingram",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "UTA@LAC"
+},
+{
+"team": "UTA",
+"player": "Jaren Jackson Jr.",
+"status": "Out",
+"reason": "Injury/Illness - Right MCL Tear",
+"matchup": "UTA@LAC"
+},
+{
+"team": "UTA",
+"player": "Lauri Markkanen",
+"status": "Out",
+"reason": "Injury/Illness - Right Hand Fracture",
+"matchup": "UTA@LAC"
+},
+{
+"team": "UTA",
+"player": "Jusuf Nurkic",
+"status": "Out",
+"reason": "Injury/Illness - Right Right Foot; 2nd Plantar Plate Tear",
+"matchup": "UTA@LAC"
+},
+{
+"team": "LAC",
+"player": "Bradley Beal",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Injury Management",
+"matchup": "UTA@LAC"
+},
+{
+"team": "LAC",
+"player": "Brandon Ingram",
+"status": "Out",
+"reason": "Injury/Illness - Right Heel Surgery",
+"matchup": "UTA@LAC"
+},
+{
+"team": "LAC",
+"player": "Jordan Miller",
+"status": "Out",
+"reason": "Injury/Illness - Left Rotator Cuff Surgery",
+"matchup": "UTA@LAC"
+},
+{
+"team": "LAC",
+"player": "Yanic Konan Niederhauser",
+"status": "Out",
+"reason": "Injury/Illness - Right Lisfranc Surgery",
+"matchup": "UTA@LAC"
+},
+{
+"team": "CHA",
+"player": "Michael Ajayi",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "CHA@LAL"
+},
+{
+"team": "CHA",
+"player": "Kylan Boswell",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "CHA@LAL"
+},
+{
+"team": "CHA",
+"player": "Kon Knueppel",
+"status": "Out",
+"reason": "Injury/Illness - Left Hamstring Strain",
+"matchup": "CHA@LAL"
+},
+{
+"team": "CHA",
+"player": "Dennis Schroder",
+"status": "Out",
+"reason": "Injury/Illness - Left Hamstring Strain",
+"matchup": "CHA@LAL"
+},
+{
+"team": "CHA",
+"player": "Hannes Steinbach",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "CHA@LAL"
+},
+{
+"team": "LAL",
+"player": "Quentin Grimes",
+"status": "Available",
+"reason": "Injury/Illness - Right Finger Splint",
+"matchup": "CHA@LAL"
+},
+{
+"team": "LAL",
+"player": "Walker Kessler",
+"status": "Out",
+"reason": "Injury/Illness - Right Lower Leg Soreness",
+"matchup": "CHA@LAL"
+},
+{
+"team": "LAL",
+"player": "Austin Reaves",
+"status": "Out",
+"reason": "Injury/Illness - Left Heel Contusion /",
+"matchup": "CHA@LAL"
 }
 ]
 }
