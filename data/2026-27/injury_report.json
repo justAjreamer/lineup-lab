@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_04_15PM.pdf",
-"report_time": "2026-11-18 16:15:00",
-"fetched_at": "2026-11-18T21:25:02.080416+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_05_30PM.pdf",
+"report_time": "2026-11-18 17:30:00",
+"fetched_at": "2026-11-18T22:40:53.190398+00:00",
 "rows": [
 {
 "team": "HOU",
@@ -55,7 +55,7 @@
 {
 "team": "IND",
 "player": "Andrew Nembhard",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Hip Soreness / Tightness",
 "matchup": "HOU@IND"
 },
