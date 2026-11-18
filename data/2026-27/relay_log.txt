@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-18T02:34:02.242628+00:00",
+ "fetched_at": "2026-11-18T03:00:36.438420+00:00",
  "source": "ESPN + NBA injury report",
  "errors": [],
  "new_pbp": 0,
@@ -9,4 +9,4 @@
  "ledger_games": 205,
  "schedule_games": 1206
 }
-exit=0 at 2026-11-18T02:34Z
+exit=0 at 2026-11-18T03:01Z
