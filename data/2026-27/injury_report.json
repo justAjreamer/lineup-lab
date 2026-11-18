@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-17_06_00PM.pdf",
-"report_time": "2026-11-17 18:00:00",
-"fetched_at": "2026-11-17T23:06:21.374248+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-17_09_30PM.pdf",
+"report_time": "2026-11-17 21:30:00",
+"fetched_at": "2026-11-18T02:34:02.242628+00:00",
 "rows": [
 {
 "team": "TOR",
@@ -118,7 +118,7 @@
 {
 "team": "POR",
 "player": "Deni Avdija",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Foot Inflammation / Soreness",
 "matchup": "POR@MIN"
 },
@@ -270,10 +270,24 @@
 "matchup": "UTA@LAC"
 },
 {
+"team": "LAC",
+"player": "Jalen Pickett",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "UTA@LAC"
+},
+{
 "team": "CHA",
 "player": "Michael Ajayi",
 "status": "Out",
 "reason": "G League - Two- Way",
+"matchup": "CHA@LAL"
+},
+{
+"team": "CHA",
+"player": "Grayson Allen",
+"status": "Out",
+"reason": "Injury/Illness - Concussion- like symptoms",
 "matchup": "CHA@LAL"
 },
 {
@@ -427,7 +441,7 @@
 "team": "CLE",
 "player": "Sam Merrill",
 "status": "Questionable",
-"reason": "Injury/Illness - Right Elbow Injury Management",
+"reason": "Injury/Illness - Right Elbow Injury",
 "matchup": "MEM@CLE"
 },
 {
@@ -441,7 +455,7 @@
 "team": "CLE",
 "player": "Nae'Qwan Tomlin",
 "status": "Out",
-"reason": "Injury/Illness - Low Back Stress",
+"reason": "Injury/Illness - Low Back Stress Reaction",
 "matchup": "MEM@CLE"
 },
 {
@@ -947,6 +961,97 @@
 "status": "Available",
 "reason": "Injury/Illness - Right Thumb Splint",
 "matchup": "GSW@DAL"
+},
+{
+"team": "BOS",
+"player": "Dillon Mitchell",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "BOS@DEN"
+},
+{
+"team": "BOS",
+"player": "Amari Williams",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "BOS@DEN"
+},
+{
+"team": "DEN",
+"player": "DaRon Holmes II",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "BOS@DEN"
+},
+{
+"team": "DEN",
+"player": "Ryan Nembhard",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "BOS@DEN"
+},
+{
+"team": "DEN",
+"player": "Julian Strawther",
+"status": "Out",
+"reason": "Injury/Illness - Left Knee Sprain",
+"matchup": "BOS@DEN"
+},
+{
+"team": "DEN",
+"player": "Cam Whitmore",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "BOS@DEN"
+},
+{
+"team": "PHX",
+"player": "Mark Williams",
+"status": "Out",
+"reason": "Injury/Illness - Left Shoulder Surgery",
+"matchup": "PHX@SAC"
+},
+{
+"team": "SAC",
+"player": "Precious Achiuwa",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Lower Leg",
+"matchup": "PHX@SAC"
+},
+{
+"team": "SAC",
+"player": "De'Andre Hunter",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Hip Soreness / Tightness",
+"matchup": "PHX@SAC"
+},
+{
+"team": "SAC",
+"player": "Jonathan Mogbo",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "PHX@SAC"
+},
+{
+"team": "SAC",
+"player": "Sean Pedulla",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "PHX@SAC"
+},
+{
+"team": "SAC",
+"player": "Maxime Raynaud",
+"status": "Out",
+"reason": "Injury/Illness - Right Patella Subluxation",
+"matchup": "PHX@SAC"
+},
+{
+"team": "SAC",
+"player": "Ben Simmons",
+"status": "Out",
+"reason": "Injury/Illness - Right Achilles Tendon Repair / Surgery",
+"matchup": "PHX@SAC"
 }
 ]
 }
