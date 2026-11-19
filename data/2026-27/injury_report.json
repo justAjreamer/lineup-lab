@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_08_45PM.pdf",
-"report_time": "2026-11-18 20:45:00",
-"fetched_at": "2026-11-19T01:58:23.254981+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_09_30PM.pdf",
+"report_time": "2026-11-18 21:30:00",
+"fetched_at": "2026-11-19T02:42:36.431696+00:00",
 "rows": [
 {
 "team": "HOU",
@@ -796,6 +796,27 @@
 },
 {
 "team": "PHX",
+"player": "Duop Reath",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "PHX@SAC"
+},
+{
+"team": "PHX",
+"player": "Pat Spencer",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "PHX@SAC"
+},
+{
+"team": "PHX",
+"player": "Drew Timme",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "PHX@SAC"
+},
+{
+"team": "PHX",
 "player": "Mark Williams",
 "status": "Out",
 "reason": "Injury/Illness - Left Shoulder Surgery",
@@ -805,7 +826,7 @@
 "team": "SAC",
 "player": "Precious Achiuwa",
 "status": "Available",
-"reason": "Injury/Illness - Left Lower Leg",
+"reason": "Injury/Illness - Left Lower Leg Contusion",
 "matchup": "PHX@SAC"
 },
 {
@@ -853,7 +874,7 @@
 {
 "team": "UTA",
 "player": "Jaxson Hayes",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Left Knee Strain",
 "matchup": "UTA@LAL"
 },
@@ -1008,7 +1029,7 @@
 "team": "POR",
 "player": "Deni Avdija",
 "status": "Questionable",
-"reason": "Injury/Illness - Left Foot",
+"reason": "Injury/Illness - Left Foot Inflammation / Soreness",
 "matchup": "POR@MIL"
 },
 {
