@@ -1,8 +1,99 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-19_01_15PM.pdf",
-"report_time": "2026-11-19 13:15:00",
-"fetched_at": "2026-11-19T18:18:06.043637+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-19_04_15PM.pdf",
+"report_time": "2026-11-19 16:15:00",
+"fetched_at": "2026-11-19T21:29:11.410322+00:00",
 "rows": [
+{
+"team": "GSW",
+"player": "Jimmy Butler III",
+"status": "Out",
+"reason": "Injury/Illness - Right ACL Repair / Surgery",
+"matchup": "GSW@MEM"
+},
+{
+"team": "GSW",
+"player": "LJ Cryer",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Low Back Soreness",
+"matchup": "GSW@MEM"
+},
+{
+"team": "GSW",
+"player": "Stephen Curry",
+"status": "Out",
+"reason": "Injury/Illness - Right Oblique Tear",
+"matchup": "GSW@MEM"
+},
+{
+"team": "GSW",
+"player": "Draymond Green",
+"status": "Out",
+"reason": "Injury/Illness - Right Elbow Injury Management",
+"matchup": "GSW@MEM"
+},
+{
+"team": "GSW",
+"player": "Moses Moody",
+"status": "Out",
+"reason": "Injury/Illness - Left Patellar Tendon Repair / Surgery",
+"matchup": "GSW@MEM"
+},
+{
+"team": "GSW",
+"player": "Kristaps Porzingis",
+"status": "Out",
+"reason": "Not With Team",
+"matchup": "GSW@MEM"
+},
+{
+"team": "GSW",
+"player": "Brandon Williams",
+"status": "Out",
+"reason": "Injury/Illness - Left Hamstring Strain",
+"matchup": "GSW@MEM"
+},
+{
+"team": "MEM",
+"player": "Zach Edey",
+"status": "Out",
+"reason": "Injury/Illness - Left Ankle Injury Management",
+"matchup": "GSW@MEM"
+},
+{
+"team": "MEM",
+"player": "GG Jackson",
+"status": "Out",
+"reason": "Injury/Illness - Left 5th Metatarsal Fracture",
+"matchup": "GSW@MEM"
+},
+{
+"team": "MEM",
+"player": "Ty Jerome",
+"status": "Out",
+"reason": "Injury/Illness - Right Hip Impingement",
+"matchup": "GSW@MEM"
+},
+{
+"team": "MEM",
+"player": "Scotty Pippen Jr.",
+"status": "Out",
+"reason": "Injury/Illness - Lumbar Disc Herniation",
+"matchup": "GSW@MEM"
+},
+{
+"team": "MEM",
+"player": "Richie Saunders",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Surgery",
+"matchup": "GSW@MEM"
+},
+{
+"team": "MEM",
+"player": "Isaiah Stewart",
+"status": "Questionable",
+"reason": "Injury/Illness - Illness",
+"matchup": "GSW@MEM"
+},
 {
 "team": "LAC",
 "player": "Bradley Beal",
@@ -49,7 +140,7 @@
 "team": "SAS",
 "player": "Dylan Harper",
 "status": "Out",
-"reason": "Injury/Illness - Left Hip Soreness",
+"reason": "Injury/Illness - Left Hip External Rotator Strain",
 "matchup": "LAC@SAS"
 },
 {
@@ -104,8 +195,8 @@
 {
 "team": "MIN",
 "player": "Zyon Pullin",
-"status": "Questionable",
-"reason": "Injury/Illness - Right Quadriceps Contusion",
+"status": "Available",
+"reason": "Injury/Illness - Right Quadriceps",
 "matchup": "NYK@MIN"
 },
 {
@@ -163,6 +254,153 @@
 "status": "Out",
 "reason": "Injury/Illness - Right Heel Contusion / Bone Bruise",
 "matchup": "POR@MIL"
+},
+{
+"team": "MIL",
+"player": "Ousmane Dieng",
+"status": "Out",
+"reason": "Injury/Illness - Left Finger Fracture",
+"matchup": "POR@MIL"
+},
+{
+"team": "MIL",
+"player": "Kyle Kuzma",
+"status": "Out",
+"reason": "Injury/Illness - Right Shoulder Contusion",
+"matchup": "POR@MIL"
+},
+{
+"team": "MIL",
+"player": "Myles Turner",
+"status": "Out",
+"reason": "Injury/Illness - Left Shoulder Contusion",
+"matchup": "POR@MIL"
+},
+{
+"team": "ORL",
+"player": "Paolo Banchero",
+"status": "Out",
+"reason": "Injury/Illness - Right High Ankle Sprain",
+"matchup": "ORL@BKN"
+},
+{
+"team": "ORL",
+"player": "Jonathan Isaac",
+"status": "Out",
+"reason": "Injury/Illness - Left Knee Injury Management",
+"matchup": "ORL@BKN"
+},
+{
+"team": "ORL",
+"player": "Izaiyah Nelson",
+"status": "Out",
+"reason": "Injury/Illness - Left Ankle injury recovery",
+"matchup": "ORL@BKN"
+},
+{
+"team": "ORL",
+"player": "Noah Penda",
+"status": "Out",
+"reason": "Injury/Illness - Right Partially torn hamstring",
+"matchup": "ORL@BKN"
+},
+{
+"team": "BKN",
+"player": "Grant Nelson",
+"status": "Out",
+"reason": "Injury/Illness - Right Ankle Sprain",
+"matchup": "ORL@BKN"
+},
+{
+"team": "NOP",
+"player": "Malik Dia",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "NOP@OKC"
+},
+{
+"team": "NOP",
+"player": "Bennedict Mathurin",
+"status": "Out",
+"reason": "Injury/Illness - Left Plantar Fasciitis",
+"matchup": "NOP@OKC"
+},
+{
+"team": "NOP",
+"player": "Bryce McGowens",
+"status": "Out",
+"reason": "Injury/Illness - Left Elbow Infection",
+"matchup": "NOP@OKC"
+},
+{
+"team": "NOP",
+"player": "Trey Murphy III",
+"status": "Questionable",
+"reason": "Injury/Illness - Bilateral Patellar Tendinopathy",
+"matchup": "NOP@OKC"
+},
+{
+"team": "NOP",
+"player": "Dejounte Murray",
+"status": "Out",
+"reason": "Injury/Illness - Left Ankle Sprain",
+"matchup": "NOP@OKC"
+},
+{
+"team": "NOP",
+"player": "Jaron Pierre Jr.",
+"status": "Probable",
+"reason": "G League - Two- Way",
+"matchup": "NOP@OKC"
+},
+{
+"team": "NOP",
+"player": "Julian Reese",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "NOP@OKC"
+},
+{
+"team": "NOP",
+"player": "Trendon Watford",
+"status": "Out",
+"reason": "Injury/Illness - Right Ankle Sprain",
+"matchup": "NOP@OKC"
+},
+{
+"team": "WAS",
+"player": "Reece Beekman",
+"status": "Out",
+"reason": "Injury/Illness - Right AC Joint Sprain / Separation",
+"matchup": "WAS@CHI"
+},
+{
+"team": "WAS",
+"player": "Justin Champagnie",
+"status": "Out",
+"reason": "Injury/Illness - Right Foot Surgery",
+"matchup": "WAS@CHI"
+},
+{
+"team": "WAS",
+"player": "Felix Okpara",
+"status": "Questionable",
+"reason": "G League - Two- Way",
+"matchup": "WAS@CHI"
+},
+{
+"team": "WAS",
+"player": "Tristan Vukcevic",
+"status": "Out",
+"reason": "Injury/Illness - Left Hip Impingement",
+"matchup": "WAS@CHI"
+},
+{
+"team": "WAS",
+"player": "Jamir Watkins",
+"status": "Out",
+"reason": "Injury/Illness - Left ACL Repair / Surgery",
+"matchup": "WAS@CHI"
 }
 ]
 }
