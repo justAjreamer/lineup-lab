@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_03_45PM.pdf",
-"report_time": "2026-11-20 15:45:00",
-"fetched_at": "2026-11-20T21:03:36.334380+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_05_00PM.pdf",
+"report_time": "2026-11-20 17:00:00",
+"fetched_at": "2026-11-20T22:19:28.184210+00:00",
 "rows": [
 {
 "team": "CHA",
@@ -622,7 +622,7 @@
 {
 "team": "SAC",
 "player": "Precious Achiuwa",
-"status": "Doubtful",
+"status": "Out",
 "reason": "Injury/Illness - Left Lower Leg Contusion",
 "matchup": "SAC@LAL"
 },
@@ -674,6 +674,125 @@
 "status": "Out",
 "reason": "Injury/Illness - Left Heel Contusion / Bone Bruise",
 "matchup": "SAC@LAL"
+},
+{
+"team": "MIL",
+"player": "Ousmane Dieng",
+"status": "Out",
+"reason": "Injury/Illness - Left Finger Fracture",
+"matchup": "MIL@PHI"
+},
+{
+"team": "MIL",
+"player": "Kam Jones",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "MIL@PHI"
+},
+{
+"team": "MIL",
+"player": "Bogoljub Markovic",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "MIL@PHI"
+},
+{
+"team": "PHI",
+"player": "Dominick Barlow",
+"status": "Probable",
+"reason": "Injury/Illness - Low Back Stress Reaction",
+"matchup": "MIL@PHI"
+},
+{
+"team": "PHI",
+"player": "Adem Bona",
+"status": "Out",
+"reason": "Injury/Illness - Cervical Spine Sprain",
+"matchup": "MIL@PHI"
+},
+{
+"team": "PHI",
+"player": "Jaylen Brown",
+"status": "Out",
+"reason": "Injury/Illness - Left Hamstring Strain",
+"matchup": "MIL@PHI"
+},
+{
+"team": "PHI",
+"player": "Ariel Hukporti",
+"status": "Out",
+"reason": "Injury/Illness - Right Achilles Tendon Rupture / Tear",
+"matchup": "MIL@PHI"
+},
+{
+"team": "PHI",
+"player": "Tyrese Maxey",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Foot Sprain",
+"matchup": "MIL@PHI"
+},
+{
+"team": "PHI",
+"player": "Dean Wade",
+"status": "Out",
+"reason": "Injury/Illness - Left Hamstring Tightness / Soreness",
+"matchup": "MIL@PHI"
+},
+{
+"team": "POR",
+"player": "Deni Avdija",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Foot Contusion",
+"matchup": "POR@NYK"
+},
+{
+"team": "POR",
+"player": "Branden Carlson",
+"status": "Available",
+"reason": "Injury/Illness - Face Mask",
+"matchup": "POR@NYK"
+},
+{
+"team": "POR",
+"player": "Vit Krejci",
+"status": "Out",
+"reason": "Injury/Illness - Left Ankle Fracture",
+"matchup": "POR@NYK"
+},
+{
+"team": "POR",
+"player": "Ja Morant",
+"status": "Out",
+"reason": "Injury/Illness - Left Hamstring Strain",
+"matchup": "POR@NYK"
+},
+{
+"team": "POR",
+"player": "Shaedon Sharpe",
+"status": "Out",
+"reason": "Injury/Illness - Right Meniscus Surgery",
+"matchup": "POR@NYK"
+},
+{
+"team": "POR",
+"player": "Chris Youngblood",
+"status": "Out",
+"reason": "Injury/Illness - Right Heel Contusion / Bone Bruise",
+"matchup": "POR@NYK"
+},
+{
+"team": "NYK",
+"player": "OG Anunoby",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Calf",
+"matchup": "POR@NYK"
+},
+{
+"team": "NYK",
+"player": "Jordan Clarkson",
+"status": "Out",
+"reason": "Injury/Illness - Right Plantar Fasciitis",
+"matchup": "POR@NYK"
 }
 ]
 }
