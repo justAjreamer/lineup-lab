@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_11_45AM.pdf",
-"report_time": "2026-11-21 11:45:00",
-"fetched_at": "2026-11-21T16:48:09.986365+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_03_00PM.pdf",
+"report_time": "2026-11-21 15:00:00",
+"fetched_at": "2026-11-21T20:04:50.908716+00:00",
 "rows": [
 {
 "team": "MIL",
@@ -27,7 +27,7 @@
 {
 "team": "PHI",
 "player": "Dominick Barlow",
-"status": "Probable",
+"status": "Available",
 "reason": "Injury/Illness - Low Back Stress Reaction",
 "matchup": "MIL@PHI"
 },
@@ -55,7 +55,7 @@
 {
 "team": "PHI",
 "player": "Tyrese Maxey",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Foot Sprain",
 "matchup": "MIL@PHI"
 },
@@ -216,8 +216,8 @@
 {
 "team": "DAL",
 "player": "P.J. Washington",
-"status": "Questionable",
-"reason": "Injury/Illness - Left Shoulder Impingement",
+"status": "Doubtful",
+"reason": "Injury/Illness - Illness",
 "matchup": "LAC@DAL"
 },
 {
@@ -244,7 +244,7 @@
 {
 "team": "MEM",
 "player": "Ty Jerome",
-"status": "Probable",
+"status": "Available",
 "reason": "Injury/Illness - Right Hip Impingement",
 "matchup": "MEM@MIN"
 },
@@ -299,10 +299,66 @@
 },
 {
 "team": "MIN",
+"player": "Isaiah Evans",
+"status": "Questionable",
+"reason": "Injury/Illness - Illness",
+"matchup": "MEM@MIN"
+},
+{
+"team": "MIN",
 "player": "Rocco Zikarsky",
 "status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "MEM@MIN"
+},
+{
+"team": "NOP",
+"player": "Malik Dia",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "NOP@SAS"
+},
+{
+"team": "NOP",
+"player": "Bennedict Mathurin",
+"status": "Out",
+"reason": "Injury/Illness - Left Plantar Fasciitis",
+"matchup": "NOP@SAS"
+},
+{
+"team": "NOP",
+"player": "Bryce McGowens",
+"status": "Out",
+"reason": "Injury/Illness - Left Elbow Infection",
+"matchup": "NOP@SAS"
+},
+{
+"team": "NOP",
+"player": "Trey Murphy III",
+"status": "Out",
+"reason": "Injury/Illness - Bilateral Patellar Tendinopathy Injury Maintenance",
+"matchup": "NOP@SAS"
+},
+{
+"team": "NOP",
+"player": "Dejounte Murray",
+"status": "Out",
+"reason": "Injury/Illness - Left Ankle Sprain",
+"matchup": "NOP@SAS"
+},
+{
+"team": "NOP",
+"player": "Julian Reese",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "NOP@SAS"
+},
+{
+"team": "NOP",
+"player": "Trendon Watford",
+"status": "Out",
+"reason": "Injury/Illness - Right Ankle Sprain",
+"matchup": "NOP@SAS"
 },
 {
 "team": "SAS",
