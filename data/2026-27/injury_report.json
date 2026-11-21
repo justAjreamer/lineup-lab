@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_08_30PM.pdf",
-"report_time": "2026-11-20 20:30:00",
-"fetched_at": "2026-11-21T01:43:19.988909+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_09_30PM.pdf",
+"report_time": "2026-11-20 21:30:00",
+"fetched_at": "2026-11-21T02:39:40.191887+00:00",
 "rows": [
 {
 "team": "CHA",
@@ -573,7 +573,7 @@
 {
 "team": "HOU",
 "player": "Steven Adams",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Quadriceps Contusion",
 "matchup": "HOU@DEN"
 },
@@ -601,7 +601,7 @@
 {
 "team": "HOU",
 "player": "Alperen Sengun",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Left Eye Corneal",
 "matchup": "HOU@DEN"
 },
@@ -650,8 +650,8 @@
 {
 "team": "SAC",
 "player": "De'Andre Hunter",
-"status": "Questionable",
-"reason": "Injury/Illness - Left Hip Soreness / Tightness",
+"status": "Available",
+"reason": "-",
 "matchup": "SAC@LAL"
 },
 {
@@ -938,7 +938,7 @@
 "team": "MEM",
 "player": "Scotty Pippen Jr.",
 "status": "Out",
-"reason": "Injury/Illness - Lumbar Disc",
+"reason": "Injury/Illness - Lumbar Disc Herniation",
 "matchup": "MEM@MIN"
 },
 {
