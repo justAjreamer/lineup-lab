@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_03_00PM.pdf",
-"report_time": "2026-11-21 15:00:00",
-"fetched_at": "2026-11-21T20:04:50.908716+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_04_00PM.pdf",
+"report_time": "2026-11-21 16:00:00",
+"fetched_at": "2026-11-21T21:03:26.766205+00:00",
 "rows": [
 {
 "team": "MIL",
@@ -404,15 +404,22 @@
 },
 {
 "team": "BOS",
+"player": "Mitchell Robinson",
+"status": "Out",
+"reason": "Injury/Illness - Illness",
+"matchup": "BOS@SAC"
+},
+{
+"team": "BOS",
 "player": "Jayson Tatum",
-"status": "Questionable",
+"status": "Out",
 "reason": "Rest",
 "matchup": "BOS@SAC"
 },
 {
 "team": "BOS",
 "player": "Derrick White",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left AC Joint Contusion",
 "matchup": "BOS@SAC"
 },
@@ -422,6 +429,62 @@
 "status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "BOS@SAC"
+},
+{
+"team": "MIA",
+"player": "Giannis Antetokounmpo",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Groin tendinitis",
+"matchup": "OKC@MIA"
+},
+{
+"team": "MIA",
+"player": "Myron Gardner",
+"status": "Probable",
+"reason": "Injury/Illness - Right Hamstring Tightness / Soreness",
+"matchup": "OKC@MIA"
+},
+{
+"team": "MIA",
+"player": "Vladislav Goldin",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "OKC@MIA"
+},
+{
+"team": "MIA",
+"player": "Keshad Johnson",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "OKC@MIA"
+},
+{
+"team": "ORL",
+"player": "Paolo Banchero",
+"status": "Out",
+"reason": "Injury/Illness - Right High Ankle Sprain",
+"matchup": "ORL@WAS"
+},
+{
+"team": "ORL",
+"player": "Jonathan Isaac",
+"status": "Out",
+"reason": "Injury/Illness - Left Knee Injury Management",
+"matchup": "ORL@WAS"
+},
+{
+"team": "ORL",
+"player": "Izaiyah Nelson",
+"status": "Out",
+"reason": "Injury/Illness - Left Ankle injury recovery",
+"matchup": "ORL@WAS"
+},
+{
+"team": "ORL",
+"player": "Noah Penda",
+"status": "Out",
+"reason": "Injury/Illness - Right Partially torn hamstring",
+"matchup": "ORL@WAS"
 }
 ]
 }
