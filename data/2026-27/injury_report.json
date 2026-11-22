@@ -1,12 +1,12 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_12_00PM.pdf",
-"report_time": "2026-11-22 12:00:00",
-"fetched_at": "2026-11-22T17:10:02.049990+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_03_00PM.pdf",
+"report_time": "2026-11-22 15:00:00",
+"fetched_at": "2026-11-22T20:19:20.372171+00:00",
 "rows": [
 {
 "team": "DET",
 "player": "Cade Cunningham",
-"status": "Probable",
+"status": "Available",
 "reason": "Injury/Illness - Right Knee Soreness",
 "matchup": "DET@ATL"
 },
@@ -20,14 +20,14 @@
 {
 "team": "DET",
 "player": "Ronald Holland II",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Left Knee Contusion / Bone Bruise",
 "matchup": "DET@ATL"
 },
 {
 "team": "DET",
 "player": "Isaac Jones",
-"status": "Questionable",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "DET@ATL"
 },
@@ -62,21 +62,21 @@
 {
 "team": "ATL",
 "player": "Rafael Castro",
-"status": "Questionable",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "DET@ATL"
 },
 {
 "team": "ATL",
 "player": "RayJ Dennis",
-"status": "Questionable",
+"status": "Available",
 "reason": "G League - Two- Way",
 "matchup": "DET@ATL"
 },
 {
 "team": "ATL",
 "player": "Kingston Flemings",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Lumbar Strain",
 "matchup": "DET@ATL"
 },
@@ -118,7 +118,7 @@
 {
 "team": "ATL",
 "player": "Jalen Wilson",
-"status": "Questionable",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "DET@ATL"
 },
@@ -207,6 +207,55 @@
 "matchup": "OKC@MIA"
 },
 {
+"team": "DAL",
+"player": "Tarik Biberovic",
+"status": "Out",
+"reason": "Injury/Illness - Right Heel Bursitis",
+"matchup": "DAL@UTA"
+},
+{
+"team": "DAL",
+"player": "Walter Clayton Jr.",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Patellar Tendinitis",
+"matchup": "DAL@UTA"
+},
+{
+"team": "DAL",
+"player": "Sergio de Larrea",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Sprain",
+"matchup": "DAL@UTA"
+},
+{
+"team": "DAL",
+"player": "Tobi Lawal",
+"status": "Out",
+"reason": "Injury/Illness - Right Groin Strain",
+"matchup": "DAL@UTA"
+},
+{
+"team": "DAL",
+"player": "Dereck Lively II",
+"status": "Out",
+"reason": "Injury/Illness - Right Foot Surgery",
+"matchup": "DAL@UTA"
+},
+{
+"team": "DAL",
+"player": "Caleb Martin",
+"status": "Available",
+"reason": "Injury/Illness - Right Thumb Splint",
+"matchup": "DAL@UTA"
+},
+{
+"team": "DAL",
+"player": "P.J. Washington",
+"status": "Doubtful",
+"reason": "Injury/Illness - Illness",
+"matchup": "DAL@UTA"
+},
+{
 "team": "UTA",
 "player": "Jonas Aidoo",
 "status": "Out",
@@ -285,16 +334,23 @@
 },
 {
 "team": "CHI",
-"player": "Norman Powell",
+"player": "Nic Claxton",
 "status": "Questionable",
+"reason": "Injury/Illness - Illness",
+"matchup": "DEN@CHI"
+},
+{
+"team": "CHI",
+"player": "Norman Powell",
+"status": "Out",
 "reason": "Injury/Illness - Right Hamstring Strain",
 "matchup": "DEN@CHI"
 },
 {
 "team": "CHI",
 "player": "Orlando Robinson",
-"status": "Out",
-"reason": "G League - On Assignment",
+"status": "Available",
+"reason": "-",
 "matchup": "DEN@CHI"
 },
 {
@@ -307,7 +363,7 @@
 {
 "team": "CHI",
 "player": "Jalen Smith",
-"status": "Questionable",
+"status": "Probable",
 "reason": "Injury/Illness - Gastrointestinal Illness",
 "matchup": "DEN@CHI"
 },
@@ -355,9 +411,23 @@
 },
 {
 "team": "WAS",
+"player": "Deandre Ayton",
+"status": "Questionable",
+"reason": "Injury/Illness - Illness",
+"matchup": "ORL@WAS"
+},
+{
+"team": "WAS",
 "player": "Reece Beekman",
 "status": "Out",
 "reason": "Injury/Illness - Right AC Joint Sprain / Separation",
+"matchup": "ORL@WAS"
+},
+{
+"team": "WAS",
+"player": "Bub Carrington",
+"status": "Questionable",
+"reason": "Injury/Illness - Illness",
 "matchup": "ORL@WAS"
 },
 {
@@ -421,6 +491,27 @@
 "player": "Pascal Siakam",
 "status": "Questionable",
 "reason": "Injury/Illness - Left Hip Soreness / Tightness",
+"matchup": "IND@NYK"
+},
+{
+"team": "NYK",
+"player": "OG Anunoby",
+"status": "Out",
+"reason": "Injury/Illness - Left Calf Tightness",
+"matchup": "IND@NYK"
+},
+{
+"team": "NYK",
+"player": "Jordan Clarkson",
+"status": "Out",
+"reason": "Injury/Illness - Right Plantar Fasciitis",
+"matchup": "IND@NYK"
+},
+{
+"team": "NYK",
+"player": "Karl- Anthony Towns",
+"status": "Questionable",
+"reason": "Injury/Illness - Illness",
 "matchup": "IND@NYK"
 },
 {
