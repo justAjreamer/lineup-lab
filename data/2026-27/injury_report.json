@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_08_00PM.pdf",
-"report_time": "2026-11-22 20:00:00",
-"fetched_at": "2026-11-23T01:06:01.711549+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_08_45PM.pdf",
+"report_time": "2026-11-22 20:45:00",
+"fetched_at": "2026-11-23T01:52:58.451160+00:00",
 "rows": [
 {
 "team": "DET",
@@ -1026,6 +1026,48 @@
 "matchup": "LAC@HOU"
 },
 {
+"team": "SAS",
+"player": "De'Aaron Fox",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Shin Contusion",
+"matchup": "SAS@SAC"
+},
+{
+"team": "SAS",
+"player": "Dylan Harper",
+"status": "Out",
+"reason": "Injury/Illness - Left Hip External Rotator Strain",
+"matchup": "SAS@SAC"
+},
+{
+"team": "SAS",
+"player": "Tobias Harris",
+"status": "Out",
+"reason": "Injury/Illness - Left Calf Strain",
+"matchup": "SAS@SAC"
+},
+{
+"team": "SAS",
+"player": "Jordan McLaughlin",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Shoulder Contusion",
+"matchup": "SAS@SAC"
+},
+{
+"team": "SAS",
+"player": "Jayden Quaintance",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Surgery",
+"matchup": "SAS@SAC"
+},
+{
+"team": "SAS",
+"player": "Victor Wembanyama",
+"status": "Questionable",
+"reason": "Injury/Illness - Bilateral Low Back Tightness",
+"matchup": "SAS@SAC"
+},
+{
 "team": "SAC",
 "player": "Jonathan Mogbo",
 "status": "Out",
@@ -1052,6 +1094,20 @@
 "status": "Out",
 "reason": "Injury/Illness - Right Achilles Tendon Repair / Surgery",
 "matchup": "SAS@SAC"
+},
+{
+"team": "LAL",
+"player": "Quentin Grimes",
+"status": "Available",
+"reason": "Injury/Illness - Right Finger Splint",
+"matchup": "UTA@LAL"
+},
+{
+"team": "LAL",
+"player": "Austin Reaves",
+"status": "Out",
+"reason": "Injury/Illness - Left Heel Contusion / Bone Bruise",
+"matchup": "UTA@LAL"
 }
 ]
 }
