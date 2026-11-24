@@ -1,11 +1,12 @@
 {
- "fetched_at": "2026-11-24T00:48:59.068175+00:00",
+ "fetched_at": "2026-11-24T02:31:56.419237+00:00",
  "source": "ESPN + NBA injury report",
- "errors": [],
- "new_pbp": 0,
- "espn_injury_rows": 91,
- "official_injury_rows": 126,
- "new_games": 0,
- "ledger_games": 248,
+ "errors": [
+  "official injury report: HTTPError('403 Client Error: Forbidden for url: https://official.nba.com/nba-injury-report-2026-27-season/')"
+ ],
+ "new_pbp": 2,
+ "espn_injury_rows": 92,
+ "new_games": 2,
+ "ledger_games": 250,
  "schedule_games": 1206
 }
