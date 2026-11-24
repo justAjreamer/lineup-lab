@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_12_15AM.pdf",
-"report_time": "2026-11-24 00:15:00",
-"fetched_at": "2026-11-24T05:24:24.691560+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_03_00PM.pdf",
+"report_time": "2026-11-24 15:00:00",
+"fetched_at": "2026-11-24T20:10:21.323975+00:00",
 "rows": [
 {
 "team": "DET",
@@ -124,6 +124,13 @@
 },
 {
 "team": "WAS",
+"player": "Tre Mann",
+"status": "Questionable",
+"reason": "Injury/Illness - Illness",
+"matchup": "BOS@WAS"
+},
+{
+"team": "WAS",
 "player": "Felix Okpara",
 "status": "Questionable",
 "reason": "G League - Two- Way",
@@ -184,6 +191,48 @@
 "status": "Questionable",
 "reason": "Injury/Illness - Illness",
 "matchup": "DAL@DEN"
+},
+{
+"team": "CHI",
+"player": "Tobe Awaka",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "CHI@CHA"
+},
+{
+"team": "CHI",
+"player": "Norman Powell",
+"status": "Out",
+"reason": "Injury/Illness - Right Hamstring Strain",
+"matchup": "CHI@CHA"
+},
+{
+"team": "CHI",
+"player": "Orlando Robinson",
+"status": "Out",
+"reason": "Not With Team",
+"matchup": "CHI@CHA"
+},
+{
+"team": "CHI",
+"player": "Jaylin Sellers",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "CHI@CHA"
+},
+{
+"team": "CHI",
+"player": "Jalen Smith",
+"status": "Questionable",
+"reason": "Injury/Illness - Gastrointestinal Illness",
+"matchup": "CHI@CHA"
+},
+{
+"team": "CHI",
+"player": "Caleb Wilson",
+"status": "Out",
+"reason": "Injury/Illness - Right Metacarpal Fracture",
+"matchup": "CHI@CHA"
 }
 ]
 }
