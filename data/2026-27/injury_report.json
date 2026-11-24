@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_03_00PM.pdf",
-"report_time": "2026-11-24 15:00:00",
-"fetched_at": "2026-11-24T20:10:21.323975+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_05_45PM.pdf",
+"report_time": "2026-11-24 17:45:00",
+"fetched_at": "2026-11-24T23:00:12.344663+00:00",
 "rows": [
 {
 "team": "DET",
@@ -193,6 +193,48 @@
 "matchup": "DAL@DEN"
 },
 {
+"team": "MIA",
+"player": "Giannis Antetokounmpo",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Groin Tendinitis",
+"matchup": "MIA@PHI"
+},
+{
+"team": "MIA",
+"player": "Tre Donaldson",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "MIA@PHI"
+},
+{
+"team": "MIA",
+"player": "Myron Gardner",
+"status": "Available",
+"reason": "Injury/Illness - Right Hamstring Strain",
+"matchup": "MIA@PHI"
+},
+{
+"team": "MIA",
+"player": "Vladislav Goldin",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "MIA@PHI"
+},
+{
+"team": "PHI",
+"player": "Joel Embiid",
+"status": "Doubtful",
+"reason": "Injury/Illness - Illness",
+"matchup": "MIA@PHI"
+},
+{
+"team": "PHI",
+"player": "Ariel Hukporti",
+"status": "Out",
+"reason": "Injury/Illness - Right Achilles Tendon Rupture / Tear",
+"matchup": "MIA@PHI"
+},
+{
 "team": "CHI",
 "player": "Tobe Awaka",
 "status": "Out",
@@ -233,6 +275,174 @@
 "status": "Out",
 "reason": "Injury/Illness - Right Metacarpal Fracture",
 "matchup": "CHI@CHA"
+},
+{
+"team": "CHA",
+"player": "Michael Ajayi",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "CHI@CHA"
+},
+{
+"team": "CHA",
+"player": "Grayson Allen",
+"status": "Questionable",
+"reason": "Concussion Protocol",
+"matchup": "CHI@CHA"
+},
+{
+"team": "CHA",
+"player": "Kylan Boswell",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "CHI@CHA"
+},
+{
+"team": "CHA",
+"player": "Sion James",
+"status": "Probable",
+"reason": "Injury/Illness - Left Thigh Soreness",
+"matchup": "CHI@CHA"
+},
+{
+"team": "CHA",
+"player": "Ryan Kalkbrenner",
+"status": "Doubtful",
+"reason": "Injury/Illness - Left Hip Soreness / Tightness",
+"matchup": "CHI@CHA"
+},
+{
+"team": "CHA",
+"player": "Kon Knueppel",
+"status": "Out",
+"reason": "Injury/Illness - Left Hamstring Strain",
+"matchup": "CHI@CHA"
+},
+{
+"team": "CHA",
+"player": "Dennis Schroder",
+"status": "Out",
+"reason": "Injury/Illness - Left Hamstring Strain",
+"matchup": "CHI@CHA"
+},
+{
+"team": "CLE",
+"player": "Zack Austin",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "CLE@NYK"
+},
+{
+"team": "CLE",
+"player": "Khalifa Diop",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "CLE@NYK"
+},
+{
+"team": "CLE",
+"player": "Evan Mobley",
+"status": "Out",
+"reason": "Injury/Illness - Left Great Toe Sprain",
+"matchup": "CLE@NYK"
+},
+{
+"team": "CLE",
+"player": "Nae'Qwan Tomlin",
+"status": "Out",
+"reason": "Injury/Illness - Low Back Stress",
+"matchup": "CLE@NYK"
+},
+{
+"team": "CLE",
+"player": "Ernest Udeh Jr.",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "CLE@NYK"
+},
+{
+"team": "NYK",
+"player": "OG Anunoby",
+"status": "Out",
+"reason": "Injury/Illness - Left Calf Strain",
+"matchup": "CLE@NYK"
+},
+{
+"team": "NYK",
+"player": "Jordan Clarkson",
+"status": "Out",
+"reason": "Injury/Illness - Right Plantar Fasciitis",
+"matchup": "CLE@NYK"
+},
+{
+"team": "NYK",
+"player": "Josh Hart",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Shoulder Sprain",
+"matchup": "CLE@NYK"
+},
+{
+"team": "NYK",
+"player": "Miles McBride",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Adductor Tightness",
+"matchup": "CLE@NYK"
+},
+{
+"team": "NYK",
+"player": "Karl- Anthony Towns",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Knee Inflammation",
+"matchup": "CLE@NYK"
+},
+{
+"team": "MIN",
+"player": "Joan Beringer",
+"status": "Available",
+"reason": "Injury/Illness - Right Face Mask",
+"matchup": "MIN@OKC"
+},
+{
+"team": "MIN",
+"player": "Jaylen Clark",
+"status": "Out",
+"reason": "Injury/Illness - Right Hamstring Strain",
+"matchup": "MIN@OKC"
+},
+{
+"team": "MIN",
+"player": "Donte DiVincenzo",
+"status": "Out",
+"reason": "Injury/Illness - Right Achilles Tendon Repair / Surgery",
+"matchup": "MIN@OKC"
+},
+{
+"team": "MIN",
+"player": "Anthony Edwards",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Arthroscopy",
+"matchup": "MIN@OKC"
+},
+{
+"team": "MIN",
+"player": "Rocco Zikarsky",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "MIN@OKC"
+},
+{
+"team": "HOU",
+"player": "Quadir Copeland",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "PHX@HOU"
+},
+{
+"team": "HOU",
+"player": "Julian Phillips",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "PHX@HOU"
 }
 ]
 }
