@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_07_45PM.pdf",
-"report_time": "2026-11-23 19:45:00",
-"fetched_at": "2026-11-24T00:48:59.068175+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_45PM.pdf",
+"report_time": "2026-11-23 23:45:00",
+"fetched_at": "2026-11-24T04:56:08.679493+00:00",
 "rows": [
 {
 "team": "MEM",
@@ -594,7 +594,7 @@
 {
 "team": "SAS",
 "player": "De'Aaron Fox",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Right Shin Contusion",
 "matchup": "SAS@SAC"
 },
@@ -615,8 +615,8 @@
 {
 "team": "SAS",
 "player": "Jordan McLaughlin",
-"status": "Questionable",
-"reason": "Injury/Illness - Left Shoulder Contusion",
+"status": "Available",
+"reason": "-",
 "matchup": "SAS@SAC"
 },
 {
@@ -629,7 +629,7 @@
 {
 "team": "SAS",
 "player": "Victor Wembanyama",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Bilateral Low Back Tightness",
 "matchup": "SAS@SAC"
 },
@@ -686,7 +686,7 @@
 "team": "UTA",
 "player": "Jusuf Nurkic",
 "status": "Out",
-"reason": "Injury/Illness - Right 2nd Plantar Plate Tear",
+"reason": "Injury/Illness - Right 2nd Plantar",
 "matchup": "UTA@LAL"
 },
 {
