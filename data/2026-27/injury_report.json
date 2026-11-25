@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_07_00PM.pdf",
-"report_time": "2026-11-24 19:00:00",
-"fetched_at": "2026-11-25T00:03:49.520629+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_10_30PM.pdf",
+"report_time": "2026-11-24 22:30:00",
+"fetched_at": "2026-11-25T03:42:11.641729+00:00",
 "rows": [
 {
 "team": "DET",
@@ -125,14 +125,14 @@
 {
 "team": "WAS",
 "player": "Tre Mann",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Illness",
 "matchup": "BOS@WAS"
 },
 {
 "team": "WAS",
 "player": "Felix Okpara",
-"status": "Questionable",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "BOS@WAS"
 },
@@ -188,7 +188,7 @@
 {
 "team": "DAL",
 "player": "P.J. Washington",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Illness",
 "matchup": "DAL@DEN"
 },
@@ -599,6 +599,27 @@
 "matchup": "PHX@HOU"
 },
 {
+"team": "SAC",
+"player": "Jonathan Mogbo",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "SAC@GSW"
+},
+{
+"team": "SAC",
+"player": "Maxime Raynaud",
+"status": "Out",
+"reason": "Injury/Illness - Right Patella Subluxation",
+"matchup": "SAC@GSW"
+},
+{
+"team": "SAC",
+"player": "Ben Simmons",
+"status": "Out",
+"reason": "Injury/Illness - Right Achilles Tendon Repair / Surgery",
+"matchup": "SAC@GSW"
+},
+{
 "team": "GSW",
 "player": "Jimmy Butler III",
 "status": "Out",
@@ -639,6 +660,69 @@
 "status": "Questionable",
 "reason": "Injury/Illness - Left Hamstring Strain",
 "matchup": "SAC@GSW"
+},
+{
+"team": "SAS",
+"player": "De'Aaron Fox",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Shin Contusion",
+"matchup": "SAS@POR"
+},
+{
+"team": "SAS",
+"player": "Dylan Harper",
+"status": "Out",
+"reason": "Injury/Illness - Left Hip External Rotator Strain",
+"matchup": "SAS@POR"
+},
+{
+"team": "SAS",
+"player": "Tobias Harris",
+"status": "Out",
+"reason": "Injury/Illness - Left Calf Strain",
+"matchup": "SAS@POR"
+},
+{
+"team": "SAS",
+"player": "Jayden Quaintance",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Surgery",
+"matchup": "SAS@POR"
+},
+{
+"team": "SAS",
+"player": "Victor Wembanyama",
+"status": "Questionable",
+"reason": "Injury/Illness - Low Back Tightness",
+"matchup": "SAS@POR"
+},
+{
+"team": "POR",
+"player": "Vit Krejci",
+"status": "Out",
+"reason": "Injury/Illness - Left Ankle Fracture",
+"matchup": "SAS@POR"
+},
+{
+"team": "POR",
+"player": "Ja Morant",
+"status": "Out",
+"reason": "Injury/Illness - Left Hamstring Strain",
+"matchup": "SAS@POR"
+},
+{
+"team": "POR",
+"player": "Shaedon Sharpe",
+"status": "Out",
+"reason": "Injury/Illness - Right Meniscus Surgery",
+"matchup": "SAS@POR"
+},
+{
+"team": "POR",
+"player": "Chris Youngblood",
+"status": "Out",
+"reason": "Injury/Illness - Right Heel Contusion / Bone Bruise",
+"matchup": "SAS@POR"
 }
 ]
 }
