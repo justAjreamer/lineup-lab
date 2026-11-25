@@ -1,12 +1,12 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_02_00PM.pdf",
-"report_time": "2026-11-25 14:00:00",
-"fetched_at": "2026-11-25T19:17:39.294397+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_05_15PM.pdf",
+"report_time": "2026-11-25 17:15:00",
+"fetched_at": "2026-11-25T22:28:45.058989+00:00",
 "rows": [
 {
 "team": "MIA",
 "player": "Giannis Antetokounmpo",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Groin Tendinitis",
 "matchup": "MIA@PHI"
 },
@@ -34,7 +34,7 @@
 {
 "team": "PHI",
 "player": "Joel Embiid",
-"status": "Doubtful",
+"status": "Out",
 "reason": "Injury/Illness - Illness",
 "matchup": "MIA@PHI"
 },
@@ -69,7 +69,7 @@
 {
 "team": "CHI",
 "player": "Jalen Smith",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Gastrointestinal Illness",
 "matchup": "CHI@CHA"
 },
@@ -104,7 +104,7 @@
 {
 "team": "CHA",
 "player": "Sion James",
-"status": "Probable",
+"status": "Available",
 "reason": "Injury/Illness - Left Thigh Soreness",
 "matchup": "CHI@CHA"
 },
@@ -174,7 +174,7 @@
 {
 "team": "NYK",
 "player": "Jalen Brunson",
-"status": "Questionable",
+"status": "Probable",
 "reason": "Injury/Illness - Illness",
 "matchup": "CLE@NYK"
 },
@@ -418,6 +418,13 @@
 },
 {
 "team": "SAC",
+"player": "Zach LaVine",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Knee Soreness",
+"matchup": "SAC@GSW"
+},
+{
+"team": "SAC",
 "player": "Jonathan Mogbo",
 "status": "Out",
 "reason": "G League - Two- Way",
@@ -462,7 +469,7 @@
 "team": "GSW",
 "player": "Moses Moody",
 "status": "Out",
-"reason": "Injury/Illness - Left Patellar Tendon",
+"reason": "Injury/Illness - Left Patellar Tendon Repair / Surgery",
 "matchup": "SAC@GSW"
 },
 {
