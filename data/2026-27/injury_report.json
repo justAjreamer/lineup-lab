@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_05_15PM.pdf",
-"report_time": "2026-11-26 17:15:00",
-"fetched_at": "2026-11-26T22:19:36.889250+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_06_45PM.pdf",
+"report_time": "2026-11-26 18:45:00",
+"fetched_at": "2026-11-26T23:58:31.060796+00:00",
 "rows": [
 {
 "team": "MIA",
@@ -338,6 +338,209 @@
 "status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "ATL@BOS"
+},
+{
+"team": "MEM",
+"player": "Cameron Boozer",
+"status": "Out",
+"reason": "Injury/Illness - Right Medial Ankle Sprain",
+"matchup": "MEM@MIN"
+},
+{
+"team": "MEM",
+"player": "Zach Edey",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Ankle Soreness",
+"matchup": "MEM@MIN"
+},
+{
+"team": "MEM",
+"player": "Jerami Grant",
+"status": "Out",
+"reason": "Injury/Illness - Left Calf Strain",
+"matchup": "MEM@MIN"
+},
+{
+"team": "MEM",
+"player": "GG Jackson",
+"status": "Out",
+"reason": "Injury/Illness - Left 5th Metatarsal Fracture",
+"matchup": "MEM@MIN"
+},
+{
+"team": "MEM",
+"player": "Karim Lopez",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "MEM@MIN"
+},
+{
+"team": "MEM",
+"player": "Scotty Pippen Jr.",
+"status": "Out",
+"reason": "Injury/Illness - Lumbar Disc Herniation",
+"matchup": "MEM@MIN"
+},
+{
+"team": "MEM",
+"player": "Richie Saunders",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Surgery",
+"matchup": "MEM@MIN"
+},
+{
+"team": "MEM",
+"player": "Isaiah Stewart",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Hip Soreness",
+"matchup": "MEM@MIN"
+},
+{
+"team": "MIN",
+"player": "LaMelo Ball",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Ankle Sprain",
+"matchup": "MEM@MIN"
+},
+{
+"team": "MIN",
+"player": "Joan Beringer",
+"status": "Available",
+"reason": "Injury/Illness - Face Mask",
+"matchup": "MEM@MIN"
+},
+{
+"team": "MIN",
+"player": "Jaylen Clark",
+"status": "Out",
+"reason": "Injury/Illness - Right Hamstring Strain",
+"matchup": "MEM@MIN"
+},
+{
+"team": "MIN",
+"player": "Donte DiVincenzo",
+"status": "Out",
+"reason": "Injury/Illness - Right Achilles Tendon Repair / Surgery",
+"matchup": "MEM@MIN"
+},
+{
+"team": "MIN",
+"player": "Anthony Edwards",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Arthroscopy",
+"matchup": "MEM@MIN"
+},
+{
+"team": "MIN",
+"player": "Rocco Zikarsky",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "MEM@MIN"
+},
+{
+"team": "DAL",
+"player": "Tarik Biberovic",
+"status": "Out",
+"reason": "Injury/Illness - Right Heel Bursitis",
+"matchup": "DAL@PHX"
+},
+{
+"team": "DAL",
+"player": "Sergio de Larrea",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Sprain",
+"matchup": "DAL@PHX"
+},
+{
+"team": "DAL",
+"player": "Tobi Lawal",
+"status": "Out",
+"reason": "Injury/Illness - Right Groin Strain",
+"matchup": "DAL@PHX"
+},
+{
+"team": "DAL",
+"player": "Dereck Lively II",
+"status": "Out",
+"reason": "Injury/Illness - Right Foot Surgery",
+"matchup": "DAL@PHX"
+},
+{
+"team": "DAL",
+"player": "Caleb Martin",
+"status": "Available",
+"reason": "Injury/Illness - Right Thumb Splint",
+"matchup": "DAL@PHX"
+},
+{
+"team": "DEN",
+"player": "DaRon Holmes II",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "DEN@UTA"
+},
+{
+"team": "DEN",
+"player": "Bryce Hopkins",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "DEN@UTA"
+},
+{
+"team": "DEN",
+"player": "Cam Whitmore",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "DEN@UTA"
+},
+{
+"team": "LAL",
+"player": "Quentin Grimes",
+"status": "Available",
+"reason": "Injury/Illness - Right Finger Splint",
+"matchup": "LAL@SAS"
+},
+{
+"team": "LAL",
+"player": "Austin Reaves",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Heel Contusion / Bone Bruise",
+"matchup": "LAL@SAS"
+},
+{
+"team": "SAS",
+"player": "Maliq Brown",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "LAL@SAS"
+},
+{
+"team": "SAS",
+"player": "De'Aaron Fox",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Shin Contusion",
+"matchup": "LAL@SAS"
+},
+{
+"team": "SAS",
+"player": "Dylan Harper",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Hip External Rotator Strain",
+"matchup": "LAL@SAS"
+},
+{
+"team": "SAS",
+"player": "Tobias Harris",
+"status": "Out",
+"reason": "Injury/Illness - Left Calf Strain",
+"matchup": "LAL@SAS"
+},
+{
+"team": "SAS",
+"player": "Jayden Quaintance",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Surgery",
+"matchup": "LAL@SAS"
 },
 {
 "team": "NOP",
