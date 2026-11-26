@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_06_30PM.pdf",
-"report_time": "2026-11-25 18:30:00",
-"fetched_at": "2026-11-25T23:45:28.111672+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_09_45PM.pdf",
+"report_time": "2026-11-25 21:45:00",
+"fetched_at": "2026-11-26T03:01:48.837977+00:00",
 "rows": [
 {
 "team": "MIA",
@@ -174,7 +174,7 @@
 {
 "team": "NYK",
 "player": "Jalen Brunson",
-"status": "Probable",
+"status": "Available",
 "reason": "Injury/Illness - Illness",
 "matchup": "CLE@NYK"
 },
@@ -188,7 +188,7 @@
 {
 "team": "NYK",
 "player": "Josh Hart",
-"status": "Probable",
+"status": "Available",
 "reason": "Injury/Illness - Right Shoulder Sprain",
 "matchup": "CLE@NYK"
 },
@@ -202,7 +202,7 @@
 {
 "team": "NYK",
 "player": "Karl- Anthony Towns",
-"status": "Probable",
+"status": "Available",
 "reason": "Injury/Illness - Right Knee Inflammation",
 "matchup": "CLE@NYK"
 },
@@ -356,7 +356,7 @@
 {
 "team": "LAC",
 "player": "Jalen Pickett",
-"status": "Questionable",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "LAC@MEM"
 },
@@ -394,6 +394,20 @@
 "status": "Out",
 "reason": "Injury/Illness - Right Knee Surgery",
 "matchup": "LAC@MEM"
+},
+{
+"team": "PHX",
+"player": "Pat Spencer",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "PHX@HOU"
+},
+{
+"team": "PHX",
+"player": "Drew Timme",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "PHX@HOU"
 },
 {
 "team": "PHX",
@@ -461,7 +475,7 @@
 {
 "team": "GSW",
 "player": "Yaxel Lendeborg",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Illness",
 "matchup": "SAC@GSW"
 },
@@ -482,14 +496,14 @@
 {
 "team": "GSW",
 "player": "Brandon Williams",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Left Hamstring Strain",
 "matchup": "SAC@GSW"
 },
 {
 "team": "SAS",
 "player": "De'Aaron Fox",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Right Shin Contusion",
 "matchup": "SAS@POR"
 },
@@ -517,8 +531,8 @@
 {
 "team": "SAS",
 "player": "Victor Wembanyama",
-"status": "Questionable",
-"reason": "Injury/Illness - Low Back Tightness",
+"status": "Available",
+"reason": "-",
 "matchup": "SAS@POR"
 },
 {
