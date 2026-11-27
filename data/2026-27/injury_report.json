@@ -1,12 +1,12 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_04_45PM.pdf",
-"report_time": "2026-11-27 16:45:00",
-"fetched_at": "2026-11-27T21:56:44.887544+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_06_30PM.pdf",
+"report_time": "2026-11-27 18:30:00",
+"fetched_at": "2026-11-27T23:41:23.722178+00:00",
 "rows": [
 {
 "team": "MIA",
 "player": "Giannis Antetokounmpo",
-"status": "Probable",
+"status": "Available",
 "reason": "Injury/Illness - Right Groin Tendinitis",
 "matchup": "MIA@NYK"
 },
@@ -62,7 +62,7 @@
 {
 "team": "NYK",
 "player": "Karl- Anthony Towns",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Abdominal Contusion",
 "matchup": "MIA@NYK"
 },
@@ -125,7 +125,7 @@
 {
 "team": "TOR",
 "player": "Alijah Martin",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Left Knee Soreness",
 "matchup": "BKN@TOR"
 },
@@ -237,7 +237,7 @@
 {
 "team": "PHI",
 "player": "Dean Wade",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Hamstring Injury Management",
 "matchup": "PHI@IND"
 },
@@ -258,7 +258,7 @@
 {
 "team": "IND",
 "player": "T.J. McConnell",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Hamstring Injury Management",
 "matchup": "PHI@IND"
 },
@@ -272,7 +272,7 @@
 {
 "team": "IND",
 "player": "Kelly Oubre Jr.",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right Hand Laceration",
 "matchup": "PHI@IND"
 },
@@ -286,7 +286,7 @@
 {
 "team": "ATL",
 "player": "Rafael Castro",
-"status": "Doubtful",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "ATL@BOS"
 },
@@ -328,7 +328,7 @@
 {
 "team": "ATL",
 "player": "Jalen Wilson",
-"status": "Doubtful",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "ATL@BOS"
 },
@@ -865,6 +865,55 @@
 "matchup": "ORL@WAS"
 },
 {
+"team": "CHA",
+"player": "Michael Ajayi",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "BKN@CHA"
+},
+{
+"team": "CHA",
+"player": "Grayson Allen",
+"status": "Questionable",
+"reason": "Concussion Protocol",
+"matchup": "BKN@CHA"
+},
+{
+"team": "CHA",
+"player": "Kylan Boswell",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "BKN@CHA"
+},
+{
+"team": "CHA",
+"player": "PJ Hall",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "BKN@CHA"
+},
+{
+"team": "CHA",
+"player": "Ryan Kalkbrenner",
+"status": "Probable",
+"reason": "Injury/Illness - Left Hip Soreness / Tightness",
+"matchup": "BKN@CHA"
+},
+{
+"team": "CHA",
+"player": "Kon Knueppel",
+"status": "Out",
+"reason": "Injury/Illness - Left Hamstring Strain",
+"matchup": "BKN@CHA"
+},
+{
+"team": "CHA",
+"player": "Dennis Schroder",
+"status": "Out",
+"reason": "Injury/Illness - Left Hamstring Strain",
+"matchup": "BKN@CHA"
+},
+{
 "team": "CHI",
 "player": "Tobe Awaka",
 "status": "Out",
@@ -912,6 +961,76 @@
 "status": "Out",
 "reason": "Injury/Illness - Right Metacarpal Fracture",
 "matchup": "IND@CHI"
+},
+{
+"team": "OKC",
+"player": "Chet Holmgren",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee/ Injury Recovery",
+"matchup": "OKC@MIL"
+},
+{
+"team": "OKC",
+"player": "Aday Mara",
+"status": "Out",
+"reason": "Injury/Illness - Right Shin Contusion",
+"matchup": "OKC@MIL"
+},
+{
+"team": "OKC",
+"player": "Thomas Sorber",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Surgery",
+"matchup": "OKC@MIL"
+},
+{
+"team": "OKC",
+"player": "Nikola Topic",
+"status": "Out",
+"reason": "Injury/Illness - Left Hip Strain",
+"matchup": "OKC@MIL"
+},
+{
+"team": "OKC",
+"player": "Cason Wallace",
+"status": "Out",
+"reason": "Injury/Illness - Left Shoulder Surgery",
+"matchup": "OKC@MIL"
+},
+{
+"team": "OKC",
+"player": "Jalen Williams",
+"status": "Out",
+"reason": "Injury/Illness - Left Ankle Surgery",
+"matchup": "OKC@MIL"
+},
+{
+"team": "OKC",
+"player": "Jaylin Williams",
+"status": "Out",
+"reason": "Injury/Illness - Low Back Spasms",
+"matchup": "OKC@MIL"
+},
+{
+"team": "HOU",
+"player": "Steven Adams",
+"status": "Questionable",
+"reason": "Injury/Illness - Right Patellofemoral Pain",
+"matchup": "PHI@HOU"
+},
+{
+"team": "HOU",
+"player": "Quadir Copeland",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "PHI@HOU"
+},
+{
+"team": "HOU",
+"player": "Julian Phillips",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "PHI@HOU"
 }
 ]
 }
