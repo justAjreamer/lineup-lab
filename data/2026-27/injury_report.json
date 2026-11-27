@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_10_30PM.pdf",
-"report_time": "2026-11-26 22:30:00",
-"fetched_at": "2026-11-27T03:41:58.920568+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_01_45PM.pdf",
+"report_time": "2026-11-27 13:45:00",
+"fetched_at": "2026-11-27T18:59:40.311945+00:00",
 "rows": [
 {
 "team": "MIA",
@@ -27,36 +27,43 @@
 {
 "team": "MIA",
 "player": "Andrew Wiggins",
-"status": "Probable",
-"reason": "Injury/Illness - Right Ankle Sprain",
+"status": "Available",
+"reason": "Injury/Illness - Right Ankle Impingement",
 "matchup": "MIA@NYK"
 },
 {
 "team": "NYK",
 "player": "OG Anunoby",
-"status": "Doubtful",
+"status": "Out",
 "reason": "Injury/Illness - Left Calf Strain",
 "matchup": "MIA@NYK"
 },
 {
 "team": "NYK",
 "player": "Jordan Clarkson",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Right Plantar Fasciitis",
 "matchup": "MIA@NYK"
 },
 {
 "team": "NYK",
 "player": "Andre Drummond",
-"status": "Questionable",
-"reason": "Injury/Illness - Head",
+"status": "Out",
+"reason": "Injury/Illness - Concussion Protocol",
 "matchup": "MIA@NYK"
 },
 {
 "team": "NYK",
 "player": "Miles McBride",
+"status": "Out",
+"reason": "Injury/Illness - Left Athletic Pubalgia",
+"matchup": "MIA@NYK"
+},
+{
+"team": "NYK",
+"player": "Karl- Anthony Towns",
 "status": "Questionable",
-"reason": "Injury/Illness - Left Adductor Tightness",
+"reason": "Injury/Illness - Right Abdominal Contusion",
 "matchup": "MIA@NYK"
 },
 {
@@ -135,6 +142,13 @@
 "status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "BKN@TOR"
+},
+{
+"team": "MIL",
+"player": "Kasparas Jakucionis",
+"status": "Out",
+"reason": "Injury/Illness - Left Ankle Tenosynovitis",
+"matchup": "MIL@DET"
 },
 {
 "team": "MIL",
@@ -217,7 +231,14 @@
 "team": "PHI",
 "player": "Ariel Hukporti",
 "status": "Out",
-"reason": "Injury/Illness - Right Achilles Tendon Rupture / Tear",
+"reason": "Injury/Illness - Right Achilles Tendon",
+"matchup": "PHI@IND"
+},
+{
+"team": "PHI",
+"player": "Dean Wade",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Hamstring Injury Management",
 "matchup": "PHI@IND"
 },
 {
@@ -244,7 +265,7 @@
 {
 "team": "IND",
 "player": "Larry Nance Jr.",
-"status": "Questionable",
+"status": "Probable",
 "reason": "Injury/Illness - Right Ankle Bruise",
 "matchup": "PHI@IND"
 },
@@ -328,7 +349,7 @@
 {
 "team": "BOS",
 "player": "Mitchell Robinson",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Illness",
 "matchup": "ATL@BOS"
 },
@@ -398,7 +419,7 @@
 {
 "team": "MIN",
 "player": "LaMelo Ball",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Ankle Sprain",
 "matchup": "MEM@MIN"
 },
@@ -509,6 +530,13 @@
 },
 {
 "team": "UTA",
+"player": "Mo Bamba",
+"status": "Questionable",
+"reason": "Injury/Illness - Illness",
+"matchup": "DEN@UTA"
+},
+{
+"team": "UTA",
 "player": "Kobe Bufkin",
 "status": "Out",
 "reason": "G League - Two- Way",
@@ -582,6 +610,13 @@
 "player": "Vit Krejci",
 "status": "Out",
 "reason": "Injury/Illness - Left Ankle Fracture",
+"matchup": "GSW@POR"
+},
+{
+"team": "POR",
+"player": "Damian Lillard",
+"status": "Out",
+"reason": "Injury/Illness - Right Calf Tightness / Soreness",
 "matchup": "GSW@POR"
 },
 {
@@ -730,6 +765,55 @@
 "status": "Questionable",
 "reason": "G League - Two- Way",
 "matchup": "NOP@LAC"
+},
+{
+"team": "CHI",
+"player": "Tobe Awaka",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "IND@CHI"
+},
+{
+"team": "CHI",
+"player": "Noa Essengue",
+"status": "Probable",
+"reason": "Injury/Illness - Right Thumb Sprain",
+"matchup": "IND@CHI"
+},
+{
+"team": "CHI",
+"player": "Norman Powell",
+"status": "Out",
+"reason": "Injury/Illness - Right Hamstring Strain",
+"matchup": "IND@CHI"
+},
+{
+"team": "CHI",
+"player": "Jaylin Sellers",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "IND@CHI"
+},
+{
+"team": "CHI",
+"player": "Jalen Smith",
+"status": "Probable",
+"reason": "Injury/Illness - Gastrointestinal Illness",
+"matchup": "IND@CHI"
+},
+{
+"team": "CHI",
+"player": "Dailyn Swain",
+"status": "Out",
+"reason": "G League - On Assignment",
+"matchup": "IND@CHI"
+},
+{
+"team": "CHI",
+"player": "Caleb Wilson",
+"status": "Out",
+"reason": "Injury/Illness - Right Metacarpal Fracture",
+"matchup": "IND@CHI"
 }
 ]
 }
