@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_01_45PM.pdf",
-"report_time": "2026-11-27 13:45:00",
-"fetched_at": "2026-11-27T18:59:40.311945+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_04_45PM.pdf",
+"report_time": "2026-11-27 16:45:00",
+"fetched_at": "2026-11-27T21:56:44.887544+00:00",
 "rows": [
 {
 "team": "MIA",
@@ -474,6 +474,13 @@
 },
 {
 "team": "DAL",
+"player": "Kyrie Irving",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Knee Injury Management",
+"matchup": "DAL@PHX"
+},
+{
+"team": "DAL",
 "player": "Tobi Lawal",
 "status": "Out",
 "reason": "Injury/Illness - Right Groin Strain",
@@ -635,6 +642,13 @@
 },
 {
 "team": "POR",
+"player": "Hansen Yang",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Ankle Sprain",
+"matchup": "GSW@POR"
+},
+{
+"team": "POR",
 "player": "Chris Youngblood",
 "status": "Out",
 "reason": "Injury/Illness - Right Heel Contusion / Bone Bruise",
@@ -650,7 +664,7 @@
 {
 "team": "LAL",
 "player": "Austin Reaves",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Left Heel Contusion / Bone Bruise",
 "matchup": "LAL@SAS"
 },
@@ -765,6 +779,90 @@
 "status": "Questionable",
 "reason": "G League - Two- Way",
 "matchup": "NOP@LAC"
+},
+{
+"team": "ORL",
+"player": "Paolo Banchero",
+"status": "Out",
+"reason": "Injury/Illness - Right High Ankle Sprain",
+"matchup": "ORL@WAS"
+},
+{
+"team": "ORL",
+"player": "Anthony Black",
+"status": "Questionable",
+"reason": "Injury/Illness - Back soreness",
+"matchup": "ORL@WAS"
+},
+{
+"team": "ORL",
+"player": "Colin Castleton",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "ORL@WAS"
+},
+{
+"team": "ORL",
+"player": "Jonathan Isaac",
+"status": "Out",
+"reason": "Injury/Illness - Left Knee Injury Management",
+"matchup": "ORL@WAS"
+},
+{
+"team": "ORL",
+"player": "Izaiyah Nelson",
+"status": "Out",
+"reason": "Injury/Illness - Left Ankle injury recovery",
+"matchup": "ORL@WAS"
+},
+{
+"team": "ORL",
+"player": "Noah Penda",
+"status": "Out",
+"reason": "Injury/Illness - Right Partially torn hamstring",
+"matchup": "ORL@WAS"
+},
+{
+"team": "ORL",
+"player": "Kevin Porter Jr.",
+"status": "Out",
+"reason": "Return to Competition Reconditioning",
+"matchup": "ORL@WAS"
+},
+{
+"team": "WAS",
+"player": "Reece Beekman",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "ORL@WAS"
+},
+{
+"team": "WAS",
+"player": "Justin Champagnie",
+"status": "Out",
+"reason": "Injury/Illness - Right Foot Surgery",
+"matchup": "ORL@WAS"
+},
+{
+"team": "WAS",
+"player": "Felix Okpara",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "ORL@WAS"
+},
+{
+"team": "WAS",
+"player": "Tristan Vukcevic",
+"status": "Out",
+"reason": "Injury/Illness - Left Hip Impingement",
+"matchup": "ORL@WAS"
+},
+{
+"team": "WAS",
+"player": "Jamir Watkins",
+"status": "Out",
+"reason": "Injury/Illness - Left ACL Repair / Surgery",
+"matchup": "ORL@WAS"
 },
 {
 "team": "CHI",
