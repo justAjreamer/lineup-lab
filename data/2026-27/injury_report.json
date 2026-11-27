@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_06_45PM.pdf",
-"report_time": "2026-11-26 18:45:00",
-"fetched_at": "2026-11-26T23:58:31.060796+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_10_00PM.pdf",
+"report_time": "2026-11-26 22:00:00",
+"fetched_at": "2026-11-27T03:12:14.220055+00:00",
 "rows": [
 {
 "team": "MIA",
@@ -473,6 +473,13 @@
 "matchup": "DAL@PHX"
 },
 {
+"team": "PHX",
+"player": "Mark Williams",
+"status": "Out",
+"reason": "Injury/Illness - Left Shoulder Surgery",
+"matchup": "DAL@PHX"
+},
+{
 "team": "DEN",
 "player": "DaRon Holmes II",
 "status": "Out",
@@ -492,6 +499,111 @@
 "status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "DEN@UTA"
+},
+{
+"team": "UTA",
+"player": "Jonas Aidoo",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "DEN@UTA"
+},
+{
+"team": "UTA",
+"player": "Kobe Bufkin",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "DEN@UTA"
+},
+{
+"team": "UTA",
+"player": "Jaxson Hayes",
+"status": "Questionable",
+"reason": "Injury/Illness - Left Knee Strain",
+"matchup": "DEN@UTA"
+},
+{
+"team": "UTA",
+"player": "Harrison Ingram",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "DEN@UTA"
+},
+{
+"team": "UTA",
+"player": "Jaren Jackson Jr.",
+"status": "Out",
+"reason": "Injury/Illness - Right MCL Tear",
+"matchup": "DEN@UTA"
+},
+{
+"team": "UTA",
+"player": "Lauri Markkanen",
+"status": "Out",
+"reason": "Injury/Illness - Right Hand Fracture",
+"matchup": "DEN@UTA"
+},
+{
+"team": "UTA",
+"player": "Jusuf Nurkic",
+"status": "Questionable",
+"reason": "Injury/Illness - Right 2nd Plantar Plate Tear",
+"matchup": "DEN@UTA"
+},
+{
+"team": "GSW",
+"player": "Jimmy Butler III",
+"status": "Out",
+"reason": "Injury/Illness - Right ACL Repair / Surgery",
+"matchup": "GSW@POR"
+},
+{
+"team": "GSW",
+"player": "Stephen Curry",
+"status": "Out",
+"reason": "Injury/Illness - Right Oblique Tear",
+"matchup": "GSW@POR"
+},
+{
+"team": "GSW",
+"player": "Moses Moody",
+"status": "Out",
+"reason": "Injury/Illness - Left Patellar Tendon Repair / Surgery",
+"matchup": "GSW@POR"
+},
+{
+"team": "GSW",
+"player": "Kristaps Porzingis",
+"status": "Out",
+"reason": "Not With Team",
+"matchup": "GSW@POR"
+},
+{
+"team": "POR",
+"player": "Vit Krejci",
+"status": "Out",
+"reason": "Injury/Illness - Left Ankle Fracture",
+"matchup": "GSW@POR"
+},
+{
+"team": "POR",
+"player": "Ja Morant",
+"status": "Out",
+"reason": "Injury/Illness - Left Hamstring Strain",
+"matchup": "GSW@POR"
+},
+{
+"team": "POR",
+"player": "Shaedon Sharpe",
+"status": "Out",
+"reason": "Injury/Illness - Right Meniscus Surgery",
+"matchup": "GSW@POR"
+},
+{
+"team": "POR",
+"player": "Chris Youngblood",
+"status": "Out",
+"reason": "Injury/Illness - Right Heel Contusion / Bone Bruise",
+"matchup": "GSW@POR"
 },
 {
 "team": "LAL",
@@ -582,6 +694,41 @@
 "player": "Trendon Watford",
 "status": "Probable",
 "reason": "Injury/Illness - Right Ankle Sprain",
+"matchup": "NOP@LAC"
+},
+{
+"team": "LAC",
+"player": "Bradley Beal",
+"status": "Out",
+"reason": "Injury/Illness - Right Knee Injury Management",
+"matchup": "NOP@LAC"
+},
+{
+"team": "LAC",
+"player": "Cam Christie",
+"status": "Questionable",
+"reason": "G League - Two- Way",
+"matchup": "NOP@LAC"
+},
+{
+"team": "LAC",
+"player": "Nick Martinelli",
+"status": "Questionable",
+"reason": "G League - Two- Way",
+"matchup": "NOP@LAC"
+},
+{
+"team": "LAC",
+"player": "Jordan Miller",
+"status": "Out",
+"reason": "Injury/Illness - Left Rotator Cuff Surgery",
+"matchup": "NOP@LAC"
+},
+{
+"team": "LAC",
+"player": "Jalen Pickett",
+"status": "Questionable",
+"reason": "G League - Two- Way",
 "matchup": "NOP@LAC"
 }
 ]
