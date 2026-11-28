@@ -1,7 +1,7 @@
 {
-"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_06_30PM.pdf",
-"report_time": "2026-11-27 18:30:00",
-"fetched_at": "2026-11-27T23:41:23.722178+00:00",
+"url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-27_09_45PM.pdf",
+"report_time": "2026-11-27 21:45:00",
+"fetched_at": "2026-11-28T02:55:35.233800+00:00",
 "rows": [
 {
 "team": "MIA",
@@ -203,7 +203,7 @@
 "team": "DET",
 "player": "Taurean Prince",
 "status": "Out",
-"reason": "Injury/Illness - Right Arthroscopy",
+"reason": "Injury/Illness - Right Knee Arthroscopy",
 "matchup": "MIL@DET"
 },
 {
@@ -223,7 +223,7 @@
 {
 "team": "PHI",
 "player": "Joel Embiid",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Illness",
 "matchup": "PHI@IND"
 },
@@ -231,7 +231,7 @@
 "team": "PHI",
 "player": "Ariel Hukporti",
 "status": "Out",
-"reason": "Injury/Illness - Right Achilles Tendon",
+"reason": "Injury/Illness - Right Achilles Tendon Rupture / Tear",
 "matchup": "PHI@IND"
 },
 {
@@ -265,7 +265,7 @@
 {
 "team": "IND",
 "player": "Larry Nance Jr.",
-"status": "Probable",
+"status": "Available",
 "reason": "Injury/Illness - Right Ankle Bruise",
 "matchup": "PHI@IND"
 },
@@ -370,7 +370,7 @@
 {
 "team": "MEM",
 "player": "Zach Edey",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Left Ankle Soreness",
 "matchup": "MEM@MIN"
 },
@@ -412,7 +412,7 @@
 {
 "team": "MEM",
 "player": "Isaiah Stewart",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Right Hip Soreness",
 "matchup": "MEM@MIN"
 },
@@ -475,7 +475,7 @@
 {
 "team": "DAL",
 "player": "Kyrie Irving",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Knee Injury Management",
 "matchup": "DAL@PHX"
 },
@@ -498,6 +498,27 @@
 "player": "Caleb Martin",
 "status": "Available",
 "reason": "Injury/Illness - Right Thumb Splint",
+"matchup": "DAL@PHX"
+},
+{
+"team": "PHX",
+"player": "Duop Reath",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "DAL@PHX"
+},
+{
+"team": "PHX",
+"player": "Pat Spencer",
+"status": "Out",
+"reason": "G League - Two- Way",
+"matchup": "DAL@PHX"
+},
+{
+"team": "PHX",
+"player": "Drew Timme",
+"status": "Out",
+"reason": "G League - Two- Way",
 "matchup": "DAL@PHX"
 },
 {
@@ -538,7 +559,7 @@
 {
 "team": "UTA",
 "player": "Mo Bamba",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Illness",
 "matchup": "DEN@UTA"
 },
@@ -552,7 +573,7 @@
 {
 "team": "UTA",
 "player": "Jaxson Hayes",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Left Knee Strain",
 "matchup": "DEN@UTA"
 },
@@ -580,7 +601,7 @@
 {
 "team": "UTA",
 "player": "Jusuf Nurkic",
-"status": "Questionable",
+"status": "Available",
 "reason": "Injury/Illness - Right 2nd Plantar Plate Tear",
 "matchup": "DEN@UTA"
 },
@@ -643,7 +664,7 @@
 {
 "team": "POR",
 "player": "Hansen Yang",
-"status": "Questionable",
+"status": "Out",
 "reason": "Injury/Illness - Left Ankle Sprain",
 "matchup": "GSW@POR"
 },
@@ -678,15 +699,15 @@
 {
 "team": "SAS",
 "player": "De'Aaron Fox",
-"status": "Questionable",
-"reason": "Injury/Illness - Right Shin Contusion",
+"status": "Available",
+"reason": "-",
 "matchup": "LAL@SAS"
 },
 {
 "team": "SAS",
 "player": "Dylan Harper",
-"status": "Questionable",
-"reason": "Injury/Illness - Left Hip External Rotator Strain",
+"status": "Available",
+"reason": "-",
 "matchup": "LAL@SAS"
 },
 {
@@ -694,6 +715,13 @@
 "player": "Tobias Harris",
 "status": "Out",
 "reason": "Injury/Illness - Left Calf Strain",
+"matchup": "LAL@SAS"
+},
+{
+"team": "SAS",
+"player": "David Jones Garcia",
+"status": "Out",
+"reason": "G League - Two- Way",
 "matchup": "LAL@SAS"
 },
 {
@@ -713,7 +741,7 @@
 {
 "team": "NOP",
 "player": "Bennedict Mathurin",
-"status": "Doubtful",
+"status": "Out",
 "reason": "Injury/Illness - Left Plantar Fasciitis",
 "matchup": "NOP@LAC"
 },
@@ -741,7 +769,7 @@
 {
 "team": "NOP",
 "player": "Trendon Watford",
-"status": "Probable",
+"status": "Available",
 "reason": "Injury/Illness - Right Ankle Sprain",
 "matchup": "NOP@LAC"
 },
@@ -755,14 +783,14 @@
 {
 "team": "LAC",
 "player": "Cam Christie",
-"status": "Questionable",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "NOP@LAC"
 },
 {
 "team": "LAC",
 "player": "Nick Martinelli",
-"status": "Questionable",
+"status": "Available",
 "reason": "G League - Two- Way",
 "matchup": "NOP@LAC"
 },
@@ -776,7 +804,7 @@
 {
 "team": "LAC",
 "player": "Jalen Pickett",
-"status": "Questionable",
+"status": "Out",
 "reason": "G League - Two- Way",
 "matchup": "NOP@LAC"
 },
